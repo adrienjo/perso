@@ -4,11 +4,16 @@
 #include  <Arduino.h>
 #include  <Adafruit_NeoPixel.h>
 
-struct{
+#define   PIN_STRIP   8
+#define   NB_LEDS     5
+
+typedef struct{
   unsigned  char  R;
   unsigned  char  G;
   unsigned  char  B;
-}RGB
+}RGB;
+
+RGB   RGB2COL(byte,byte,byte);
 
 class LED{
 
@@ -16,7 +21,9 @@ class LED{
 
           LED();
     bool  isOn();
-    void  setColor();    
+    void  ON(bool);
+    void  setColor(RGB);
+    void  refresh(Adafruit_NeoPixel,int);  
 
   private :
 
