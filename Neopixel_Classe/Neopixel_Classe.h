@@ -31,4 +31,33 @@ class LED{
     RGB   color;
 };
 
+class VIBREUR{
+
+  public  :
+
+          VIBREUR();
+    bool  isOn();
+    void  ON(bool);
+    void  setRPM(byte);
+
+  private :
+
+    bool  on;
+    byte  rpm;
+};
+
+class PRESS{
+
+  public  :
+
+          PRESS();
+    byte  isOn();
+    byte  getVal();
+    void  setVal(byte);
+
+  private :
+
+    byte  val;
+};
+
 #endif

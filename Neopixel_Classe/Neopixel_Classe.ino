@@ -1,26 +1,25 @@
 #include  "Neopixel_Classe.h"
 
+unsigned  char  cpt;
+bool  up;
+
+LED LEDS[NB_LEDS];
+
+Adafruit_NeoPixel strip = Adafruit_NeoPixel(NB_LEDS, PIN_STRIP, NEO_GRB + NEO_KHZ800);
+
 void setup() {
 
-  Serial.begin(9600);
-
-  LED LEDS[5];
-
-  Adafruit_NeoPixel strip = Adafruit_NeoPixel(NB_LEDS, PIN_STRIP, NEO_GRB + NEO_KHZ800);
+  //Serial.begin(9600);
 
   strip.begin();
 
-  for(int led = 0;  led<5;  led++){
+  for(int led = 0;  led<NB_LEDS;  led++){
 
-    LEDS[led].setColor(RGB2COL(led*255/NB_LEDS,127,255-led*255/NB_LEDS));
+    LEDS[led].setColor(RGB2COL(100,100,100));
 
     LEDS[led].ON(1);
 
     LEDS[led].refresh(&strip,  led);
-
-    //strip.setPixelColor(led, strip.Color(led*255/NB_LEDS,0,255-led*255/NB_LEDS));
-
-    //Serial.println("test");
 
   }
 
@@ -30,5 +29,22 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
+  if(cpt==0)    up = 1;
+  if(cpt==255)  up = 0;
+  
+  if(up)  cpt++;
+  else    cpt--;
+
+  for(int led = 0;  led<NB_LEDS;  led++){
+
+    LEDS[led].setColor(RGB2COL(cpt,0,255-cpt));
+
+    LEDS[led].refresh(&strip,  led);
+
+  }
+
+  strip.show();
+
+  delay(5);
 
 }
