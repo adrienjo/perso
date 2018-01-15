@@ -23,7 +23,7 @@ class LED{
     bool  isOn();
     void  ON(bool);
     void  setColor(RGB);
-    void  refresh(Adafruit_NeoPixel,int);  
+    void  refresh(Adafruit_NeoPixel*,int);  
 
   private :
 

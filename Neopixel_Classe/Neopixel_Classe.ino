@@ -11,16 +11,16 @@ void setup() {
   strip.begin();
 
   for(int led = 0;  led<5;  led++){
-/*
-    LEDS[led].setColor(RGB2COL(led*255/NB_LEDS,0,255-led*255/NB_LEDS));
+
+    LEDS[led].setColor(RGB2COL(led*255/NB_LEDS,127,255-led*255/NB_LEDS));
 
     LEDS[led].ON(1);
 
-    LEDS[led].refresh(strip,  led);
-*/
-    strip.setPixelColor(led, strip.Color(led*255/NB_LEDS,0,led*255/NB_LEDS));
+    LEDS[led].refresh(&strip,  led);
 
-    Serial.println("test");
+    //strip.setPixelColor(led, strip.Color(led*255/NB_LEDS,0,255-led*255/NB_LEDS));
+
+    //Serial.println("test");
 
   }
 
