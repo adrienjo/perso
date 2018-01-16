@@ -1,5 +1,5 @@
-#ifndef NEOPIXEL_CLASSE_H
-#define NEOPIXEL_CLASSE_H
+#ifndef Monoblink_Receiver_H
+#define Monoblink_Receiver_H
 
 #include  <Arduino.h>
 #include  <Adafruit_NeoPixel.h>
@@ -29,35 +29,6 @@ class LED{
 
     bool  on;
     RGB   color;
-};
-
-class VIBREUR{
-
-  public  :
-
-          VIBREUR();
-    bool  isOn();
-    void  ON(bool);
-    void  setRPM(byte);
-
-  private :
-
-    bool  on;
-    byte  rpm;
-};
-
-class PRESS{
-
-  public  :
-
-          PRESS();
-    byte  isOn();
-    byte  getVal();
-    void  setVal(byte);
-
-  private :
-
-    byte  val;
 };
 
 #endif

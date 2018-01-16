@@ -1,4 +1,4 @@
-#include  "Neopixel_Classe.h"
+#include  "Monoblink_Receiver.h"
 
 unsigned  char  cpt;
 bool  up;
@@ -9,19 +9,13 @@ Adafruit_NeoPixel strip = Adafruit_NeoPixel(NB_LEDS, PIN_STRIP, NEO_GRB + NEO_KH
 
 void setup() {
 
-  //Serial.begin(9600);
-
   strip.begin();
 
-  for(int led = 0;  led<NB_LEDS;  led++){
+  LEDS[led].setColor(RGB2COL(100,100,100));
 
-    LEDS[led].setColor(RGB2COL(100,100,100));
+  LEDS[led].ON(1);
 
-    LEDS[led].ON(1);
-
-    LEDS[led].refresh(&strip,  led);
-
-  }
+  LEDS[led].refresh(&strip,  led);
 
   strip.show();
 

@@ -1,4 +1,4 @@
-#include  "Neopixel_Classe.h"
+#include  "Monoblink_Receiver.h"
 
 RGB   RGB2COL(byte  Red,byte  Green,byte  Blue){
 
@@ -40,42 +40,5 @@ void  LED::refresh(Adafruit_NeoPixel* strip,int  num_led){
 
   if(this->on)  strip->setPixelColor(num_led, strip->Color(this->color.R,this->color.G,this->color.B));
   else          strip->setPixelColor(num_led, strip->Color(0,0,0));
-}
-
-///////////////////////////////////////////////////////////////////
-
-VIBREUR::VIBREUR(){
-
-}
-
-bool  VIBREUR::isOn(){
-
-  return  this->on;
-}
- 
-void  VIBREUR::ON(bool ON){
-
-  this->on  = ON;
-}
-
-void  VIBREUR::setRPM(byte  RPM){
-
-  this->rpm = RPM;
-}
-
-///////////////////////////////////////////////////////////////////
-
-PRESS::PRESS(){
-
-}
-
-byte  PRESS::getVal(){
-
-  return  this->val;
-}
- 
-void  PRESS::setVal(byte  VAL){
-
-  this->val = VAL;
 }
 
