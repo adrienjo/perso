@@ -4,7 +4,7 @@
 #include  <Arduino.h>
 #include  <Adafruit_NeoPixel.h>
 
-#define   PIN_STRIP   8
+#define   PIN_STRIP   3
 #define   NB_LEDS     5
 
 typedef struct{
@@ -30,6 +30,8 @@ class LED{
     bool  on;
     RGB   color;
 };
+
+void  set_Timer0();
 
 class VIBREUR{
 
