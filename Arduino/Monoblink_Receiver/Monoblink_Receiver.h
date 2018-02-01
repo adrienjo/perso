@@ -3,6 +3,7 @@
 
 #include  <Arduino.h>
 #include  <Adafruit_NeoPixel.h>
+#include  <VirtualWire.h>
 
 #define   PIN_STRIP   3
 #define   NB_LEDS     1
@@ -30,5 +31,7 @@ class LED{
     bool  on;
     RGB   color;
 };
+
+bool  read_message(byte*,unsigned char);
 
 #endif

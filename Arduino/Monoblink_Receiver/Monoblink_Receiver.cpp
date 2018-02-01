@@ -42,3 +42,14 @@ void  LED::refresh(Adafruit_NeoPixel* strip,int  num_led){
   else          strip->setPixelColor(num_led, strip->Color(0,0,0));
 }
 
+///////////////////////////////////////////////
+
+bool  read_message(byte* mssg,unsigned char mssg_length){
+
+        if(message[0]=='R') pixels.setPixelColor(0, pixels.Color(255,0,0));
+        if(message[0]=='G') pixels.setPixelColor(0, pixels.Color(0,255,0));
+        if(message[0]=='B') pixels.setPixelColor(0, pixels.Color(0,0,255));
+        
+        return true;
+}
+
