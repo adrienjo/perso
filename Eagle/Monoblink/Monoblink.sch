@@ -238,14 +238,14 @@
 <circle x="0" y="0" radius="1.79605" width="0.127" layer="21"/>
 </package>
 <package name="RF_CONN">
-<pad name="1" x="1.27" y="1.27" drill="0.8" diameter="1.6764" shape="square"/>
-<pad name="2" x="1.27" y="3.81" drill="0.8" diameter="1.6764"/>
-<pad name="3" x="1.27" y="6.35" drill="0.8" diameter="1.6764"/>
-<pad name="4" x="1.27" y="8.89" drill="0.8" diameter="1.6764"/>
-<wire x1="0" y1="10.16" x2="0" y2="0" width="0.127" layer="21"/>
-<wire x1="0" y1="0" x2="2.54" y2="0" width="0.127" layer="21"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="10.16" width="0.127" layer="21"/>
-<wire x1="2.54" y1="10.16" x2="0" y2="10.16" width="0.127" layer="21"/>
+<pad name="1" x="0" y="-3.81" drill="0.8" diameter="1.6764" shape="square"/>
+<pad name="2" x="0" y="-1.27" drill="0.8" diameter="1.6764"/>
+<pad name="3" x="0" y="1.27" drill="0.8" diameter="1.6764"/>
+<pad name="4" x="0" y="3.81" drill="0.8" diameter="1.6764"/>
+<wire x1="-1.27" y1="5.08" x2="-1.27" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-5.08" x2="1.27" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="1.27" y1="-5.08" x2="1.27" y2="5.08" width="0.127" layer="21"/>
+<wire x1="1.27" y1="5.08" x2="-1.27" y2="5.08" width="0.127" layer="21"/>
 </package>
 <package name="C0402">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
@@ -1810,7 +1810,7 @@ Source: AVX .. aphvc.pdf</description>
 <text x="-0.4" y="-1.6" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="PS1240P02BT">
-<circle x="0" y="0" radius="6.1" width="0.6096" layer="21"/>
+<circle x="0" y="0" radius="6.1" width="0.254" layer="21"/>
 <pad name="V-" x="0" y="-2.5" drill="0.8" diameter="2.54" shape="square"/>
 <pad name="V+" x="0" y="2.5" drill="0.8" diameter="2.54"/>
 </package>
@@ -3052,9 +3052,9 @@ Two pin, compact surface mount connector. Commonly used as a battery input conne
 <label x="96.52" y="76.2" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="PB2"/>
-<wire x1="20.32" y1="30.48" x2="17.78" y2="30.48" width="0.1524" layer="91"/>
-<label x="17.78" y="30.48" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="U1" gate="G$1" pin="PB1"/>
+<wire x1="20.32" y1="35.56" x2="17.78" y2="35.56" width="0.1524" layer="91"/>
+<label x="17.78" y="35.56" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="LED_DATA_IN" class="0">
@@ -3064,9 +3064,9 @@ Two pin, compact surface mount connector. Commonly used as a battery input conne
 <label x="83.82" y="35.56" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="PB1"/>
-<wire x1="20.32" y1="35.56" x2="17.78" y2="35.56" width="0.1524" layer="91"/>
-<label x="17.78" y="35.56" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="U1" gate="G$1" pin="PB2"/>
+<wire x1="20.32" y1="30.48" x2="17.78" y2="30.48" width="0.1524" layer="91"/>
+<label x="17.78" y="30.48" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="LED_DATA_OUT" class="0">
