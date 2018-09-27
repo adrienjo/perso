@@ -44,8 +44,35 @@ void  LED::refresh(Adafruit_NeoPixel* strip,int  num_led){
 
 ///////////////////////////////////////////////////////////////////
 
+void  set_Timer0(){
+  
+  //Timer déclenche interruption à F_PWM*256
+  //IT sur match + CTC
+
+  TCCR0A  = 0b00000010; //WGM mode 4 (CTC)
+  TCCR0B  = 0b00000001; //no prescaler
+
+  OCR0A   = 100;
+
+  TIMSK   = 0b00010000;
+
+  DDRB    |=  0b100;
+
+  PORTB   |=  0b100;
+
+  sei();
+}
+
+ISR(TIMER0_COMPA_vect){
+  
+  PORTB ^=  0b100;
+}
+
 VIBREUR::VIBREUR(){
 
+  set_Timer0();
+  this->on  = 0;
+  this->rpm = 0;
 }
 
 bool  VIBREUR::isOn(){

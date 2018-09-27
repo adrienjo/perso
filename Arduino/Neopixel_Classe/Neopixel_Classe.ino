@@ -25,6 +25,8 @@ void setup() {
 
   strip.show();
 
+  set_Timer0();
+
 }
 
 void loop() {
