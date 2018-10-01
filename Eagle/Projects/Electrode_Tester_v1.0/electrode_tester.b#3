@@ -3,12 +3,12 @@
 <eagle version="9.1.3">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="10" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
 <layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
 <layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
@@ -28,11 +28,11 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
@@ -46,19 +46,19 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -164,7 +164,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyYTAzOTA1" projecturn="a.cGVyc29uYWw6dWUyYTAzOTA1IzIwMTgwOTI0MTUwNTkxMjUx" f3durn="urn:adsk.wipprod:dm.lineage:Yge1FnNQQbu_CCwllhp9Ww" pcbguid="72ec9701-0d9c-4318-9309-981fd7c34612" lastpulledtime="" lastsyncedchangeguid="c79a7f0f-34da-027a-49ff-6292f0690521"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyYTAzOTA1" projecturn="a.cGVyc29uYWw6dWUyYTAzOTA1IzIwMTgwOTI0MTUwNTkxMjUx" f3durn="urn:adsk.wipprod:dm.lineage:Yge1FnNQQbu_CCwllhp9Ww" pcbguid="72ec9701-0d9c-4318-9309-981fd7c34612" lastpulledtime="" lastsyncedchangeguid="d4a06ae4-89ce-5aa5-82b2-14d428e19225"/>
 <plain>
 <wire x1="48.26" y1="22.86" x2="2.54" y2="22.86" width="0.1524" layer="48"/>
 <wire x1="2.54" y1="22.86" x2="0" y2="20.32" width="0.1524" layer="48" curve="90"/>
@@ -181,22 +181,11 @@
 <wire x1="50.8" y1="20.32" x2="50.8" y2="2.54" width="0.1524" layer="20"/>
 <wire x1="50.8" y1="2.54" x2="48.26" y2="0" width="0.1524" layer="20" curve="-90"/>
 <wire x1="48.26" y1="0" x2="6.35" y2="0" width="0.1524" layer="20"/>
-<wire x1="-1.27" y1="24.13" x2="52.07" y2="24.13" width="0.1524" layer="20"/>
-<wire x1="52.07" y1="24.13" x2="52.07" y2="-1.27" width="0.1524" layer="20"/>
-<wire x1="52.07" y1="-1.27" x2="-1.27" y2="-1.27" width="0.1524" layer="20"/>
-<wire x1="-1.27" y1="-1.27" x2="-1.27" y2="10.795" width="0.1524" layer="20"/>
-<wire x1="-1.27" y1="12.065" x2="-1.27" y2="24.13" width="0.1524" layer="20"/>
-<wire x1="-2.54" y1="25.4" x2="-2.54" y2="-2.54" width="0.1524" layer="20"/>
-<wire x1="-2.54" y1="-2.54" x2="53.34" y2="-2.54" width="0.1524" layer="20"/>
-<wire x1="53.34" y1="-2.54" x2="53.34" y2="25.4" width="0.1524" layer="20"/>
-<wire x1="53.34" y1="25.4" x2="-2.54" y2="25.4" width="0.1524" layer="20"/>
 <wire x1="3.81" y1="20.32" x2="3.81" y2="12.065" width="0.1524" layer="20"/>
-<wire x1="3.81" y1="12.065" x2="-1.27" y2="12.065" width="0.1524" layer="20"/>
-<wire x1="3.81" y1="2.54" x2="3.81" y2="10.795" width="0.1524" layer="20"/>
-<wire x1="3.81" y1="10.795" x2="-1.27" y2="10.795" width="0.1524" layer="20"/>
+<wire x1="3.81" y1="2.54" x2="3.81" y2="12.065" width="0.1524" layer="20"/>
 </plain>
 <libraries>
-<library name="electrode_tester">
+<library name="electrode_tester" urn="urn:adsk.eagle:library:5554192">
 <packages>
 <package name="TSSOP28" urn="urn:adsk.eagle:footprint:5502013/1">
 <description>&lt;b&gt;28-Lead TSSOP Package&lt;/b&gt;&lt;p&gt;
@@ -491,20 +480,20 @@ RU-28</description>
 <packageinstance name="C0603"/>
 </packageinstances>
 </package3d>
-<package3d name="TSSOP28" urn="urn:adsk.eagle:package:5502030/1" type="box">
+<package3d name="TSSOP28" urn="urn:adsk.eagle:package:5502030/2" type="model" library_version="3" library_locally_modified="yes">
 <description>&lt;b&gt;28-Lead TSSOP Package&lt;/b&gt;&lt;p&gt;
 RU-28</description>
 <packageinstances>
 <packageinstance name="TSSOP28"/>
 </packageinstances>
 </package3d>
-<package3d name="1X16_ROUND" urn="urn:adsk.eagle:package:5502036/1" type="box">
+<package3d name="1X16_ROUND" urn="urn:adsk.eagle:package:5502036/3" type="model" library_version="3" library_locally_modified="yes">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <packageinstances>
 <packageinstance name="1X16_ROUND"/>
 </packageinstances>
 </package3d>
-<package3d name="1X12_ROUND" urn="urn:adsk.eagle:package:5502031/1" type="box">
+<package3d name="1X12_ROUND" urn="urn:adsk.eagle:package:5502031/2" type="model" library_version="3" library_locally_modified="yes">
 <packageinstances>
 <packageinstance name="1X12_ROUND"/>
 </packageinstances>
@@ -514,12 +503,14 @@ RU-28</description>
 <packageinstance name="505110-1292"/>
 </packageinstances>
 </package3d>
-<package3d name="WS2812B" urn="urn:adsk.eagle:package:5502052/1" type="box">
+<package3d name="WS2812B" urn="urn:adsk.eagle:package:5502052/2" type="model" library_version="3" library_locally_modified="yes">
 <packageinstances>
 <packageinstance name="WS2812B"/>
 </packageinstances>
 </package3d>
-<package3d name="VSSOP8" urn="urn:adsk.eagle:package:5502055/1" type="box">
+<package3d name="VSSOP8" urn="urn:adsk.eagle:package:5502055/2" type="model" library_version="3" library_locally_modified="yes">
+<description>8-SOP, 0.65 mm pitch, 5.03 mm span, 3.05 X 3.05 X 1.10 mm body
+&lt;p&gt;8-pin SOP package with 0.65 mm pitch, 5.03 mm span with body size 3.05 X 3.05 X 1.10 mm&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="VSSOP8"/>
 </packageinstances>
@@ -540,87 +531,119 @@ RU-28</description>
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="SeeedStudio_2layer_DRU_no_angle_20140221">
-<description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
+<designrules name="eC_2Layer_PClass6_BaseCopperO18_eCDefault">
+<description language="de">
+
+
 &lt;p&gt;
-Die Standard-Design-Rules sind so gewählt, dass sie für 
-die meisten Anwendungen passen. Sollte ihre Platine 
-besondere Anforderungen haben, treffen Sie die erforderlichen
-Einstellungen hier und speichern die Design Rules unter 
-einem neuen Namen ab.</description>
-<description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
+&lt;b&gt;Eurocircuits-EAGLE design rules&lt;/b&gt;&lt;br&gt;
+&lt;br&gt;
+Setup for &lt;b&gt;2-layer PatternClass6 BaseCopperO18 eCDefault&lt;/b&gt;
 &lt;p&gt;
-The default Design Rules have been set to cover
-a wide range of applications. Your particular design
-may have different requirements, so please make the
-necessary adjustments and save your customized
-design rules under a new name.</description>
-<description language="zh">&lt;b&gt;Seeed Studio EAGLE Design Rules&lt;/b&gt;
+ The option &lt;b&gt;Sizes-Minimum Drill&lt;/b&gt; is set to 0.35mm. This minimum drill endsize can be set lower if needed. Values below 0.25mm will result in a higher DrillClassification. For details see the Eurocircuits Classification overview.
+&lt;p&gt;
+&lt;u&gt;Extra Notes:&lt;/u&gt;&lt;br&gt;
+- The option &lt;b&gt;Distance-Copper/Dimension&lt;/b&gt; is set to 0.25mm, the default for boards with a routed boardoutline. If you require Vcut on your board this parameter should be set to 0.45mm.&lt;br&gt;
+- The option &lt;b&gt;Supply-Generate thermals for vias&lt;/b&gt; is on by default but may be changed if required.&lt;br&gt;
+- The option &lt;b&gt;Mask-Stop&lt;/b&gt; is set to 0mm oversize which is the preffered value.&lt;br&gt;
+- The option &lt;b&gt;Mask-Cream&lt;/b&gt; is set to 0mm oversize by default, but may be changed if required&lt;br&gt;
+- The option &lt;b&gt;Mask-Limit&lt;/b&gt; is set to 0.45mm, resulting in covered or tented via holes for vias of 0.45mm and smaller. The option may be changed if required.&lt;br&gt;
+- The options &lt;b&gt;Shapes&lt;/b&gt; and &lt;b&gt;Misc&lt;/b&gt; are not relevant. Values for &lt;b&gt;Shapes-Smds-Roundness&lt;/b&gt; are not critical and can be set as you require.
+&lt;p&gt;
+&lt;p&gt;
+You can set higher minimum values if you wish, setting lower minimum values is &lt;u&gt;not advisable&lt;/u&gt;.&lt;br&gt;
+If you need lower minimum values, please use a different Eurocircuits-EAGLE design rule file. For details see the Eurocircuits-EAGLE dru overview table.
+&lt;p&gt;
+Your Eurocircuits Team
+</description>
+<description language="en">
+
+
+&lt;p&gt;
+&lt;b&gt;Eurocircuits-EAGLE design rules&lt;/b&gt;&lt;br&gt;
+&lt;br&gt;
+Setup for &lt;b&gt;2-layer PatternClass6 BaseCopperO18 eCDefault&lt;/b&gt;
+&lt;p&gt;
+ The option &lt;b&gt;Sizes-Minimum Drill&lt;/b&gt; is set to 0.35mm. This minimum drill endsize can be set lower if needed. Values below 0.25mm will result in a higher DrillClassification. For details see the Eurocircuits Classification overview.
+&lt;p&gt;
+&lt;u&gt;Extra Notes:&lt;/u&gt;&lt;br&gt;
+- The option &lt;b&gt;Distance-Copper/Dimension&lt;/b&gt; is set to 0.25mm, the default for boards with a routed boardoutline. If you require Vcut on your board this parameter should be set to 0.45mm.&lt;br&gt;
+- The option &lt;b&gt;Supply-Generate thermals for vias&lt;/b&gt; is on by default but may be changed if required.&lt;br&gt;
+- The option &lt;b&gt;Mask-Stop&lt;/b&gt; is set to 0mm oversize which is the preffered value.&lt;br&gt;
+- The option &lt;b&gt;Mask-Cream&lt;/b&gt; is set to 0mm oversize by default, but may be changed if required&lt;br&gt;
+- The option &lt;b&gt;Mask-Limit&lt;/b&gt; is set to 0.45mm, resulting in covered or tented via holes for vias of 0.45mm and smaller. The option may be changed if required.&lt;br&gt;
+- The options &lt;b&gt;Shapes&lt;/b&gt; and &lt;b&gt;Misc&lt;/b&gt; are not relevant. Values for &lt;b&gt;Shapes-Smds-Roundness&lt;/b&gt; are not critical and can be set as you require.
+&lt;p&gt;
+&lt;p&gt;
+You can set higher minimum values if you wish, setting lower minimum values is &lt;u&gt;not advisable&lt;/u&gt;.&lt;br&gt;
+If you need lower minimum values, please use a different Eurocircuits-EAGLE design rule file. For details see the Eurocircuits-EAGLE dru overview table.
+&lt;p&gt;
+Your Eurocircuits Team
 </description>
 <param name="layerSetup" value="(1*16)"/>
-<param name="mtCopper" value="0.035mm 0.0175mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.0175mm 0.035mm"/>
-<param name="mtIsolate" value="1.5mm 1.1mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
-<param name="mdWireWire" value="6mil"/>
-<param name="mdWirePad" value="6mil"/>
-<param name="mdWireVia" value="6mil"/>
-<param name="mdPadPad" value="6mil"/>
-<param name="mdPadVia" value="6mil"/>
-<param name="mdViaVia" value="6mil"/>
+<param name="mtCopper" value="0.018mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.018mm"/>
+<param name="mtIsolate" value="1.55mm 0.71mm 0.36mm 0.2mm 0.2mm 0.2mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
+<param name="mdWireWire" value="0.15mm"/>
+<param name="mdWirePad" value="0.15mm"/>
+<param name="mdWireVia" value="0.15mm"/>
+<param name="mdPadPad" value="0.15mm"/>
+<param name="mdPadVia" value="0.15mm"/>
+<param name="mdViaVia" value="0.15mm"/>
 <param name="mdSmdPad" value="0mil"/>
 <param name="mdSmdVia" value="0mil"/>
 <param name="mdSmdSmd" value="0mil"/>
-<param name="mdViaViaSameLayer" value="8mil"/>
+<param name="mdViaViaSameLayer" value="0.2mm"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="10mil"/>
-<param name="mdDrill" value="10mil"/>
+<param name="mdCopperDimension" value="0.25mm"/>
+<param name="mdDrill" value="0.35mm"/>
 <param name="mdSmdStop" value="0mil"/>
-<param name="msWidth" value="6mil"/>
-<param name="msDrill" value="12mil"/>
-<param name="msMicroVia" value="12mil"/>
+<param name="msWidth" value="0.15mm"/>
+<param name="msDrill" value="0.35mm"/>
+<param name="msMicroVia" value="25mm"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
 <param name="rvPadInner" value="0.25"/>
 <param name="rvPadBottom" value="0.25"/>
 <param name="rvViaOuter" value="0.25"/>
 <param name="rvViaInner" value="0.25"/>
-<param name="rvMicroViaOuter" value="0.25"/>
-<param name="rvMicroViaInner" value="0.25"/>
-<param name="rlMinPadTop" value="10mil"/>
-<param name="rlMaxPadTop" value="20mil"/>
-<param name="rlMinPadInner" value="10mil"/>
-<param name="rlMaxPadInner" value="20mil"/>
-<param name="rlMinPadBottom" value="10mil"/>
-<param name="rlMaxPadBottom" value="20mil"/>
-<param name="rlMinViaOuter" value="6mil"/>
-<param name="rlMaxViaOuter" value="20mil"/>
-<param name="rlMinViaInner" value="6mil"/>
-<param name="rlMaxViaInner" value="20mil"/>
-<param name="rlMinMicroViaOuter" value="4mil"/>
-<param name="rlMaxMicroViaOuter" value="20mil"/>
-<param name="rlMinMicroViaInner" value="4mil"/>
-<param name="rlMaxMicroViaInner" value="20mil"/>
+<param name="rvMicroViaOuter" value="0"/>
+<param name="rvMicroViaInner" value="0"/>
+<param name="rlMinPadTop" value="0.175mm"/>
+<param name="rlMaxPadTop" value="2.5mm"/>
+<param name="rlMinPadInner" value="0.175mm"/>
+<param name="rlMaxPadInner" value="2.5mm"/>
+<param name="rlMinPadBottom" value="0.175mm"/>
+<param name="rlMaxPadBottom" value="2.5mm"/>
+<param name="rlMinViaOuter" value="0.125mm"/>
+<param name="rlMaxViaOuter" value="2.5mm"/>
+<param name="rlMinViaInner" value="0.125mm"/>
+<param name="rlMaxViaInner" value="2.5mm"/>
+<param name="rlMinMicroViaOuter" value="2.5mm"/>
+<param name="rlMaxMicroViaOuter" value="25mm"/>
+<param name="rlMinMicroViaInner" value="2.5mm"/>
+<param name="rlMaxMicroViaInner" value="25mm"/>
 <param name="psTop" value="-1"/>
 <param name="psBottom" value="-1"/>
-<param name="psFirst" value="0"/>
+<param name="psFirst" value="-1"/>
 <param name="psElongationLong" value="100"/>
 <param name="psElongationOffset" value="100"/>
-<param name="mvStopFrame" value="1"/>
+<param name="mvStopFrame" value="0"/>
 <param name="mvCreamFrame" value="0"/>
-<param name="mlMinStopFrame" value="2mil"/>
-<param name="mlMaxStopFrame" value="2mil"/>
+<param name="mlMinStopFrame" value="0mil"/>
+<param name="mlMaxStopFrame" value="0mil"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
-<param name="mlViaStopLimit" value="100mil"/>
+<param name="mlViaStopLimit" value="0.45mm"/>
 <param name="srRoundness" value="0"/>
 <param name="srMinRoundness" value="0mil"/>
 <param name="srMaxRoundness" value="0mil"/>
-<param name="slThermalIsolate" value="10mil"/>
-<param name="slThermalsForVias" value="0"/>
+<param name="slThermalIsolate" value="0.2mm"/>
+<param name="slThermalsForVias" value="1"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
 <param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
-<param name="checkRestrict" value="0"/>
+<param name="checkRestrict" value="1"/>
 <param name="checkStop" value="0"/>
 <param name="checkValues" value="0"/>
 <param name="checkNames" value="1"/>
@@ -726,116 +749,116 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="U1" library="electrode_tester" package="TSSOP28" package3d_urn="urn:adsk.eagle:package:5502030/1" value="ADS1248" x="20.32" y="11.43" smashed="yes" rot="MR180">
+<element name="U1" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="TSSOP28" package3d_urn="urn:adsk.eagle:package:5502030/2" value="ADS1248" x="20.32" y="11.43" smashed="yes" rot="MR180">
 <attribute name="NAME" x="15.24" y="15.24" size="0.8128" layer="26" font="vector" ratio="15" rot="MR90"/>
 <attribute name="VALUE" x="16.764" y="12.954" size="1.27" layer="28" rot="MR180"/>
 </element>
-<element name="JP1" library="electrode_tester" package="1X16_ROUND" package3d_urn="urn:adsk.eagle:package:5502036/1" value="" x="25.4" y="21.59" smashed="yes">
-<attribute name="NAME" x="46.2788" y="21.5138" size="0.8128" layer="25" ratio="18"/>
-<attribute name="VALUE" x="5.08" y="18.415" size="0.4064" layer="27" ratio="10"/>
+<element name="JP1" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="1X16_ROUND" package3d_urn="urn:adsk.eagle:package:5502036/3" value="" x="25.4" y="21.59" smashed="yes" rot="MR180">
+<attribute name="NAME" x="4.445" y="20.32" size="0.8128" layer="26" ratio="18" rot="MR180"/>
+<attribute name="VALUE" x="5.08" y="24.765" size="0.4064" layer="28" ratio="10" rot="MR180"/>
 </element>
-<element name="JP2" library="electrode_tester" package="1X12_ROUND" package3d_urn="urn:adsk.eagle:package:5502031/1" value="" x="20.32" y="1.27" smashed="yes" rot="R180">
-<attribute name="NAME" x="38.1762" y="1.3462" size="0.8128" layer="25" ratio="18" rot="R180"/>
-<attribute name="VALUE" x="35.56" y="4.445" size="0.4064" layer="27" ratio="10" rot="R180"/>
+<element name="JP2" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="1X12_ROUND" package3d_urn="urn:adsk.eagle:package:5502031/2" value="" x="20.32" y="1.27" smashed="yes" rot="MR0">
+<attribute name="NAME" x="6.35" y="2.54" size="0.8128" layer="26" ratio="18" rot="MR0"/>
+<attribute name="VALUE" x="35.56" y="-1.905" size="0.4064" layer="28" ratio="10" rot="MR0"/>
 </element>
-<element name="CONN1" library="electrode_tester" package="505110-1292" package3d_urn="urn:adsk.eagle:package:5502051/2" value="505110-1292" x="41.91" y="2.54" smashed="yes" rot="MR180">
+<element name="CONN1" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="505110-1292" package3d_urn="urn:adsk.eagle:package:5502051/2" value="505110-1292" x="41.91" y="2.54" smashed="yes" rot="MR180">
 <attribute name="NAME" x="35.56" y="3.81" size="0.8128" layer="26" font="vector" ratio="15" rot="MR90"/>
 <attribute name="VALUE" x="38.91" y="7.54" size="0.6096" layer="28" font="vector" ratio="15" rot="MR180"/>
 </element>
-<element name="LED1" library="electrode_tester" package="WS2812B" package3d_urn="urn:adsk.eagle:package:5502052/1" value="WS2812B5050" x="8.255" y="17.78" smashed="yes">
+<element name="LED1" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="WS2812B" package3d_urn="urn:adsk.eagle:package:5502052/2" value="WS2812B5050" x="8.255" y="17.78" smashed="yes">
 <attribute name="NAME" x="11.43" y="17.145" size="0.8128" layer="25" font="vector" ratio="15"/>
 </element>
-<element name="R1" library="electrode_tester" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="30.48" y="14.605" smashed="yes" rot="MR0">
+<element name="R1" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="30.48" y="14.605" smashed="yes" rot="MR0">
 <attribute name="NAME" x="28.575" y="14.605" size="0.6096" layer="26" font="vector" ratio="15" rot="MR0"/>
 <attribute name="SPICEPREFIX" value="R" x="30.48" y="14.605" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="VALUE" x="31.115" y="12.7" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="C1" library="electrode_tester" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="22.225" y="17.78" smashed="yes" rot="MR90">
+<element name="C1" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="22.225" y="17.78" smashed="yes" rot="MR90">
 <attribute name="NAME" x="14.605" y="17.145" size="0.6096" layer="26" font="vector" ratio="15" rot="MR90"/>
 <attribute name="SPICEPREFIX" value="C" x="22.225" y="17.78" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="VALUE" x="20.32" y="17.145" size="1.27" layer="28" rot="MR90"/>
 </element>
-<element name="R2" library="electrode_tester" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="30.48" y="12.065" smashed="yes" rot="MR0">
+<element name="R2" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="30.48" y="12.065" smashed="yes" rot="MR0">
 <attribute name="NAME" x="28.575" y="12.065" size="0.6096" layer="26" font="vector" ratio="15" rot="MR0"/>
 <attribute name="SPICEPREFIX" value="R" x="30.48" y="17.145" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="VALUE" x="31.115" y="10.16" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="C2" library="electrode_tester" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="24.13" y="17.78" smashed="yes" rot="MR90">
+<element name="C2" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="24.13" y="17.78" smashed="yes" rot="MR90">
 <attribute name="NAME" x="15.875" y="17.145" size="0.6096" layer="26" font="vector" ratio="15" rot="MR90"/>
 <attribute name="SPICEPREFIX" value="C" x="19.05" y="17.78" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="VALUE" x="22.225" y="17.145" size="1.27" layer="28" rot="MR90"/>
 </element>
-<element name="R3" library="electrode_tester" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="33.655" y="10.795" smashed="yes" rot="MR0">
+<element name="R3" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="33.655" y="10.795" smashed="yes" rot="MR0">
 <attribute name="NAME" x="35.56" y="11.43" size="0.6096" layer="26" font="vector" ratio="15" rot="MR180"/>
 <attribute name="SPICEPREFIX" value="R" x="33.655" y="20.955" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="VALUE" x="34.29" y="8.89" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="C3" library="electrode_tester" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="24.13" y="5.08" smashed="yes" rot="MR270">
+<element name="C3" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="24.13" y="5.08" smashed="yes" rot="MR270">
 <attribute name="NAME" x="15.875" y="4.445" size="0.6096" layer="26" font="vector" ratio="15" rot="MR90"/>
 <attribute name="SPICEPREFIX" value="C" x="29.21" y="5.08" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="VALUE" x="26.035" y="5.715" size="1.27" layer="28" rot="MR270"/>
 </element>
-<element name="R4" library="electrode_tester" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="33.655" y="8.255" smashed="yes" rot="MR0">
+<element name="R4" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="33.655" y="8.255" smashed="yes" rot="MR0">
 <attribute name="NAME" x="35.56" y="8.89" size="0.6096" layer="26" font="vector" ratio="15" rot="MR180"/>
 <attribute name="SPICEPREFIX" value="R" x="33.655" y="13.335" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="VALUE" x="34.29" y="6.35" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="C4" library="electrode_tester" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="22.225" y="5.08" smashed="yes" rot="MR270">
+<element name="C4" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="22.225" y="5.08" smashed="yes" rot="MR270">
 <attribute name="NAME" x="14.605" y="4.445" size="0.6096" layer="26" font="vector" ratio="15" rot="MR90"/>
 <attribute name="SPICEPREFIX" value="C" x="32.385" y="5.08" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="VALUE" x="24.13" y="5.715" size="1.27" layer="28" rot="MR270"/>
 </element>
-<element name="R5" library="electrode_tester" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="33.655" y="13.335" smashed="yes" rot="MR0">
+<element name="R5" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="33.655" y="13.335" smashed="yes" rot="MR0">
 <attribute name="NAME" x="35.56" y="13.97" size="0.6096" layer="26" font="vector" ratio="15" rot="MR180"/>
 <attribute name="SPICEPREFIX" value="R" x="33.655" y="23.495" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="VALUE" x="34.29" y="11.43" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="C5" library="electrode_tester" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="26.035" y="17.78" smashed="yes" rot="MR90">
+<element name="C5" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="26.035" y="17.78" smashed="yes" rot="MR90">
 <attribute name="NAME" x="17.145" y="17.145" size="0.6096" layer="26" font="vector" ratio="15" rot="MR90"/>
 <attribute name="SPICEPREFIX" value="C" x="20.955" y="17.78" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="VALUE" x="24.13" y="17.145" size="1.27" layer="28" rot="MR90"/>
 </element>
-<element name="R6" library="electrode_tester" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="33.655" y="15.875" smashed="yes" rot="MR0">
+<element name="R6" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="33.655" y="15.875" smashed="yes" rot="MR0">
 <attribute name="NAME" x="35.56" y="16.51" size="0.6096" layer="26" font="vector" ratio="15" rot="MR180"/>
 <attribute name="SPICEPREFIX" value="R" x="38.735" y="15.875" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="VALUE" x="34.29" y="13.97" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="C6" library="electrode_tester" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="27.94" y="17.78" smashed="yes" rot="MR90">
+<element name="C6" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="27.94" y="17.78" smashed="yes" rot="MR90">
 <attribute name="NAME" x="18.415" y="17.145" size="0.6096" layer="26" font="vector" ratio="15" rot="MR90"/>
 <attribute name="SPICEPREFIX" value="C" x="12.7" y="12.7" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="VALUE" x="26.035" y="17.145" size="1.27" layer="28" rot="MR90"/>
 </element>
-<element name="R7" library="electrode_tester" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="30.48" y="6.985" smashed="yes" rot="MR0">
+<element name="R7" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="30.48" y="6.985" smashed="yes" rot="MR0">
 <attribute name="NAME" x="28.575" y="6.985" size="0.6096" layer="26" font="vector" ratio="15" rot="MR0"/>
 <attribute name="SPICEPREFIX" value="R" x="30.48" y="1.905" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="VALUE" x="31.115" y="5.08" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="C7" library="electrode_tester" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="27.94" y="5.08" smashed="yes" rot="MR270">
+<element name="C7" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="27.94" y="5.08" smashed="yes" rot="MR270">
 <attribute name="NAME" x="18.415" y="4.445" size="0.6096" layer="26" font="vector" ratio="15" rot="MR90"/>
 <attribute name="SPICEPREFIX" value="C" x="48.26" y="5.08" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="VALUE" x="29.845" y="5.715" size="1.27" layer="28" rot="MR270"/>
 </element>
-<element name="R8" library="electrode_tester" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="30.48" y="9.525" smashed="yes" rot="MR0">
+<element name="R8" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="30.48" y="9.525" smashed="yes" rot="MR0">
 <attribute name="NAME" x="28.575" y="9.525" size="0.6096" layer="26" font="vector" ratio="15" rot="MR0"/>
 <attribute name="SPICEPREFIX" value="R" x="35.56" y="-5.715" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="VALUE" x="31.115" y="7.62" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="C8" library="electrode_tester" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="26.035" y="5.08" smashed="yes" rot="MR270">
+<element name="C8" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="26.035" y="5.08" smashed="yes" rot="MR270">
 <attribute name="NAME" x="17.145" y="4.445" size="0.6096" layer="26" font="vector" ratio="15" rot="MR90"/>
 <attribute name="SPICEPREFIX" value="C" x="56.515" y="10.16" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="VALUE" x="27.94" y="5.715" size="1.27" layer="28" rot="MR270"/>
 </element>
-<element name="C9" library="electrode_tester" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="20.32" y="5.08" smashed="yes" rot="MR270">
+<element name="C9" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="20.32" y="5.08" smashed="yes" rot="MR270">
 <attribute name="NAME" x="13.335" y="4.445" size="0.6096" layer="26" font="vector" ratio="15" rot="MR90"/>
 <attribute name="SPICEPREFIX" value="C" x="20.32" y="5.08" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="VALUE" x="22.225" y="5.715" size="1.27" layer="28" rot="MR270"/>
 </element>
-<element name="C10" library="electrode_tester" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="13.97" y="13.335" smashed="yes" rot="MR90">
+<element name="C10" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="13.97" y="13.335" smashed="yes" rot="MR90">
 <attribute name="NAME" x="12.065" y="12.7" size="0.6096" layer="26" font="vector" ratio="15" rot="MR90"/>
 <attribute name="SPICEPREFIX" value="C" x="13.97" y="13.335" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="VALUE" x="12.065" y="12.7" size="1.27" layer="28" rot="MR90"/>
 </element>
-<element name="U2" library="electrode_tester" package="VSSOP8" package3d_urn="urn:adsk.eagle:package:5502055/1" value="LMP7702MM/NOPBVSSOP" x="43.815" y="17.145" smashed="yes" rot="MR0">
+<element name="U2" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="VSSOP8" package3d_urn="urn:adsk.eagle:package:5502055/2" value="LMP7702MM/NOPBVSSOP" x="43.815" y="17.145" smashed="yes" rot="MR0">
 <attribute name="DESCRIPTION" value="Op Amps Prec RRIO 12V Dual Op Amp" x="43.815" y="17.145" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MF" value="Texas Instruments" x="43.815" y="17.145" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MP" value="LMP7702MM/NOPB" x="43.815" y="17.145" size="1.778" layer="28" rot="MR0" display="off"/>
@@ -843,141 +866,141 @@ design rules under a new name.</description>
 <attribute name="PACKAGE" value="MSOP-8" x="43.815" y="17.145" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="VALUE" x="45.4914" y="14.478" size="0.6096" layer="28" font="vector" ratio="15" rot="SMR0"/>
 </element>
-<element name="C11" library="electrode_tester" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="8.255" y="13.97" smashed="yes" rot="R180">
+<element name="C11" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="8.255" y="13.97" smashed="yes" rot="R180">
 <attribute name="NAME" x="9.525" y="12.7" size="0.6096" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="SPICEPREFIX" value="C" x="8.255" y="13.97" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="8.89" y="15.875" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="LED2" library="electrode_tester" package="WS2812B" package3d_urn="urn:adsk.eagle:package:5502052/1" value="WS2812B5050" x="27.305" y="17.78" smashed="yes">
+<element name="LED2" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="WS2812B" package3d_urn="urn:adsk.eagle:package:5502052/2" value="WS2812B5050" x="27.305" y="17.78" smashed="yes">
 <attribute name="NAME" x="30.48" y="17.145" size="0.8128" layer="25" font="vector" ratio="15"/>
 </element>
-<element name="C12" library="electrode_tester" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="8.255" y="8.89" smashed="yes">
+<element name="C12" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="8.255" y="8.89" smashed="yes">
 <attribute name="NAME" x="6.985" y="10.16" size="0.6096" layer="25" font="vector" ratio="15"/>
 <attribute name="SPICEPREFIX" value="C" x="8.255" y="8.89" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="7.62" y="6.985" size="1.27" layer="27"/>
 </element>
-<element name="LED3" library="electrode_tester" package="WS2812B" package3d_urn="urn:adsk.eagle:package:5502052/1" value="WS2812B5050" x="36.83" y="11.43" smashed="yes">
+<element name="LED3" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="WS2812B" package3d_urn="urn:adsk.eagle:package:5502052/2" value="WS2812B5050" x="36.83" y="11.43" smashed="yes">
 <attribute name="NAME" x="40.005" y="10.795" size="0.8128" layer="25" font="vector" ratio="15"/>
 </element>
-<element name="C13" library="electrode_tester" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="17.78" y="15.24" smashed="yes">
+<element name="C13" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="17.78" y="15.24" smashed="yes">
 <attribute name="NAME" x="16.51" y="16.51" size="0.6096" layer="25" font="vector" ratio="15"/>
 <attribute name="SPICEPREFIX" value="C" x="17.78" y="20.955" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="17.145" y="13.335" size="1.27" layer="27"/>
 </element>
-<element name="LED4" library="electrode_tester" package="WS2812B" package3d_urn="urn:adsk.eagle:package:5502052/1" value="WS2812B5050" x="46.355" y="17.78" smashed="yes">
+<element name="LED4" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="WS2812B" package3d_urn="urn:adsk.eagle:package:5502052/2" value="WS2812B5050" x="46.355" y="17.78" smashed="yes">
 <attribute name="NAME" x="43.18" y="18.415" size="0.8128" layer="25" font="vector" ratio="15" rot="R180"/>
 </element>
-<element name="C14" library="electrode_tester" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="27.305" y="13.97" smashed="yes" rot="R180">
+<element name="C14" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="27.305" y="13.97" smashed="yes" rot="R180">
 <attribute name="NAME" x="28.575" y="12.7" size="0.6096" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="SPICEPREFIX" value="C" x="32.385" y="17.145" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="27.94" y="15.875" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="LED5" library="electrode_tester" package="WS2812B" package3d_urn="urn:adsk.eagle:package:5502052/1" value="WS2812B5050" x="46.355" y="5.08" smashed="yes" rot="R180">
+<element name="LED5" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="WS2812B" package3d_urn="urn:adsk.eagle:package:5502052/2" value="WS2812B5050" x="46.355" y="5.08" smashed="yes" rot="R180">
 <attribute name="NAME" x="43.18" y="5.715" size="0.8128" layer="25" font="vector" ratio="15" rot="R180"/>
 </element>
-<element name="C15" library="electrode_tester" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="27.305" y="8.89" smashed="yes">
+<element name="C15" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="27.305" y="8.89" smashed="yes">
 <attribute name="NAME" x="26.035" y="10.16" size="0.6096" layer="25" font="vector" ratio="15"/>
 <attribute name="SPICEPREFIX" value="C" x="19.685" y="20.32" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="26.67" y="6.985" size="1.27" layer="27"/>
 </element>
-<element name="LED6" library="electrode_tester" package="WS2812B" package3d_urn="urn:adsk.eagle:package:5502052/1" value="WS2812B5050" x="27.305" y="5.08" smashed="yes" rot="R180">
+<element name="LED6" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="WS2812B" package3d_urn="urn:adsk.eagle:package:5502052/2" value="WS2812B5050" x="27.305" y="5.08" smashed="yes" rot="R180">
 <attribute name="NAME" x="30.48" y="4.445" size="0.8128" layer="25" font="vector" ratio="15"/>
 </element>
-<element name="C16" library="electrode_tester" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="36.83" y="7.62" smashed="yes" rot="R180">
+<element name="C16" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="36.83" y="7.62" smashed="yes" rot="R180">
 <attribute name="NAME" x="38.1" y="6.35" size="0.6096" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="SPICEPREFIX" value="C" x="36.83" y="-0.635" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="37.465" y="9.525" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="LED7" library="electrode_tester" package="WS2812B" package3d_urn="urn:adsk.eagle:package:5502052/1" value="WS2812B5050" x="17.78" y="11.43" smashed="yes" rot="R180">
+<element name="LED7" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="WS2812B" package3d_urn="urn:adsk.eagle:package:5502052/2" value="WS2812B5050" x="17.78" y="11.43" smashed="yes" rot="R180">
 <attribute name="NAME" x="20.955" y="10.795" size="0.8128" layer="25" font="vector" ratio="15"/>
 </element>
-<element name="C17" library="electrode_tester" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="46.355" y="13.97" smashed="yes" rot="R180">
+<element name="C17" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="46.355" y="13.97" smashed="yes" rot="R180">
 <attribute name="NAME" x="47.625" y="12.7" size="0.6096" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="SPICEPREFIX" value="C" x="51.435" y="14.605" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="46.99" y="15.875" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="LED8" library="electrode_tester" package="WS2812B" package3d_urn="urn:adsk.eagle:package:5502052/1" value="WS2812B5050" x="8.255" y="5.08" smashed="yes" rot="R180">
+<element name="LED8" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="WS2812B" package3d_urn="urn:adsk.eagle:package:5502052/2" value="WS2812B5050" x="8.255" y="5.08" smashed="yes" rot="R180">
 <attribute name="NAME" x="11.43" y="4.445" size="0.8128" layer="25" font="vector" ratio="15"/>
 </element>
-<element name="C18" library="electrode_tester" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="46.355" y="8.89" smashed="yes">
+<element name="C18" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="46.355" y="8.89" smashed="yes">
 <attribute name="NAME" x="45.085" y="10.16" size="0.6096" layer="25" font="vector" ratio="15"/>
 <attribute name="SPICEPREFIX" value="C" x="36.195" y="-0.635" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="45.72" y="6.985" size="1.27" layer="27"/>
 </element>
-<element name="C19" library="electrode_tester" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="33.655" y="18.415" smashed="yes" rot="MR0">
+<element name="C19" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="33.655" y="18.415" smashed="yes" rot="MR0">
 <attribute name="NAME" x="34.29" y="19.685" size="0.6096" layer="26" font="vector" ratio="15" rot="MR0"/>
 <attribute name="SPICEPREFIX" value="C" x="33.655" y="18.415" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="VALUE" x="34.29" y="16.51" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="R9" library="electrode_tester" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="38.1" y="17.145" smashed="yes" rot="MR180">
+<element name="R9" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="38.1" y="17.145" smashed="yes" rot="MR180">
 <attribute name="NAME" x="40.64" y="17.145" size="0.6096" layer="26" font="vector" ratio="15" rot="MR0"/>
 <attribute name="SPICEPREFIX" value="R" x="38.1" y="17.145" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="VALUE" x="37.465" y="19.05" size="1.27" layer="28" rot="MR180"/>
 </element>
-<element name="R10" library="electrode_tester" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="30.48" y="17.145" smashed="yes" rot="MR180">
+<element name="R10" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="30.48" y="17.145" smashed="yes" rot="MR180">
 <attribute name="NAME" x="31.115" y="18.415" size="0.6096" layer="26" font="vector" ratio="15" rot="MR0"/>
 <attribute name="SPICEPREFIX" value="R" x="30.48" y="17.145" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="VALUE" x="29.845" y="19.05" size="1.27" layer="28" rot="MR180"/>
 </element>
-<element name="R11" library="electrode_tester" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="46.99" y="12.065" smashed="yes" rot="MR270">
+<element name="R11" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="46.99" y="12.065" smashed="yes" rot="MR270">
 <attribute name="NAME" x="47.625" y="10.16" size="0.6096" layer="26" font="vector" ratio="15" rot="MR270"/>
 <attribute name="SPICEPREFIX" value="R" x="46.99" y="12.065" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="VALUE" x="48.895" y="12.7" size="1.27" layer="28" rot="MR270"/>
 </element>
-<element name="R12" library="electrode_tester" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="38.1" y="15.24" smashed="yes" rot="MR180">
-<attribute name="NAME" x="41.275" y="14.605" size="0.6096" layer="26" font="vector" ratio="15" rot="MR0"/>
+<element name="R12" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="38.1" y="15.24" smashed="yes" rot="MR180">
+<attribute name="NAME" x="41.275" y="14.351" size="0.6096" layer="26" font="vector" ratio="15" rot="MR0"/>
 <attribute name="SPICEPREFIX" value="R" x="38.1" y="15.24" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="VALUE" x="37.465" y="17.145" size="1.27" layer="28" rot="MR180"/>
 </element>
-<element name="R13" library="electrode_tester" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="40.64" y="12.065" smashed="yes" rot="MR90">
+<element name="R13" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="40.64" y="12.065" smashed="yes" rot="MR90">
 <attribute name="NAME" x="41.275" y="10.16" size="0.6096" layer="26" font="vector" ratio="15" rot="MR270"/>
 <attribute name="SPICEPREFIX" value="R" x="40.64" y="12.065" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="VALUE" x="38.735" y="11.43" size="1.27" layer="28" rot="MR90"/>
 </element>
-<element name="C20" library="electrode_tester" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="42.545" y="12.065" smashed="yes" rot="MR270">
+<element name="C20" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="42.545" y="12.065" smashed="yes" rot="MR270">
 <attribute name="NAME" x="43.18" y="10.16" size="0.6096" layer="26" font="vector" ratio="15" rot="MR270"/>
 <attribute name="SPICEPREFIX" value="C" x="42.545" y="12.065" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="VALUE" x="44.45" y="12.7" size="1.27" layer="28" rot="MR270"/>
 </element>
-<element name="DRL_IN" library="electrode_tester" package="TP1.5MM" package3d_urn="urn:adsk.eagle:package:5502061/1" value="TESTPAD_PROG" x="48.895" y="13.335" smashed="yes" rot="MR0">
-<attribute name="NAME" x="47.625" y="13.97" size="0.6096" layer="26" font="vector" ratio="15" rot="SMR0"/>
+<element name="DRL_IN" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="TP1.5MM" package3d_urn="urn:adsk.eagle:package:5502061/1" value="TESTPAD_PROG" x="48.895" y="13.335" smashed="yes" rot="MR0">
+<attribute name="NAME" x="50.038" y="11.811" size="0.6096" layer="26" font="vector" ratio="15" rot="SMR90"/>
 <attribute name="VALUE" x="49.5427" y="10.9827" size="0.6096" layer="28" font="vector" ratio="15" rot="SMR0"/>
 </element>
-<element name="CMS_BF" library="electrode_tester" package="TP1.5MM" package3d_urn="urn:adsk.eagle:package:5502061/1" value="TESTPAD_PROG" x="48.895" y="15.875" smashed="yes" rot="MR0">
-<attribute name="NAME" x="50.165" y="17.145" size="0.6096" layer="26" font="vector" ratio="15" rot="SMR0"/>
+<element name="CMS_BF" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="TP1.5MM" package3d_urn="urn:adsk.eagle:package:5502061/1" value="TESTPAD_PROG" x="48.895" y="15.875" smashed="yes" rot="MR0">
+<attribute name="NAME" x="50.038" y="15.367" size="0.6096" layer="26" font="vector" ratio="15" rot="SMR90"/>
 <attribute name="VALUE" x="49.5427" y="13.5227" size="0.6096" layer="28" font="vector" ratio="15" rot="SMR0"/>
 </element>
-<element name="CMS" library="electrode_tester" package="TP1.5MM" package3d_urn="urn:adsk.eagle:package:5502061/1" value="TESTPAD_PROG" x="48.895" y="10.795" smashed="yes" rot="MR0">
-<attribute name="NAME" x="49.53" y="8.89" size="0.6096" layer="26" font="vector" ratio="15" rot="SMR0"/>
+<element name="CMS" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="TP1.5MM" package3d_urn="urn:adsk.eagle:package:5502061/1" value="TESTPAD_PROG" x="48.895" y="10.795" smashed="yes" rot="MR0">
+<attribute name="NAME" x="50.038" y="9.525" size="0.6096" layer="26" font="vector" ratio="15" rot="SMR90"/>
 <attribute name="VALUE" x="49.5427" y="8.4427" size="0.6096" layer="28" font="vector" ratio="15" rot="SMR0"/>
 </element>
-<element name="R14" library="electrode_tester" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="45.085" y="12.065" smashed="yes" rot="MR90">
+<element name="R14" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="45.085" y="12.065" smashed="yes" rot="MR90">
 <attribute name="NAME" x="45.72" y="10.16" size="0.6096" layer="26" font="vector" ratio="15" rot="MR270"/>
 <attribute name="SPICEPREFIX" value="R" x="45.085" y="12.065" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="VALUE" x="43.18" y="11.43" size="1.27" layer="28" rot="MR90"/>
 </element>
-<element name="C21" library="electrode_tester" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="38.1" y="19.05" smashed="yes" rot="MR0">
+<element name="C21" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="38.1" y="19.05" smashed="yes" rot="MR0">
 <attribute name="NAME" x="40.005" y="19.685" size="0.6096" layer="26" font="vector" ratio="15" rot="MR180"/>
 <attribute name="SPICEPREFIX" value="C" x="38.1" y="19.05" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="VALUE" x="38.735" y="17.145" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="DRL" library="electrode_tester" package="TP1.5MM" package3d_urn="urn:adsk.eagle:package:5502061/1" value="TESTPAD_PROG" x="48.895" y="7.62" smashed="yes" rot="MR0">
-<attribute name="NAME" x="49.53" y="5.715" size="0.6096" layer="26" font="vector" ratio="15" rot="SMR0"/>
+<element name="DRL_OUT" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="TP1.5MM" package3d_urn="urn:adsk.eagle:package:5502061/1" value="TESTPAD_PROG" x="48.895" y="7.62" smashed="yes" rot="MR0">
+<attribute name="NAME" x="50.038" y="5.207" size="0.6096" layer="26" font="vector" ratio="15" rot="SMR90"/>
 <attribute name="VALUE" x="49.5427" y="5.2677" size="0.6096" layer="28" font="vector" ratio="15" rot="SMR0"/>
 </element>
-<element name="GND" library="electrode_tester" package="TP1.5MM" package3d_urn="urn:adsk.eagle:package:5502061/1" value="TESTPAD_PROG" x="48.895" y="1.905" smashed="yes" rot="MR0">
+<element name="GND" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="TP1.5MM" package3d_urn="urn:adsk.eagle:package:5502061/1" value="TESTPAD_PROG" x="48.895" y="1.905" smashed="yes" rot="MR0">
 <attribute name="NAME" x="50.165" y="3.175" size="0.6096" layer="26" font="vector" ratio="15" rot="SMR0"/>
 <attribute name="VALUE" x="49.5427" y="-0.4473" size="0.6096" layer="28" font="vector" ratio="15" rot="SMR0"/>
 </element>
-<element name="3V3-A" library="electrode_tester" package="TP1.5MM" package3d_urn="urn:adsk.eagle:package:5502061/1" value="TESTPAD_PROG" x="48.895" y="20.955" smashed="yes" rot="MR0">
+<element name="3V3-A" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="TP1.5MM" package3d_urn="urn:adsk.eagle:package:5502061/1" value="TESTPAD_PROG" x="48.895" y="20.955" smashed="yes" rot="MR0">
 <attribute name="NAME" x="50.165" y="19.05" size="0.6096" layer="26" font="vector" ratio="15" rot="SMR0"/>
 <attribute name="VALUE" x="49.5427" y="18.6027" size="0.6096" layer="28" font="vector" ratio="15" rot="SMR0"/>
 </element>
-<element name="3V3-B" library="electrode_tester" package="TP1.5MM" package3d_urn="urn:adsk.eagle:package:5502061/1" value="TESTPAD_PROG" x="13.97" y="10.16" smashed="yes" rot="MR0">
+<element name="3V3-B" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="TP1.5MM" package3d_urn="urn:adsk.eagle:package:5502061/1" value="TESTPAD_PROG" x="13.97" y="10.16" smashed="yes" rot="MR0">
 <attribute name="NAME" x="12.065" y="8.89" size="0.6096" layer="26" font="vector" ratio="15" rot="SMR90"/>
 <attribute name="VALUE" x="14.6177" y="7.8077" size="0.6096" layer="28" font="vector" ratio="15" rot="SMR0"/>
 </element>
-<element name="C22" library="electrode_tester" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="20.32" y="17.78" smashed="yes" rot="MR90">
+<element name="C22" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="20.32" y="17.78" smashed="yes" rot="MR90">
 <attribute name="NAME" x="13.335" y="17.145" size="0.6096" layer="26" font="vector" ratio="15" rot="MR90"/>
 <attribute name="SPICEPREFIX" value="C" x="20.32" y="17.78" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="VALUE" x="18.415" y="17.145" size="1.27" layer="28" rot="MR90"/>
@@ -1054,7 +1077,6 @@ design rules under a new name.</description>
 <wire x1="47.88" y1="16.13" x2="47.205" y2="15.455" width="0.3048" layer="1"/>
 <wire x1="26.455" y1="8.89" x2="24.855" y2="7.29" width="0.3048" layer="1"/>
 <wire x1="24.855" y1="7.29" x2="24.855" y2="6.73" width="0.3048" layer="1"/>
-<wire x1="34.29" y1="1.27" x2="45.085" y2="1.27" width="0.3048" layer="1"/>
 <wire x1="45.085" y1="1.27" x2="46.355" y2="2.54" width="0.3048" layer="1"/>
 <wire x1="46.355" y1="2.54" x2="46.355" y2="5.08" width="0.3048" layer="1"/>
 <wire x1="46.355" y1="5.08" x2="45.505" y2="5.93" width="0.3048" layer="1"/>
@@ -1063,6 +1085,7 @@ design rules under a new name.</description>
 <wire x1="29.755" y1="15.57" x2="29.755" y2="16.13" width="0.3048" layer="1"/>
 <wire x1="27.305" y1="12.065" x2="28.155" y2="12.915" width="0.3048" layer="1"/>
 <wire x1="28.155" y1="12.915" x2="28.155" y2="13.97" width="0.3048" layer="1"/>
+<wire x1="34.29" y1="1.27" x2="45.085" y2="1.27" width="0.3048" layer="1"/>
 </signal>
 <signal name="SDA">
 <contactref element="JP2" pad="12"/>
@@ -1071,7 +1094,7 @@ design rules under a new name.</description>
 <contactref element="CONN1" pad="10"/>
 <contactref element="R14" pad="1"/>
 <contactref element="C20" pad="1"/>
-<contactref element="DRL" pad="1"/>
+<contactref element="DRL_OUT" pad="1"/>
 <wire x1="43.66" y1="6.195" x2="43.66" y2="5.24" width="0.1524" layer="16"/>
 <wire x1="48.895" y1="7.62" x2="45.085" y2="7.62" width="0.1524" layer="16"/>
 <wire x1="45.085" y1="7.62" x2="43.66" y2="6.195" width="0.1524" layer="16"/>
@@ -1340,9 +1363,9 @@ design rules under a new name.</description>
 <wire x1="17.395" y1="14.33" x2="17.395" y2="16.76" width="0.1524" layer="16"/>
 <wire x1="18.415" y1="17.78" x2="18.415" y2="19.685" width="0.1524" layer="16"/>
 <wire x1="18.415" y1="19.685" x2="19.05" y2="20.32" width="0.1524" layer="16"/>
-<wire x1="19.05" y1="20.32" x2="20.32" y2="20.32" width="0.1524" layer="16"/>
-<wire x1="20.32" y1="20.32" x2="21.59" y2="21.59" width="0.1524" layer="16"/>
+<wire x1="20.32" y1="20.32" x2="19.05" y2="20.32" width="0.1524" layer="16"/>
 <wire x1="17.395" y1="16.76" x2="18.415" y2="17.78" width="0.1524" layer="16"/>
+<wire x1="21.59" y1="21.59" x2="20.32" y2="20.32" width="0.1524" layer="16"/>
 </signal>
 <signal name="SPI_SCLK">
 <contactref element="U1" pad="28"/>
@@ -1351,8 +1374,7 @@ design rules under a new name.</description>
 <wire x1="16.095" y1="8.53" x2="15.82" y2="8.255" width="0.1524" layer="16"/>
 <wire x1="15.82" y1="8.255" x2="13.97" y2="8.255" width="0.1524" layer="16"/>
 <wire x1="13.97" y1="8.255" x2="12.7" y2="9.525" width="0.1524" layer="16"/>
-<wire x1="19.05" y1="21.59" x2="14.605" y2="17.145" width="0.1524" layer="16"/>
-<wire x1="14.605" y1="17.145" x2="12.7" y2="15.24" width="0.1524" layer="16"/>
+<wire x1="19.05" y1="21.59" x2="12.7" y2="15.24" width="0.1524" layer="16"/>
 </signal>
 <signal name="SPI_MOSI">
 <contactref element="U1" pad="27"/>
@@ -1370,8 +1392,8 @@ design rules under a new name.</description>
 <wire x1="18.045" y1="8.53" x2="18.045" y2="5.98" width="0.1524" layer="16"/>
 <wire x1="18.045" y1="5.98" x2="16.51" y2="4.445" width="0.1524" layer="16"/>
 <wire x1="16.51" y1="4.445" x2="15.24" y2="4.445" width="0.1524" layer="16"/>
-<wire x1="15.24" y1="4.445" x2="13.97" y2="3.175" width="0.1524" layer="16"/>
-<wire x1="13.97" y1="3.175" x2="13.97" y2="1.27" width="0.1524" layer="16"/>
+<wire x1="13.97" y1="3.175" x2="15.24" y2="4.445" width="0.1524" layer="16"/>
+<wire x1="13.97" y1="1.27" x2="13.97" y2="3.175" width="0.1524" layer="16"/>
 </signal>
 <signal name="SPI_MISO">
 <contactref element="U1" pad="26"/>
@@ -1380,22 +1402,22 @@ design rules under a new name.</description>
 <wire x1="17.395" y1="6.6" x2="16.51" y2="5.715" width="0.1524" layer="16"/>
 <wire x1="16.51" y1="5.715" x2="12.7" y2="5.715" width="0.1524" layer="16"/>
 <wire x1="10.16" y1="8.255" x2="12.7" y2="5.715" width="0.1524" layer="16"/>
-<wire x1="13.97" y1="21.59" x2="10.16" y2="17.78" width="0.1524" layer="16"/>
 <wire x1="10.16" y1="17.78" x2="10.16" y2="8.255" width="0.1524" layer="16"/>
+<wire x1="13.97" y1="21.59" x2="10.16" y2="17.78" width="0.1524" layer="16"/>
 </signal>
 <signal name="ADC_/CS">
 <contactref element="U1" pad="24"/>
 <contactref element="JP2" pad="8"/>
 <wire x1="18.695" y1="8.53" x2="18.695" y2="5.36" width="0.1524" layer="16"/>
-<wire x1="18.695" y1="5.36" x2="16.51" y2="3.175" width="0.1524" layer="16"/>
-<wire x1="16.51" y1="3.175" x2="16.51" y2="1.27" width="0.1524" layer="16"/>
+<wire x1="16.51" y1="3.175" x2="18.695" y2="5.36" width="0.1524" layer="16"/>
+<wire x1="16.51" y1="1.27" x2="16.51" y2="3.175" width="0.1524" layer="16"/>
 </signal>
 <signal name="ADC_START">
 <contactref element="U1" pad="23"/>
 <contactref element="JP2" pad="7"/>
 <wire x1="19.345" y1="8.53" x2="19.345" y2="6.645" width="0.1524" layer="16"/>
-<wire x1="19.345" y1="6.645" x2="19.05" y2="6.35" width="0.1524" layer="16"/>
-<wire x1="19.05" y1="6.35" x2="19.05" y2="1.27" width="0.1524" layer="16"/>
+<wire x1="19.05" y1="6.35" x2="19.345" y2="6.645" width="0.1524" layer="16"/>
+<wire x1="19.05" y1="1.27" x2="19.05" y2="6.35" width="0.1524" layer="16"/>
 </signal>
 <signal name="ADC_/RST">
 <contactref element="U1" pad="4"/>
@@ -1404,8 +1426,8 @@ design rules under a new name.</description>
 <wire x1="18.045" y1="16.14" x2="19.05" y2="17.145" width="0.1524" layer="16"/>
 <wire x1="19.05" y1="17.145" x2="19.05" y2="19.05" width="0.1524" layer="16"/>
 <wire x1="19.05" y1="19.05" x2="19.685" y2="19.685" width="0.1524" layer="16"/>
-<wire x1="22.225" y1="19.685" x2="24.13" y2="21.59" width="0.1524" layer="16"/>
-<wire x1="19.685" y1="19.685" x2="22.225" y2="19.685" width="0.1524" layer="16"/>
+<wire x1="22.225" y1="19.685" x2="19.685" y2="19.685" width="0.1524" layer="16"/>
+<wire x1="24.13" y1="21.59" x2="22.225" y2="19.685" width="0.1524" layer="16"/>
 </signal>
 <signal name="3V3">
 <contactref element="C10" pad="1"/>
@@ -1426,9 +1448,8 @@ design rules under a new name.</description>
 <wire x1="48.42" y1="5.24" x2="50.165" y2="6.985" width="0.3048" layer="16"/>
 <wire x1="50.165" y1="6.985" x2="50.165" y2="17.78" width="0.3048" layer="16"/>
 <wire x1="50.165" y1="17.78" x2="48.26" y2="19.685" width="0.3048" layer="16"/>
-<wire x1="41.6306" y1="19.685" x2="48.26" y2="19.684996875" width="0.3048" layer="16"/>
-<wire x1="41.91" y1="21.59" x2="41.6306" y2="21.310596875" width="0.3048" layer="16"/>
-<wire x1="41.6306" y1="21.310596875" x2="41.6306" y2="19.685" width="0.3048" layer="16"/>
+<wire x1="41.6306" y1="19.685" x2="41.91" y2="19.685" width="0.3048" layer="16"/>
+<wire x1="41.91" y1="19.685" x2="48.26" y2="19.684996875" width="0.3048" layer="16"/>
 <wire x1="41.6306" y1="19.685" x2="41.6306" y2="18.110203125" width="0.3048" layer="16"/>
 <contactref element="3V3-A" pad="1"/>
 <wire x1="48.26" y1="19.684996875" x2="48.895" y2="20.32" width="0.3048" layer="16"/>
@@ -1449,15 +1470,14 @@ design rules under a new name.</description>
 <wire x1="41.6306" y1="18.1102" x2="39.8898" y2="18.1102" width="0.1524" layer="16"/>
 <wire x1="41.6306" y1="19.684996875" x2="48.26" y2="19.684996875" width="0.3048" layer="16"/>
 <wire x1="41.6306" y1="19.684996875" x2="41.6306" y2="18.1102" width="0.3048" layer="16"/>
-<wire x1="41.6306" y1="21.310596875" x2="41.6306" y2="19.684996875" width="0.3048" layer="16"/>
-<wire x1="41.6306" y1="21.3106" x2="41.6306" y2="19.684996875" width="0.3048" layer="16"/>
-<wire x1="41.91" y1="21.59" x2="41.6306" y2="21.3106" width="0.3048" layer="16"/>
 <wire x1="50.165" y1="17.78" x2="48.26" y2="19.684996875" width="0.3048" layer="16"/>
 <wire x1="48.26" y1="19.685" x2="48.895" y2="20.32" width="0.3048" layer="16"/>
 <wire x1="41.6306" y1="19.684996875" x2="41.6306" y2="18.110203125" width="0.3048" layer="16"/>
-<wire x1="41.6306" y1="19.685" x2="48.26" y2="19.685" width="0.3048" layer="16"/>
+<wire x1="41.6306" y1="19.685" x2="41.91" y2="19.685" width="0.3048" layer="16"/>
+<wire x1="41.91" y1="19.685" x2="48.26" y2="19.685" width="0.3048" layer="16"/>
 <wire x1="41.6306" y1="19.684996875" x2="48.26" y2="19.685" width="0.3048" layer="16"/>
-<wire x1="41.6306" y1="21.3106" x2="41.6306" y2="19.685" width="0.3048" layer="16"/>
+<wire x1="41.6306" y1="19.684996875" x2="41.6306" y2="21.3106" width="0.3048" layer="16"/>
+<wire x1="41.6306" y1="21.3106" x2="41.91" y2="21.59" width="0.3048" layer="16"/>
 <wire x1="19.995" y1="10.485" x2="38.95" y2="17.145" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="VBUS">
@@ -1478,10 +1498,10 @@ design rules under a new name.</description>
 <signal name="LEDS_IN">
 <contactref element="LED1" pad="4-DIN"/>
 <contactref element="JP1" pad="1"/>
-<wire x1="6.35" y1="21.59" x2="8.255" y2="19.685" width="0.1524" layer="1"/>
 <wire x1="8.255" y1="19.685" x2="8.255" y2="17.145" width="0.1524" layer="1"/>
 <wire x1="8.255" y1="17.145" x2="7.24" y2="16.13" width="0.1524" layer="1"/>
 <wire x1="7.24" y1="16.13" x2="5.805" y2="16.13" width="0.1524" layer="1"/>
+<wire x1="6.35" y1="21.59" x2="8.255" y2="19.685" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$1">
 <contactref element="LED1" pad="2-DOUT"/>
@@ -1647,6 +1667,11 @@ design rules under a new name.</description>
 </board>
 </drawing>
 <compatibility>
+<note version="8.2" severity="warning">
+Since Version 8.2, EAGLE supports online libraries. The ids
+of those online libraries will not be understood (or retained)
+with this version.
+</note>
 <note version="8.3" severity="warning">
 Since Version 8.3, EAGLE supports Fusion synchronisation.
 This feature will not be available in this version and saving

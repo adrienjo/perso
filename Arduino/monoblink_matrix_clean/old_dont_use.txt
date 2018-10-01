@@ -1,0 +1,139 @@
+if (len > 0) packetBuffer[len] = 0;
+
+    String("Bien recu").toCharArray(UDP_response,50);   //réponse au client par défaut
+
+    if(strcmp(packetBuffer,"SD")==0){
+
+      for(pixel=0;pixel<NUMPIXELS;pixel++)  strip.setPixelColor(pixel,  0x000000);
+      strip.show();
+      delay(500);
+      //pinMode(SHUTDOWNPIN,INPUT);
+      digitalWrite(SHUTDOWNPIN,LOW);
+      delay(2000);
+    }
+    else  if(strcmp(packetBuffer,"bw")==0){
+      frame_set = SET_BW;
+    }
+    else  if(strcmp(packetBuffer,"lines")==0){
+      frame_set = SET_LINES;
+    }
+    else  if(strcmp(packetBuffer,"checker")==0){
+      frame_set = SET_GABOR;
+    }
+    else  if(strcmp(packetBuffer,"particules")==0){
+      frame_set = SET_PARTICULES;
+    }
+    else  if(strcmp(packetBuffer,"more_bright")==0){
+      if(user_brightness<255)  user_brightness++;
+      String(String("Brightness = ")+String(user_brightness,DEC)).toCharArray(UDP_response,50);
+    }
+    else  if(strcmp(packetBuffer,"less_bright")==0){
+      if(user_brightness>0)  user_brightness--;
+      String(String("Brightness = ")+String(user_brightness,DEC)).toCharArray(UDP_response,50);
+    }
+    else  if(strcmp(packetBuffer,"std_disp")==0){
+      disp_col  = 0;
+      for(composante  = 0; composante<3;  composante++) rgb_fader[composante] = 0;
+      rgb_balance[0]  = 190;
+      rgb_balance[1]  = 255;
+      rgb_balance[2]  = 240;
+    }
+    else  if(strcmp(packetBuffer,"red_disp")==0){
+      disp_col  = 1;
+    }
+    else  if(strcmp(packetBuffer,"green_disp")==0){
+      disp_col  = 2;
+    }
+    else  if(strcmp(packetBuffer,"blue_disp")==0){
+      disp_col  = 3;
+    }
+    else  if(strcmp(packetBuffer,"red_fade")==0){
+      
+      rgb_fader[1]  = 1;
+      rgb_fader[2]  = 1;
+       
+      String("Fading to red").toCharArray(UDP_response,50);
+    }
+    else  if(strcmp(packetBuffer,"green_fade")==0){
+      
+      rgb_fader[0]  = 1;
+      rgb_fader[2]  = 1;
+       
+      String("Fading to green").toCharArray(UDP_response,50);
+    }
+    else  if(strcmp(packetBuffer,"blue_fade")==0){
+      
+      rgb_fader[0]  = 1;
+      rgb_fader[1]  = 1;
+       
+      String("Fading to blue").toCharArray(UDP_response,50);
+    }
+    else  if(strcmp(packetBuffer,"start")==0){
+      
+      //reset du timer et retour à la première frame du pattern :
+      frame_counter = 0;
+      timer1_disable();
+      timer1_write(period_count);
+      timer1_enable(TIM_DIV1, TIM_EDGE, TIM_LOOP);
+
+      refresh = 1;
+       
+      String("Timer recalé").toCharArray(UDP_response,50);
+    }
+    else if (strcmp(packetBuffer, "p0") == 0) {
+      pattern = 0;
+    }    else if (strcmp(packetBuffer, "p1") == 0) {
+      pattern = 1;
+    }    else if (strcmp(packetBuffer, "p2") == 0) {
+      pattern = 2;
+    }    else if (strcmp(packetBuffer, "p3") == 0) {
+      pattern = 3;
+    }    else if (strcmp(packetBuffer, "p4") == 0) {
+      pattern = 4;
+    }    else if (strcmp(packetBuffer, "p5") == 0) {
+      pattern = 5;
+    }    else if (strcmp(packetBuffer, "p6") == 0) {
+      pattern = 6;
+    }    else if (strcmp(packetBuffer, "p7") == 0) {
+      pattern = 7;
+    }    else if (strcmp(packetBuffer, "p8") == 0) {
+      pattern = 8;
+    }    else if (strcmp(packetBuffer, "p9") == 0) {
+      pattern = 9;
+    }   else if (strcmp(packetBuffer, "p10") == 0) {
+      pattern = 10;
+    } else if (strcmp(packetBuffer, "p11") == 0) {
+      pattern = 11;
+    }
+    else if (strcmp(packetBuffer, "more_feedback") == 0) {
+      if(feedback_level<=99)  feedback_level++;
+      String(String("Feedback_level = ")+String(feedback_level,DEC)).toCharArray(UDP_response,50);
+    }
+    else if (strcmp(packetBuffer, "less_feedback") == 0) {
+      if(feedback_level>0)  feedback_level--;
+      String(String("Feedback_level = ")+String(feedback_level,DEC)).toCharArray(UDP_response,50);
+    }
+    else if (strcmp(packetBuffer, "fb0") == 0) {
+      feedback_level  = 0;
+    }
+    else if (strcmp(packetBuffer, "fb20") == 0) {
+      feedback_level  = 20;
+    }
+    else if (strcmp(packetBuffer, "fb40") == 0) {
+      feedback_level  = 40;
+    }
+    else if (strcmp(packetBuffer, "fb60") == 0) {
+      feedback_level  = 60;
+    }
+    else if (strcmp(packetBuffer, "fb80") == 0) {
+      feedback_level  = 80;
+    }
+    else if (strcmp(packetBuffer, "fb100") == 0) {
+      feedback_level  = 100;
+    }
+    packetSize  = 0;
+
+    //Réponse au client :
+    Udp.beginPacket(Udp.remoteIP(), Udp.remotePort());
+    Udp.write(UDP_response);
+    Udp.endPacket();
