@@ -45,8 +45,8 @@
 const char* ssid          = "Connectify-me";                  //SSID du WiFi
 const char* password      = "vocarof1";             //mot de passe du WiFi
 
-const char* wroom_name      = "WRM-02";
-const int   udp_port_number = 5061;
+const char* wroom_name      = "WRM-03";
+const int   udp_port_number = 5060;
 
 WiFiUDP Udp;
 char    packetBuffer[UDP_TX_PACKET_MAX_SIZE];   //buffer to hold incoming packet

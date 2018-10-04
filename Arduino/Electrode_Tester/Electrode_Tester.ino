@@ -10,13 +10,13 @@
 #include "Electrode_Tester.h"
 
 //WiFi :
-const char* ssid      = "Freebox-5F46E4";
-const char* password  = "gubernasti*-jaciens5-inriti?-distinctus#";
+const	char*	ssid		=	"Freebox-5F46E4";
+const	char*   password	=	"gubernasti*-jaciens5-inriti?-distinctus#";
 
 //UDP :
-WiFiUDP udp;
-const char* udpAddress = "192.168.1.5";
-const int udpPort = 52396;
+WiFiUDP	udp;
+const	char*	udpAddress = "192.168.1.5";
+const	int		udpPort = 52396;
 
 uint8_t sensor;
 uint8_t res_values[NB_SENSORS];
@@ -30,10 +30,12 @@ uint8_t test_cpt  = 0;
 hw_timer_t*   timer = NULL;
 bool          timer_refresh = 0;
 
+/*
 void IRAM_ATTR onTimer(){
 
   timer_refresh = 1;
 }
+*/
 
 void setup() {
   Serial.begin(115200);
@@ -43,7 +45,7 @@ void setup() {
   digitalWrite(PIN_TEST_LED,HIGH);
 
   init_LEDS();
-  set_ADC(sensor);
+  init_ADC();
   
   WiFi.mode(WIFI_STA);
   WiFi.begin(ssid, password);
@@ -89,7 +91,7 @@ void setup() {
   Serial.println("Ready");
   Serial.print("IP address: ");
   Serial.println(WiFi.localIP());
-
+/*
   timer = timerBegin(0, 80, true);
 
   // Attach onTimer function to our timer.
@@ -101,12 +103,22 @@ void setup() {
 
   // Start an alarm
   timerAlarmEnable(timer);
+*/
+  uint32_t test = 8192000;  //correspond à 1V correspond à 100kohm si Itest=10µA
+
+  test  = value_2_res(test);
+
+  Serial.print("Rmes = ");  Serial.print(test);  Serial.println("ohm");
+
+  test  = 0;
+
+  for(sensor=0;sensor<8;sensor++) refresh_LEDS(test,sensor);
 }
 
 void loop() {
   
   ArduinoOTA.handle();
-
+/*
   if(timer_refresh){
 
     for(sensor  = 0;  sensor<NB_SENSORS;  sensor++){
@@ -121,7 +133,7 @@ void loop() {
     
     timer_refresh = 0;
   }
-
+*/
 }
 
 /*

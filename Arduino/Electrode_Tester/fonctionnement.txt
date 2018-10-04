@@ -1,0 +1,44 @@
+
+START impose le caractère synchrone / asynchrone des conversions :
+- START tout le temps à l'état haut : nouveau résultat tous les temps d'échantillonnage (output data rate réglé via registres)
+- START bref, un résultat après temps de conversion et pas de nouvelle conversion avant le prochain START.
+
+
+void	new_value_ISR(){
+	new_val =	1;
+}
+
+uint32	get_value(uint8_t nb_values){
+
+	uint32_t values[nb_values];
+	
+	val	=	0;
+	
+	enable_DRDY_interrupt();
+
+	while(val<nb_values){
+	
+		if(new_val){
+			values[val]	=	read_val();	//envoie de 24 cycles sur SCLK et récupération des valeurs
+			//TEST SUR VALEUR (pas saturation, ...)
+			SI VALEUR CORRECTE 	:	val++;					(SINON on prendra la prochaine)
+			SINON				:	incrément d'un compteur de valeurs foireuses (pour sortir de la boucle quoi qu'il arrive)
+			new_val	=	0;
+		}
+		digitalWrite(PIN_ADC_START,HIGH);
+	}
+	
+	digitalWrite(PIN_ADC_START,LOW);
+	
+	disable_DRDY_interrupt();
+	
+	//Moyenne des valeurs obtenues :
+	
+	uint32_t	final_value	=	0;
+	
+	for(val=0;val<nb_values;val++)	final_value	+=	values[val]/nb_values;
+	
+	return	final_value;
+
+}
+
