@@ -1,0 +1,11 @@
+G04 Gerber job file.*
+%TF.FileFunction,JobInfo*%
+%TF.GenerationSoftware,Autodesk,EAGLE,8.6.0*%
+%TF.CreationDate,2018-02-09T15:01:17Z*%
+%TF.Part,Single*%
+%MOMM*%
+%TJ.B_Owner,Adrien Jollet <adrien.jollet@gmail.com>*%
+%TJ.B_ID,Monoblink_12xPannel*%
+%TJ.B_LayerNum,2*%
+%TJ.B_Thickness,1.586000*%
+M02*

@@ -1,12 +1,12 @@
 [Eagle]
-Version="08 06 00"
+Version="09 00 00"
 Platform="Windows"
 Globals="Globals"
 Desktop="Desktop"
 
 [Globals]
 AutoSaveProject=1
-UsedLibrary="Monoblink.lbr"
+UsedLibrary="C:/Users/Toshiba3/Desktop/Victoria/Eagle_projects/Monoblink_WiFi/monoblink_wifi.lbr"
 
 [Win_1]
 Type="Control Panel"
