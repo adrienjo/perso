@@ -28,11 +28,11 @@
 #define FRAME_ALPHABOT_IR_8 14
 
 
-//const char* ssid          = "quedesvirus";                  //SSID du WiFi
-//const char* password      = "0707106781186547";
+const char* ssid          = "quedesvirus";                  //SSID du WiFi
+const char* password      = "0707106781186547";
 
-const char* ssid          = "Connectify-me";                  //SSID du WiFi
-const char* password      = "vocarof1";    
+//const char* ssid          = "Connectify-me";                  //SSID du WiFi
+//const char* password      = "vocarof1";    
 
 const char* wroom_name    = "DIO_Commander";
 
