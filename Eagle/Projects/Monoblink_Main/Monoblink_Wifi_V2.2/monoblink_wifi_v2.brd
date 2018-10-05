@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.3">
+<eagle version="9.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -164,6 +164,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyYTAzOTA1" projecturn="a.cGVyc29uYWw6dWUyYTAzOTA1IzIwMTgxMDA0MTUyNjgwODUx" f3durn="urn:adsk.wipprod:dm.lineage:VNFiGiy7RjCM8QbSb5XuHg" pcbguid="a6d3de18-afa2-49a3-a0d0-303f6bb48e7a" lastpulledtime="" lastsyncedchangeguid="5e79a82b-2b0e-7c19-05c5-79735c9fc28e"/>
 <plain>
 <wire x1="7" y1="8" x2="7" y2="1" width="0.1524" layer="20"/>
 <wire x1="7" y1="1" x2="8" y2="0" width="0.1524" layer="20" curve="90"/>
@@ -491,7 +492,7 @@
 <rectangle x1="4.7665" y1="16.8755" x2="4.8935" y2="17.0025" layer="26" rot="R270"/>
 </plain>
 <libraries>
-<library name="monoblink_wifi">
+<library name="monoblink_wifi" urn="urn:adsk.eagle:library:5745129">
 <packages>
 <package name="C0603" urn="urn:adsk.eagle:footprint:23123/1">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
@@ -509,7 +510,7 @@
 <rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
 </package>
-<package name="SOT23-6" urn="urn:adsk.eagle:footprint:20690/1" locally_modified="yes">
+<package name="SOT23-6" urn="urn:adsk.eagle:footprint:5745152/1" library_version="2" library_locally_modified="yes">
 <description>&lt;b&gt;Small Outline Transistor&lt;/b&gt; 6 lead</description>
 <wire x1="1.422" y1="-0.781" x2="-1.423" y2="-0.781" width="0.1524" layer="51"/>
 <wire x1="-1.423" y1="-0.781" x2="-1.423" y2="0.781" width="0.1524" layer="21"/>
@@ -530,13 +531,7 @@
 <rectangle x1="-0.25" y1="0.8" x2="0.25" y2="1.4" layer="51"/>
 <rectangle x1="-1.2" y1="0.8" x2="-0.7" y2="1.4" layer="51"/>
 </package>
-<package name="TP1.5MM">
-<circle x="0" y="0" radius="0.9" width="0.0254" layer="51"/>
-<smd name="1" x="0" y="0" dx="1.5" dy="1.5" layer="1" roundness="100" cream="no"/>
-<text x="-0.6477" y="1.6717" size="0.6096" layer="25" font="vector" ratio="15" rot="SR0">&gt;NAME</text>
-<text x="-0.6477" y="-2.3523" size="0.6096" layer="27" font="vector" ratio="15" rot="SR0">&gt;VALUE</text>
-</package>
-<package name="SOD323" urn="urn:adsk.eagle:footprint:43205/1" locally_modified="yes">
+<package name="SOD323" urn="urn:adsk.eagle:footprint:5745163/1" library_version="2" library_locally_modified="yes">
 <description>&lt;b&gt;SOD323 Wave soldering&lt;/b&gt; Philips SC01_Mounting_1996.pdf</description>
 <wire x1="-0.85" y1="0.65" x2="0.85" y2="0.65" width="0.1524" layer="51"/>
 <wire x1="0.85" y1="0.65" x2="0.85" y2="-0.65" width="0.1524" layer="51"/>
@@ -551,7 +546,7 @@
 <smd name="1" x="-1.125" y="0" dx="0.65" dy="0.85" layer="1"/>
 <smd name="2" x="1.125" y="0" dx="0.65" dy="0.85" layer="1"/>
 </package>
-<package name="SOT23-5" urn="urn:adsk.eagle:footprint:20627/1" locally_modified="yes">
+<package name="SOT23-5" urn="urn:adsk.eagle:footprint:5745153/1" library_version="2" library_locally_modified="yes">
 <description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;&lt;p&gt;
 package type OT</description>
 <wire x1="1.422" y1="0.81" x2="1.422" y2="-0.81" width="0.1524" layer="21"/>
@@ -578,11 +573,11 @@ package type OT</description>
 <rectangle x1="0.7" y1="0.85" x2="1.2" y2="1.5" layer="51"/>
 <rectangle x1="-1.2" y1="0.85" x2="-0.7" y2="1.5" layer="51"/>
 </package>
-<package name="BATT_CON">
+<package name="BATT_CON" urn="urn:adsk.eagle:footprint:5745154/1" library_version="2" library_locally_modified="yes">
 <pad name="V+" x="0" y="0" drill="1.1" diameter="1.6" rot="R90" thermals="no"/>
 <pad name="V-" x="2" y="0" drill="1.1" diameter="1.6" shape="square" rot="R90"/>
 </package>
-<package name="KMS231GLFS">
+<package name="KMS231GLFS" urn="urn:adsk.eagle:footprint:5745151/1" library_version="2" library_locally_modified="yes">
 <smd name="3" x="0" y="2.8" dx="1.7" dy="0.55" layer="1"/>
 <smd name="2" x="-2.05" y="2.175" dx="1" dy="0.9" layer="1" rot="R90"/>
 <smd name="1" x="-2.05" y="0.575" dx="1" dy="0.9" layer="1" rot="R90"/>
@@ -615,17 +610,21 @@ package type OT</description>
 <rectangle x1="-0.8382" y1="-0.4318" x2="-0.4318" y2="0.4318" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
 </package>
-<package name="USB_PADS">
+<package name="USB_PADS" urn="urn:adsk.eagle:footprint:5745149/1" library_version="2" library_locally_modified="yes">
 <smd name="V_SUPPLY" x="-3.5" y="3.75" dx="7.5" dy="1.5" layer="1" rot="R90"/>
 <smd name="D-" x="-1" y="3.25" dx="6.5" dy="1" layer="1" rot="R90"/>
 <smd name="GND" x="3.5" y="3.75" dx="7.5" dy="1.5" layer="1" rot="R90"/>
 <smd name="D+" x="1" y="3.25" dx="6.5" dy="1" layer="1" rot="R90"/>
 </package>
-<package name="FRONT-FACE">
+<package name="FRONT-FACE" urn="urn:adsk.eagle:footprint:5745134/1" library_version="2" library_locally_modified="yes">
 <description>Front Face Top</description>
 <wire x1="-9" y1="-8" x2="9" y2="-8" width="0.2032" layer="21"/>
 <wire x1="9" y1="-8" x2="9" y2="5.65" width="0.2032" layer="21"/>
 <wire x1="-9" y1="5.65" x2="-9" y2="-8" width="0.2032" layer="21"/>
+<wire x1="-7.62" y1="-7.3025" x2="7.62" y2="-7.3025" width="0.127" layer="51"/>
+<wire x1="7.62" y1="-7.3025" x2="7.62" y2="5.08" width="0.127" layer="51"/>
+<wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.127" layer="51"/>
+<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-7.3025" width="0.127" layer="51"/>
 <text x="-4.445" y="2.3" size="1.016" layer="27">&gt;VALUE</text>
 <smd name="1" x="-8.8925" y="4.9" dx="1.485" dy="0.9" layer="1" cream="no"/>
 <smd name="2" x="-8.8925" y="3.4" dx="1.485" dy="0.9" layer="1" cream="no"/>
@@ -645,27 +644,10 @@ package type OT</description>
 <smd name="16" x="8.8925" y="1.9" dx="1.485" dy="0.9" layer="1" cream="no"/>
 <smd name="17" x="8.8925" y="3.4" dx="1.485" dy="0.9" layer="1" cream="no"/>
 <smd name="18" x="8.8925" y="4.9" dx="1.485" dy="0.9" layer="1" cream="no"/>
-<wire x1="-7.62" y1="7.3025" x2="-7.62" y2="11.1125" width="0.4064" layer="51"/>
-<wire x1="-7.62" y1="11.1125" x2="-5.3975" y2="11.1125" width="0.4064" layer="51"/>
-<wire x1="-5.3975" y1="11.1125" x2="-5.3975" y2="8.5725" width="0.4064" layer="51"/>
-<wire x1="-5.3975" y1="8.5725" x2="-3.175" y2="8.5725" width="0.4064" layer="51"/>
-<wire x1="-3.175" y1="8.5725" x2="-3.175" y2="11.1125" width="0.4064" layer="51"/>
-<wire x1="-3.175" y1="11.1125" x2="-0.9525" y2="11.1125" width="0.4064" layer="51"/>
-<wire x1="-0.9525" y1="11.1125" x2="-0.9525" y2="8.5725" width="0.4064" layer="51"/>
-<wire x1="-0.9525" y1="8.5725" x2="1.27" y2="8.5725" width="0.4064" layer="51"/>
-<wire x1="1.27" y1="8.5725" x2="1.27" y2="11.1125" width="0.4064" layer="51"/>
-<wire x1="1.27" y1="11.1125" x2="3.4925" y2="11.1125" width="0.4064" layer="51"/>
-<wire x1="3.4925" y1="11.1125" x2="5.715" y2="11.1125" width="0.4064" layer="51"/>
-<wire x1="5.715" y1="11.1125" x2="5.715" y2="6.0325" width="0.4064" layer="51"/>
-<wire x1="3.4925" y1="11.1125" x2="3.4925" y2="6.0325" width="0.4064" layer="51"/>
-<wire x1="-7.62" y1="-7.3025" x2="7.62" y2="-7.3025" width="0.127" layer="51"/>
-<wire x1="7.62" y1="-7.3025" x2="7.62" y2="5.08" width="0.127" layer="51"/>
-<wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.127" layer="51"/>
-<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-7.3025" width="0.127" layer="51"/>
 <circle x="-6.0325" y="-5.715" radius="0.635" width="0.127" layer="51"/>
 <rectangle x1="-1.27" y1="-4.7625" x2="4.445" y2="0.9525" layer="29"/>
 </package>
-<package name="TT2D5L" urn="urn:adsk.eagle:footprint:22931/1" locally_modified="yes">
+<package name="TT2D5L" urn="urn:adsk.eagle:footprint:5745164/1" library_version="2" library_locally_modified="yes">
 <description>&lt;b&gt;ELECTROLYTIC CAPACITOR&lt;/b&gt;&lt;p&gt;
 diameter 5 mm, grid 2.54 mm</description>
 <wire x1="2.54" y1="12.065" x2="2.54" y2="1.651" width="0.1524" layer="21"/>
@@ -673,6 +655,9 @@ diameter 5 mm, grid 2.54 mm</description>
 <wire x1="-1.905" y1="1.016" x2="1.905" y2="1.016" width="0.1524" layer="21"/>
 <wire x1="-2.54" y1="1.651" x2="-1.905" y2="1.016" width="0.1524" layer="21" curve="90"/>
 <wire x1="1.905" y1="1.016" x2="2.54" y2="1.651" width="0.1524" layer="21" curve="90"/>
+<wire x1="-2.54" y1="12.065" x2="-1.905" y2="12.7" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.905" y1="12.7" x2="1.905" y2="12.7" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="12.7" x2="2.54" y2="12.065" width="0.1524" layer="21" curve="-90"/>
 <pad name="-" x="-1.27" y="0" drill="0.8128" diameter="1.6002" shape="octagon"/>
 <pad name="+" x="1.27" y="0" drill="0.8128" diameter="1.6002"/>
 <text x="-2.921" y="1.397" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
@@ -681,15 +666,12 @@ diameter 5 mm, grid 2.54 mm</description>
 <rectangle x1="0.889" y1="0.635" x2="1.651" y2="1.016" layer="51"/>
 <rectangle x1="0.889" y1="-0.127" x2="1.651" y2="0.635" layer="51"/>
 <rectangle x1="-1.651" y1="-0.127" x2="-0.889" y2="0.635" layer="51"/>
-<wire x1="-2.54" y1="12.065" x2="-1.905" y2="12.7" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-1.905" y1="12.7" x2="1.905" y2="12.7" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="12.7" x2="2.54" y2="12.065" width="0.1524" layer="21" curve="-90"/>
 </package>
-<package name="2PIN_STD">
+<package name="2PIN_STD" urn="urn:adsk.eagle:footprint:5745165/1" library_version="2" library_locally_modified="yes">
 <pad name="-" x="-1.27" y="0" drill="0.8128" diameter="1.6002" shape="octagon"/>
 <pad name="+" x="1.27" y="0" drill="0.8128" diameter="1.6002"/>
 </package>
-<package name="SOLDERJUMPER_ARROW_NOPASTE">
+<package name="SOLDERJUMPER_ARROW_NOPASTE" urn="urn:adsk.eagle:footprint:5745159/1" library_version="2" library_locally_modified="yes">
 <wire x1="1.397" y1="-1.016" x2="-1.397" y2="-1.016" width="0.2032" layer="21"/>
 <wire x1="1.397" y1="1.016" x2="1.651" y2="0.762" width="0.2032" layer="21" curve="-90"/>
 <wire x1="-1.651" y1="0.762" x2="-1.397" y2="1.016" width="0.2032" layer="21" curve="-90"/>
@@ -718,6 +700,9 @@ diameter 5 mm, grid 2.54 mm</description>
 </polygon>
 <rectangle x1="-1.4605" y1="-0.8255" x2="1.4605" y2="0.8255" layer="29"/>
 </package>
+<package name="MATRIX_CONN" urn="urn:adsk.eagle:footprint:5745498/1" library_version="2" library_locally_modified="yes">
+<pad name="1" x="0" y="0" drill="1.016" diameter="1.778"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="C0603" urn="urn:adsk.eagle:package:23616/2" type="model">
@@ -730,6 +715,68 @@ diameter 5 mm, grid 2.54 mm</description>
 <description>RESISTOR</description>
 <packageinstances>
 <packageinstance name="R0603"/>
+</packageinstances>
+</package3d>
+<package3d name="SOT23-5" urn="urn:adsk.eagle:package:5745176/2" type="model" library_version="2" library_locally_modified="yes">
+<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;&lt;p&gt;
+package type OT</description>
+<packageinstances>
+<packageinstance name="SOT23-5"/>
+</packageinstances>
+</package3d>
+<package3d name="FRONT-FACE" urn="urn:adsk.eagle:package:5745166/2" type="model" library_version="2" library_locally_modified="yes">
+<description>Front Face Top</description>
+<packageinstances>
+<packageinstance name="FRONT-FACE"/>
+</packageinstances>
+</package3d>
+<package3d name="USB_PADS" urn="urn:adsk.eagle:package:5745172/1" type="box" library_version="2" library_locally_modified="yes">
+<packageinstances>
+<packageinstance name="USB_PADS"/>
+</packageinstances>
+</package3d>
+<package3d name="SOT23-6" urn="urn:adsk.eagle:package:5745175/2" type="model" library_version="2" library_locally_modified="yes">
+<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt; 6 lead</description>
+<packageinstances>
+<packageinstance name="SOT23-6"/>
+</packageinstances>
+</package3d>
+<package3d name="BATT_CON" urn="urn:adsk.eagle:package:5745177/1" type="box" library_version="2" library_locally_modified="yes">
+<packageinstances>
+<packageinstance name="BATT_CON"/>
+</packageinstances>
+</package3d>
+<package3d name="SOD323" urn="urn:adsk.eagle:package:5745186/2" type="model" library_version="2" library_locally_modified="yes">
+<description>&lt;b&gt;SOD323 Wave soldering&lt;/b&gt; Philips SC01_Mounting_1996.pdf</description>
+<packageinstances>
+<packageinstance name="SOD323"/>
+</packageinstances>
+</package3d>
+<package3d name="KMS231GLFS" urn="urn:adsk.eagle:package:5745174/2" type="model" library_version="2" library_locally_modified="yes">
+<packageinstances>
+<packageinstance name="KMS231GLFS"/>
+</packageinstances>
+</package3d>
+<package3d name="TT2D5L" urn="urn:adsk.eagle:package:5745187/1" type="box" library_version="2" library_locally_modified="yes">
+<description>&lt;b&gt;ELECTROLYTIC CAPACITOR&lt;/b&gt;&lt;p&gt;
+diameter 5 mm, grid 2.54 mm</description>
+<packageinstances>
+<packageinstance name="TT2D5L"/>
+</packageinstances>
+</package3d>
+<package3d name="2PIN_STD" urn="urn:adsk.eagle:package:5745188/1" type="box" library_version="2" library_locally_modified="yes">
+<packageinstances>
+<packageinstance name="2PIN_STD"/>
+</packageinstances>
+</package3d>
+<package3d name="SOLDERJUMPER_ARROW_NOPASTE" urn="urn:adsk.eagle:package:5745182/1" type="box" library_version="2" library_locally_modified="yes">
+<packageinstances>
+<packageinstance name="SOLDERJUMPER_ARROW_NOPASTE"/>
+</packageinstances>
+</package3d>
+<package3d name="MATRIX_CONN" urn="urn:adsk.eagle:package:5745499/3" type="model" library_version="2" library_locally_modified="yes">
+<packageinstances>
+<packageinstance name="MATRIX_CONN"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -979,100 +1026,100 @@ Your Eurocircuits Team
 </pass>
 </autorouter>
 <elements>
-<element name="C1" library="monoblink_wifi" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1u" x="19.5" y="11" smashed="yes" rot="R180">
+<element name="C1" library="monoblink_wifi" library_urn="urn:adsk.eagle:library:5745129" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1u" x="19.5" y="11" rot="R180">
 <attribute name="NAME" x="18.8" y="11.7" size="1.016" layer="25" font="vector" ratio="15"/>
 <attribute name="SPICEPREFIX" value="C" x="19.5" y="11" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="20.135" y="12.905" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="C2" library="monoblink_wifi" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1u" x="6.5" y="11" smashed="yes" rot="R180">
+<element name="C2" library="monoblink_wifi" library_urn="urn:adsk.eagle:library:5745129" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1u" x="6.5" y="11" rot="R180">
 <attribute name="NAME" x="5.9" y="11.8" size="1.016" layer="25" font="vector" ratio="15"/>
 <attribute name="SPICEPREFIX" value="C" x="6.5" y="11" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="7.135" y="12.905" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="C3" library="monoblink_wifi" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="6.5" y="19" smashed="yes" rot="R180">
+<element name="C3" library="monoblink_wifi" library_urn="urn:adsk.eagle:library:5745129" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="6.5" y="19" rot="R180">
 <attribute name="NAME" x="5.9" y="19.7" size="1.016" layer="25" font="vector" ratio="15"/>
 <attribute name="SPICEPREFIX" value="C" x="6.5" y="19" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="7.135" y="20.905" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="CHG" library="monoblink_wifi" package="SOT23-6" value="BQ21040" x="18.5" y="15" smashed="yes" rot="R180">
+<element name="CHG" library="monoblink_wifi" library_urn="urn:adsk.eagle:library:5745129" package="SOT23-6" package3d_urn="urn:adsk.eagle:package:5745175/2" value="BQ21040" x="18.5" y="15" rot="R180">
 <attribute name="NAME" x="21.2" y="13.8" size="1.016" layer="25" font="vector" ratio="15" rot="R90"/>
 </element>
-<element name="CLK" library="monoblink_wifi" package="TP1.5MM" value="TESTPAD_PROG" x="1.5" y="33.5" smashed="yes" rot="R270">
+<element name="CLK" library="monoblink_wifi" library_urn="urn:adsk.eagle:library:5745129" package="MATRIX_CONN" package3d_urn="urn:adsk.eagle:package:5745499/3" value="TESTPAD_PROGSPRING_PIN" x="1.5" y="33.5" rot="R270">
 <attribute name="NAME" x="2.8" y="33" size="1.016" layer="25" font="vector" ratio="15" rot="SR0"/>
 <attribute name="VALUE" x="-0.8523" y="34.1477" size="0.6096" layer="27" font="vector" ratio="15" rot="SR270"/>
 </element>
-<element name="D1" library="monoblink_wifi" package="SOD323" value="NSR0320MW2T1G" x="13" y="13.5" smashed="yes">
+<element name="D1" library="monoblink_wifi" library_urn="urn:adsk.eagle:library:5745129" package="SOD323" package3d_urn="urn:adsk.eagle:package:5745186/2" value="NSR0320MW2T1G" x="13" y="13.5">
 <attribute name="NAME" x="12.3" y="14.4" size="1.016" layer="25" font="vector" ratio="15"/>
 <attribute name="VALUE" x="11.9" y="11.2" size="1.27" layer="27"/>
 </element>
-<element name="D2" library="monoblink_wifi" package="SOD323" value="NSR0320MW2T1G" x="13" y="16.5" smashed="yes">
+<element name="D2" library="monoblink_wifi" library_urn="urn:adsk.eagle:library:5745129" package="SOD323" package3d_urn="urn:adsk.eagle:package:5745186/2" value="NSR0320MW2T1G" x="13" y="16.5">
 <attribute name="NAME" x="12.3" y="17.4" size="1.016" layer="25" font="vector" ratio="15"/>
 <attribute name="VALUE" x="11.9" y="14.2" size="1.27" layer="27"/>
 </element>
-<element name="DAT" library="monoblink_wifi" package="TP1.5MM" value="TESTPAD_PROG" x="1.5" y="31" smashed="yes" rot="R270">
+<element name="DAT" library="monoblink_wifi" library_urn="urn:adsk.eagle:library:5745129" package="MATRIX_CONN" package3d_urn="urn:adsk.eagle:package:5745499/3" value="TESTPAD_PROGSPRING_PIN" x="1.5" y="31" rot="R270">
 <attribute name="NAME" x="2.8" y="30.5" size="1.016" layer="25" font="vector" ratio="15" rot="SR0"/>
 <attribute name="VALUE" x="-0.8523" y="31.6477" size="0.6096" layer="27" font="vector" ratio="15" rot="SR270"/>
 </element>
-<element name="GND" library="monoblink_wifi" package="TP1.5MM" value="TESTPAD_PROG" x="1.5" y="28.5" smashed="yes" rot="R270">
+<element name="GND" library="monoblink_wifi" library_urn="urn:adsk.eagle:library:5745129" package="MATRIX_CONN" package3d_urn="urn:adsk.eagle:package:5745499/3" value="TESTPAD_PROGSPRING_PIN" x="1.5" y="28.5" rot="R270">
 <attribute name="NAME" x="2.8" y="28" size="1.016" layer="25" font="vector" ratio="15" rot="SR0"/>
 <attribute name="VALUE" x="-0.8523" y="29.1477" size="0.6096" layer="27" font="vector" ratio="15" rot="SR270"/>
 </element>
-<element name="LDO" library="monoblink_wifi" package="SOT23-5" value="TLV755P" x="7.5" y="15" smashed="yes">
+<element name="LDO" library="monoblink_wifi" library_urn="urn:adsk.eagle:library:5745129" package="SOT23-5" package3d_urn="urn:adsk.eagle:package:5745176/2" value="TLV755P" x="7.5" y="15">
 <attribute name="NAME" x="10.3" y="14.3" size="1.016" layer="25" font="vector" ratio="15" rot="R90"/>
 <attribute name="VALUE" x="5.595" y="11.571" size="1.27" layer="27"/>
 </element>
-<element name="LP402025" library="monoblink_wifi" package="BATT_CON" value="150mAh" x="14.5" y="33"/>
-<element name="ON/OFF" library="monoblink_wifi" package="KMS231GLFS" value="KMS231GPLFSNO_PEGS" x="0.3" y="18" smashed="yes" rot="R270">
+<element name="LP402025" library="monoblink_wifi" library_urn="urn:adsk.eagle:library:5745129" package="BATT_CON" package3d_urn="urn:adsk.eagle:package:5745177/1" value="150mAh" x="14.5" y="33"/>
+<element name="ON/OFF" library="monoblink_wifi" library_urn="urn:adsk.eagle:library:5745129" package="KMS231GLFS" package3d_urn="urn:adsk.eagle:package:5745174/2" value="KMS231GPLFSNO_PEGS" x="0.3" y="18" rot="R270">
 <attribute name="NAME" x="3.7" y="20.5" size="1.016" layer="25" font="vector" ratio="15" rot="R270"/>
 </element>
-<element name="R1" library="monoblink_wifi" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="220" x="11" y="19" smashed="yes">
+<element name="R1" library="monoblink_wifi" library_urn="urn:adsk.eagle:library:5745129" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="220" x="11" y="19">
 <attribute name="NAME" x="10.2" y="19.7" size="1.016" layer="25" font="vector" ratio="15"/>
 <attribute name="SPICEPREFIX" value="R" x="11" y="19" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="10.365" y="17.095" size="1.27" layer="27"/>
 </element>
-<element name="R2" library="monoblink_wifi" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="10K" x="19.5" y="19" smashed="yes">
+<element name="R2" library="monoblink_wifi" library_urn="urn:adsk.eagle:library:5745129" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="10K" x="19.5" y="19">
 <attribute name="NAME" x="18.7" y="19.7" size="1.016" layer="25" font="vector" ratio="15"/>
 <attribute name="SPICEPREFIX" value="R" x="19.5" y="19" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="18.865" y="17.095" size="1.27" layer="27"/>
 </element>
-<element name="R3" library="monoblink_wifi" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="6.8K" x="24" y="11" smashed="yes">
+<element name="R3" library="monoblink_wifi" library_urn="urn:adsk.eagle:library:5745129" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="6.8K" x="24" y="11">
 <attribute name="NAME" x="23.265" y="11.735" size="1.016" layer="25" font="vector" ratio="15"/>
 <attribute name="SPICEPREFIX" value="R" x="24" y="11" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="23.365" y="9.095" size="1.27" layer="27"/>
 </element>
-<element name="R4" library="monoblink_wifi" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="100K" x="2" y="11" smashed="yes" rot="R180">
+<element name="R4" library="monoblink_wifi" library_urn="urn:adsk.eagle:library:5745129" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="100K" x="2" y="11" rot="R180">
 <attribute name="NAME" x="1.2" y="11.7" size="1.016" layer="25" font="vector" ratio="15"/>
 <attribute name="SPICEPREFIX" value="R" x="2" y="11" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="2.635" y="12.905" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="R5" library="monoblink_wifi" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="10K" x="2" y="13.5" smashed="yes" rot="R180">
+<element name="R5" library="monoblink_wifi" library_urn="urn:adsk.eagle:library:5745129" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="10K" x="2" y="13.5" rot="R180">
 <attribute name="NAME" x="1.2" y="14.2" size="1.016" layer="25" font="vector" ratio="15"/>
 <attribute name="SPICEPREFIX" value="R" x="2" y="13.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="2.635" y="15.405" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="U$2" library="monoblink_wifi" package="USB_PADS" value="USB_PCB" x="13" y="8.5" rot="R180"/>
-<element name="VCC" library="monoblink_wifi" package="TP1.5MM" value="TESTPAD_PROG" x="1.5" y="26" smashed="yes" rot="R270">
+<element name="U$2" library="monoblink_wifi" library_urn="urn:adsk.eagle:library:5745129" package="USB_PADS" package3d_urn="urn:adsk.eagle:package:5745172/1" value="USB_PCB" x="13" y="8.5" rot="R180"/>
+<element name="VCC" library="monoblink_wifi" library_urn="urn:adsk.eagle:library:5745129" package="MATRIX_CONN" package3d_urn="urn:adsk.eagle:package:5745499/3" value="TESTPAD_PROGSPRING_PIN" x="1.5" y="26" rot="R270">
 <attribute name="NAME" x="2.8" y="25.5" size="1.016" layer="25" font="vector" ratio="15" rot="SR0"/>
 <attribute name="VALUE" x="-0.8523" y="26.6477" size="0.6096" layer="27" font="vector" ratio="15" rot="SR270"/>
 </element>
-<element name="WROOM-02" library="monoblink_wifi" package="FRONT-FACE" value="ESP-WROOM-02FRONT-FACE" x="15.5" y="29" smashed="yes">
+<element name="WROOM-02" library="monoblink_wifi" library_urn="urn:adsk.eagle:library:5745129" package="FRONT-FACE" package3d_urn="urn:adsk.eagle:package:5745166/2" value="ESP-WROOM-02FRONT-FACE" x="15.5" y="29">
 <attribute name="VALUE" x="11.055" y="31.3" size="1.016" layer="27"/>
 </element>
-<element name="C4" library="monoblink_wifi" package="TT2D5L" value="CAP_5MM_L" x="3" y="22" smashed="yes" rot="MR0">
+<element name="C4" library="monoblink_wifi" library_urn="urn:adsk.eagle:library:5745129" package="TT2D5L" package3d_urn="urn:adsk.eagle:package:5745187/1" value="CAP_5MM_L" x="3" y="22" rot="MR0">
 <attribute name="NAME" x="2.5" y="23.5" size="1.016" layer="26" font="vector" ratio="15" rot="MR0"/>
 <attribute name="VALUE" x="1.222" y="26.318" size="1.27" layer="28" ratio="10" rot="MR90"/>
 </element>
-<element name="LED1" library="adafruit" package="CHIP-LED0603" value="" x="15" y="19" smashed="yes" rot="R270">
+<element name="LED1" library="adafruit" package="CHIP-LED0603" value="" x="15" y="19" rot="R270">
 <attribute name="NAME" x="13.6" y="19.7" size="1.016" layer="25" font="vector" ratio="15"/>
 <attribute name="VALUE" x="14.365" y="17.095" size="1.27" layer="27"/>
 </element>
-<element name="U$1" library="monoblink_wifi" package="2PIN_STD" value="2PIN_STD" x="24.5" y="15" rot="R90"/>
-<element name="R6" library="monoblink_wifi" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="10K" x="24" y="19" smashed="yes" rot="R180">
+<element name="U$1" library="monoblink_wifi" library_urn="urn:adsk.eagle:library:5745129" package="2PIN_STD" package3d_urn="urn:adsk.eagle:package:5745188/1" value="2PIN_STD" x="24.5" y="15" rot="R90"/>
+<element name="R6" library="monoblink_wifi" library_urn="urn:adsk.eagle:library:5745129" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="10K" x="24" y="19" rot="R180">
 <attribute name="NAME" x="23.3" y="19.7" size="1.016" layer="25" font="vector" ratio="15"/>
 <attribute name="SPICEPREFIX" value="R" x="24" y="19" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="24.635" y="20.905" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="RST" library="monoblink_wifi" package="SOLDERJUMPER_ARROW_NOPASTE" value="" x="24.5" y="31" smashed="yes" rot="MR270">
+<element name="RST" library="monoblink_wifi" library_urn="urn:adsk.eagle:library:5745129" package="SOLDERJUMPER_ARROW_NOPASTE" package3d_urn="urn:adsk.eagle:package:5745182/1" value="" x="24.5" y="31" rot="MR270">
 <attribute name="BOM" value="EXCLUDE" x="24.5" y="31" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="NAME" x="25.5" y="33" size="0.8128" layer="26" ratio="18" rot="MR0"/>
 <attribute name="VALUE" x="26.151" y="32.651" size="0.4064" layer="28" ratio="10" rot="MR270"/>
@@ -1423,6 +1470,16 @@ Your Eurocircuits Team
 </board>
 </drawing>
 <compatibility>
+<note version="8.2" severity="warning">
+Since Version 8.2, EAGLE supports online libraries. The ids
+of those online libraries will not be understood (or retained)
+with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports Fusion synchronisation.
+This feature will not be available in this version and saving
+the document will break the link to the Fusion PCB feature.
+</note>
 <note version="8.3" severity="warning">
 Since Version 8.3, EAGLE supports URNs for individual library
 assets (packages, symbols, and devices). The URNs of those assets

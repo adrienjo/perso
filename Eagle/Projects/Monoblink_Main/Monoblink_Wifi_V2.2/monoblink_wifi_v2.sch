@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.0.1">
+<eagle version="9.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -198,9 +198,9 @@
 </deviceset>
 </devicesets>
 </library>
-<library name="monoblink_wifi">
+<library name="monoblink_wifi" urn="urn:adsk.eagle:library:5745129">
 <packages>
-<package name="SOT23-5" urn="urn:adsk.eagle:footprint:20627/1" locally_modified="yes">
+<package name="SOT23-5" urn="urn:adsk.eagle:footprint:5745153/1" library_version="2" library_locally_modified="yes">
 <description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;&lt;p&gt;
 package type OT</description>
 <wire x1="1.422" y1="0.81" x2="1.422" y2="-0.81" width="0.1524" layer="21"/>
@@ -227,11 +227,15 @@ package type OT</description>
 <rectangle x1="0.7" y1="0.85" x2="1.2" y2="1.5" layer="51"/>
 <rectangle x1="-1.2" y1="0.85" x2="-0.7" y2="1.5" layer="51"/>
 </package>
-<package name="FRONT-FACE">
+<package name="FRONT-FACE" urn="urn:adsk.eagle:footprint:5745134/1" library_version="2" library_locally_modified="yes">
 <description>Front Face Top</description>
 <wire x1="-9" y1="-8" x2="9" y2="-8" width="0.2032" layer="21"/>
 <wire x1="9" y1="-8" x2="9" y2="5.65" width="0.2032" layer="21"/>
 <wire x1="-9" y1="5.65" x2="-9" y2="-8" width="0.2032" layer="21"/>
+<wire x1="-7.62" y1="-7.3025" x2="7.62" y2="-7.3025" width="0.127" layer="51"/>
+<wire x1="7.62" y1="-7.3025" x2="7.62" y2="5.08" width="0.127" layer="51"/>
+<wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.127" layer="51"/>
+<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-7.3025" width="0.127" layer="51"/>
 <text x="-4.445" y="2.3" size="1.016" layer="27">&gt;VALUE</text>
 <smd name="1" x="-8.8925" y="4.9" dx="1.485" dy="0.9" layer="1" cream="no"/>
 <smd name="2" x="-8.8925" y="3.4" dx="1.485" dy="0.9" layer="1" cream="no"/>
@@ -251,60 +255,16 @@ package type OT</description>
 <smd name="16" x="8.8925" y="1.9" dx="1.485" dy="0.9" layer="1" cream="no"/>
 <smd name="17" x="8.8925" y="3.4" dx="1.485" dy="0.9" layer="1" cream="no"/>
 <smd name="18" x="8.8925" y="4.9" dx="1.485" dy="0.9" layer="1" cream="no"/>
-<wire x1="-7.62" y1="7.3025" x2="-7.62" y2="11.1125" width="0.4064" layer="51"/>
-<wire x1="-7.62" y1="11.1125" x2="-5.3975" y2="11.1125" width="0.4064" layer="51"/>
-<wire x1="-5.3975" y1="11.1125" x2="-5.3975" y2="8.5725" width="0.4064" layer="51"/>
-<wire x1="-5.3975" y1="8.5725" x2="-3.175" y2="8.5725" width="0.4064" layer="51"/>
-<wire x1="-3.175" y1="8.5725" x2="-3.175" y2="11.1125" width="0.4064" layer="51"/>
-<wire x1="-3.175" y1="11.1125" x2="-0.9525" y2="11.1125" width="0.4064" layer="51"/>
-<wire x1="-0.9525" y1="11.1125" x2="-0.9525" y2="8.5725" width="0.4064" layer="51"/>
-<wire x1="-0.9525" y1="8.5725" x2="1.27" y2="8.5725" width="0.4064" layer="51"/>
-<wire x1="1.27" y1="8.5725" x2="1.27" y2="11.1125" width="0.4064" layer="51"/>
-<wire x1="1.27" y1="11.1125" x2="3.4925" y2="11.1125" width="0.4064" layer="51"/>
-<wire x1="3.4925" y1="11.1125" x2="5.715" y2="11.1125" width="0.4064" layer="51"/>
-<wire x1="5.715" y1="11.1125" x2="5.715" y2="6.0325" width="0.4064" layer="51"/>
-<wire x1="3.4925" y1="11.1125" x2="3.4925" y2="6.0325" width="0.4064" layer="51"/>
-<wire x1="-7.62" y1="-7.3025" x2="7.62" y2="-7.3025" width="0.127" layer="51"/>
-<wire x1="7.62" y1="-7.3025" x2="7.62" y2="5.08" width="0.127" layer="51"/>
-<wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.127" layer="51"/>
-<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-7.3025" width="0.127" layer="51"/>
 <circle x="-6.0325" y="-5.715" radius="0.635" width="0.127" layer="51"/>
 <rectangle x1="-1.27" y1="-4.7625" x2="4.445" y2="0.9525" layer="29"/>
 </package>
-<package name="BACK-FACE">
-<description>Back Face Top</description>
-<wire x1="-9" y1="-8" x2="9" y2="-8" width="0.2032" layer="21"/>
-<wire x1="9" y1="-8" x2="9" y2="12" width="0.2032" layer="21"/>
-<wire x1="9" y1="12" x2="-9" y2="12" width="0.2032" layer="21"/>
-<wire x1="-9" y1="12" x2="-9" y2="-8" width="0.2032" layer="21"/>
-<text x="-5.715" y="-0.24" size="1.016" layer="27">&gt;VALUE</text>
-<smd name="1" x="8.575" y="4.9" dx="0.9" dy="0.85" layer="1" cream="no"/>
-<smd name="2" x="8.575" y="3.4" dx="0.9" dy="0.85" layer="1" cream="no"/>
-<smd name="3" x="8.575" y="1.9" dx="0.9" dy="0.85" layer="1" cream="no"/>
-<smd name="4" x="8.575" y="0.4" dx="0.9" dy="0.85" layer="1" cream="no"/>
-<smd name="5" x="8.575" y="-1.1" dx="0.9" dy="0.85" layer="1" cream="no"/>
-<smd name="6" x="8.575" y="-2.6" dx="0.9" dy="0.85" layer="1" cream="no"/>
-<smd name="7" x="8.575" y="-4.1" dx="0.9" dy="0.85" layer="1" cream="no"/>
-<smd name="8" x="8.575" y="-5.6" dx="0.9" dy="0.85" layer="1" cream="no"/>
-<smd name="9" x="8.575" y="-7.1" dx="0.9" dy="0.85" layer="1" cream="no"/>
-<smd name="10" x="-8.575" y="-7.1" dx="0.9" dy="0.85" layer="1" cream="no"/>
-<smd name="11" x="-8.575" y="-5.6" dx="0.9" dy="0.85" layer="1" cream="no"/>
-<smd name="12" x="-8.575" y="-4.1" dx="0.9" dy="0.85" layer="1" cream="no"/>
-<smd name="13" x="-8.575" y="-2.6" dx="0.9" dy="0.85" layer="1" cream="no"/>
-<smd name="14" x="-8.575" y="-1.1" dx="0.9" dy="0.85" layer="1" cream="no"/>
-<smd name="15" x="-8.575" y="0.4" dx="0.9" dy="0.85" layer="1" cream="no"/>
-<smd name="16" x="-8.575" y="1.9" dx="0.9" dy="0.85" layer="1" cream="no"/>
-<smd name="17" x="-8.575" y="3.4" dx="0.9" dy="0.85" layer="1" cream="no"/>
-<smd name="18" x="-8.575" y="4.9" dx="0.9" dy="0.85" layer="1" cream="no"/>
-<text x="-8.255" y="12.46" size="1.27" layer="25">&gt;NAME</text>
-</package>
-<package name="USB_PADS">
+<package name="USB_PADS" urn="urn:adsk.eagle:footprint:5745149/1" library_version="2" library_locally_modified="yes">
 <smd name="V_SUPPLY" x="-3.5" y="3.75" dx="7.5" dy="1.5" layer="1" rot="R90"/>
 <smd name="D-" x="-1" y="3.25" dx="6.5" dy="1" layer="1" rot="R90"/>
 <smd name="GND" x="3.5" y="3.75" dx="7.5" dy="1.5" layer="1" rot="R90"/>
 <smd name="D+" x="1" y="3.25" dx="6.5" dy="1" layer="1" rot="R90"/>
 </package>
-<package name="SOT23-6" urn="urn:adsk.eagle:footprint:20690/1" locally_modified="yes">
+<package name="SOT23-6" urn="urn:adsk.eagle:footprint:5745152/1" library_version="2" library_locally_modified="yes">
 <description>&lt;b&gt;Small Outline Transistor&lt;/b&gt; 6 lead</description>
 <wire x1="1.422" y1="-0.781" x2="-1.423" y2="-0.781" width="0.1524" layer="51"/>
 <wire x1="-1.423" y1="-0.781" x2="-1.423" y2="0.781" width="0.1524" layer="21"/>
@@ -325,7 +285,7 @@ package type OT</description>
 <rectangle x1="-0.25" y1="0.8" x2="0.25" y2="1.4" layer="51"/>
 <rectangle x1="-1.2" y1="0.8" x2="-0.7" y2="1.4" layer="51"/>
 </package>
-<package name="BATT_CON">
+<package name="BATT_CON" urn="urn:adsk.eagle:footprint:5745154/1" library_version="2" library_locally_modified="yes">
 <pad name="V+" x="0" y="0" drill="1.1" diameter="1.6" rot="R90" thermals="no"/>
 <pad name="V-" x="2" y="0" drill="1.1" diameter="1.6" shape="square" rot="R90"/>
 </package>
@@ -3438,7 +3398,7 @@ Source: AVX .. aphvc.pdf</description>
 <text x="-0.4" y="0.3" size="1.27" layer="25">&gt;NAME</text>
 <text x="-0.4" y="-1.6" size="1.27" layer="27">&gt;VALUE</text>
 </package>
-<package name="SOD323" urn="urn:adsk.eagle:footprint:43205/1" locally_modified="yes">
+<package name="SOD323" urn="urn:adsk.eagle:footprint:5745163/1" library_version="2" library_locally_modified="yes">
 <description>&lt;b&gt;SOD323 Wave soldering&lt;/b&gt; Philips SC01_Mounting_1996.pdf</description>
 <wire x1="-0.85" y1="0.65" x2="0.85" y2="0.65" width="0.1524" layer="51"/>
 <wire x1="0.85" y1="0.65" x2="0.85" y2="-0.65" width="0.1524" layer="51"/>
@@ -3453,13 +3413,110 @@ Source: AVX .. aphvc.pdf</description>
 <smd name="1" x="-1.125" y="0" dx="0.65" dy="0.85" layer="1"/>
 <smd name="2" x="1.125" y="0" dx="0.65" dy="0.85" layer="1"/>
 </package>
-<package name="TP1.5MM">
+<package name="TP1.5MM" urn="urn:adsk.eagle:footprint:5745160/1" library_version="2" library_locally_modified="yes">
 <circle x="0" y="0" radius="0.9" width="0.0254" layer="51"/>
 <smd name="1" x="0" y="0" dx="1.5" dy="1.5" layer="1" roundness="100" cream="no"/>
 <text x="-0.6477" y="1.6717" size="0.6096" layer="25" font="vector" ratio="15" rot="SR0">&gt;NAME</text>
 <text x="-0.6477" y="-2.3523" size="0.6096" layer="27" font="vector" ratio="15" rot="SR0">&gt;VALUE</text>
 </package>
-<package name="KMS231GPLFS">
+<package name="KMS231GLFS" urn="urn:adsk.eagle:footprint:5745151/1" library_version="2" library_locally_modified="yes">
+<smd name="3" x="0" y="2.8" dx="1.7" dy="0.55" layer="1"/>
+<smd name="2" x="-2.05" y="2.175" dx="1" dy="0.9" layer="1" rot="R90"/>
+<smd name="1" x="-2.05" y="0.575" dx="1" dy="0.9" layer="1" rot="R90"/>
+<smd name="4" x="2.05" y="2.175" dx="1" dy="0.9" layer="1" rot="R90"/>
+<smd name="5" x="2.05" y="0.575" dx="1" dy="0.9" layer="1" rot="R90"/>
+<wire x1="-2.3" y1="2.8" x2="2.3" y2="2.8" width="0.1" layer="21"/>
+<wire x1="2.3" y1="2.8" x2="2.3" y2="0" width="0.1" layer="21"/>
+<wire x1="2.3" y1="0" x2="1.25" y2="0" width="0.1" layer="21"/>
+<wire x1="1.25" y1="0" x2="-1.25" y2="0" width="0.1" layer="21"/>
+<wire x1="-1.25" y1="0" x2="-2.3" y2="0" width="0.1" layer="21"/>
+<wire x1="-2.3" y1="0" x2="-2.3" y2="2.8" width="0.1" layer="21"/>
+<wire x1="-1.25" y1="0" x2="-1.25" y2="-0.75" width="0.1" layer="21"/>
+<wire x1="-1.25" y1="-0.75" x2="1.25" y2="-0.75" width="0.1" layer="21"/>
+<wire x1="1.25" y1="-0.75" x2="1.25" y2="0" width="0.1" layer="21"/>
+<text x="-2.54" y="3.81" size="1.27" layer="25">&gt;NAME</text>
+</package>
+<package name="TT2D5L" urn="urn:adsk.eagle:footprint:5745164/1" library_version="2" library_locally_modified="yes">
+<description>&lt;b&gt;ELECTROLYTIC CAPACITOR&lt;/b&gt;&lt;p&gt;
+diameter 5 mm, grid 2.54 mm</description>
+<wire x1="2.54" y1="12.065" x2="2.54" y2="1.651" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="12.065" x2="-2.54" y2="1.651" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="1.016" x2="1.905" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="1.651" x2="-1.905" y2="1.016" width="0.1524" layer="21" curve="90"/>
+<wire x1="1.905" y1="1.016" x2="2.54" y2="1.651" width="0.1524" layer="21" curve="90"/>
+<wire x1="-2.54" y1="12.065" x2="-1.905" y2="12.7" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.905" y1="12.7" x2="1.905" y2="12.7" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="12.7" x2="2.54" y2="12.065" width="0.1524" layer="21" curve="-90"/>
+<pad name="-" x="-1.27" y="0" drill="0.8128" diameter="1.6002" shape="octagon"/>
+<pad name="+" x="1.27" y="0" drill="0.8128" diameter="1.6002"/>
+<text x="-2.921" y="1.397" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="1.778" y="4.318" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<rectangle x1="-1.651" y1="0.635" x2="-0.889" y2="1.016" layer="51"/>
+<rectangle x1="0.889" y1="0.635" x2="1.651" y2="1.016" layer="51"/>
+<rectangle x1="0.889" y1="-0.127" x2="1.651" y2="0.635" layer="51"/>
+<rectangle x1="-1.651" y1="-0.127" x2="-0.889" y2="0.635" layer="51"/>
+</package>
+<package name="2PIN_STD" urn="urn:adsk.eagle:footprint:5745165/1" library_version="2" library_locally_modified="yes">
+<pad name="-" x="-1.27" y="0" drill="0.8128" diameter="1.6002" shape="octagon"/>
+<pad name="+" x="1.27" y="0" drill="0.8128" diameter="1.6002"/>
+</package>
+<package name="SOLDERJUMPER_ARROW_NOPASTE" urn="urn:adsk.eagle:footprint:5745159/1" library_version="2" library_locally_modified="yes">
+<wire x1="1.397" y1="-1.016" x2="-1.397" y2="-1.016" width="0.2032" layer="21"/>
+<wire x1="1.397" y1="1.016" x2="1.651" y2="0.762" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-1.651" y1="0.762" x2="-1.397" y2="1.016" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-1.651" y1="-0.762" x2="-1.397" y2="-1.016" width="0.2032" layer="21" curve="90"/>
+<wire x1="1.397" y1="-1.016" x2="1.651" y2="-0.762" width="0.2032" layer="21" curve="90"/>
+<wire x1="1.651" y1="-0.762" x2="1.651" y2="0.762" width="0.2032" layer="21"/>
+<wire x1="-1.651" y1="-0.762" x2="-1.651" y2="0.762" width="0.2032" layer="21"/>
+<wire x1="-1.397" y1="1.016" x2="1.397" y2="1.016" width="0.2032" layer="21"/>
+<smd name="1" x="-1.016" y="0" dx="0.762" dy="1.524" layer="1" roundness="50" stop="no" cream="no"/>
+<smd name="2" x="1.016" y="0" dx="0.762" dy="1.524" layer="1" roundness="50" stop="no" cream="no"/>
+<text x="-1.778" y="1.27" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="-1.651" y="-1.651" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+<polygon width="0.0508" layer="1">
+<vertex x="-1.143" y="0.7366"/>
+<vertex x="-0.5715" y="0.7366"/>
+<vertex x="0.1651" y="0"/>
+<vertex x="-0.5715" y="-0.7366"/>
+<vertex x="-1.143" y="-0.7366"/>
+</polygon>
+<polygon width="0.0508" layer="1">
+<vertex x="-0.127" y="0.7366"/>
+<vertex x="0.5842" y="0"/>
+<vertex x="-0.127" y="-0.7366"/>
+<vertex x="1.143" y="-0.7366"/>
+<vertex x="1.143" y="0.7366"/>
+</polygon>
+<rectangle x1="-1.4605" y1="-0.8255" x2="1.4605" y2="0.8255" layer="29"/>
+</package>
+<package name="BACK-FACE" urn="urn:adsk.eagle:footprint:5745133/1" library_version="2" library_locally_modified="yes">
+<description>Back Face Top</description>
+<wire x1="-9" y1="-8" x2="9" y2="-8" width="0.2032" layer="21"/>
+<wire x1="9" y1="-8" x2="9" y2="12" width="0.2032" layer="21"/>
+<wire x1="9" y1="12" x2="-9" y2="12" width="0.2032" layer="21"/>
+<wire x1="-9" y1="12" x2="-9" y2="-8" width="0.2032" layer="21"/>
+<text x="-5.715" y="-0.24" size="1.016" layer="27">&gt;VALUE</text>
+<text x="-8.255" y="12.46" size="1.27" layer="25">&gt;NAME</text>
+<smd name="1" x="8.575" y="4.9" dx="0.9" dy="0.85" layer="1" cream="no"/>
+<smd name="2" x="8.575" y="3.4" dx="0.9" dy="0.85" layer="1" cream="no"/>
+<smd name="3" x="8.575" y="1.9" dx="0.9" dy="0.85" layer="1" cream="no"/>
+<smd name="4" x="8.575" y="0.4" dx="0.9" dy="0.85" layer="1" cream="no"/>
+<smd name="5" x="8.575" y="-1.1" dx="0.9" dy="0.85" layer="1" cream="no"/>
+<smd name="6" x="8.575" y="-2.6" dx="0.9" dy="0.85" layer="1" cream="no"/>
+<smd name="7" x="8.575" y="-4.1" dx="0.9" dy="0.85" layer="1" cream="no"/>
+<smd name="8" x="8.575" y="-5.6" dx="0.9" dy="0.85" layer="1" cream="no"/>
+<smd name="9" x="8.575" y="-7.1" dx="0.9" dy="0.85" layer="1" cream="no"/>
+<smd name="10" x="-8.575" y="-7.1" dx="0.9" dy="0.85" layer="1" cream="no"/>
+<smd name="11" x="-8.575" y="-5.6" dx="0.9" dy="0.85" layer="1" cream="no"/>
+<smd name="12" x="-8.575" y="-4.1" dx="0.9" dy="0.85" layer="1" cream="no"/>
+<smd name="13" x="-8.575" y="-2.6" dx="0.9" dy="0.85" layer="1" cream="no"/>
+<smd name="14" x="-8.575" y="-1.1" dx="0.9" dy="0.85" layer="1" cream="no"/>
+<smd name="15" x="-8.575" y="0.4" dx="0.9" dy="0.85" layer="1" cream="no"/>
+<smd name="16" x="-8.575" y="1.9" dx="0.9" dy="0.85" layer="1" cream="no"/>
+<smd name="17" x="-8.575" y="3.4" dx="0.9" dy="0.85" layer="1" cream="no"/>
+<smd name="18" x="-8.575" y="4.9" dx="0.9" dy="0.85" layer="1" cream="no"/>
+</package>
+<package name="KMS231GPLFS" urn="urn:adsk.eagle:footprint:5745150/1" library_version="2" library_locally_modified="yes">
 <smd name="3" x="0" y="2.8" dx="1.7" dy="0.55" layer="1"/>
 <smd name="2" x="-2.05" y="2.175" dx="1" dy="0.9" layer="1" rot="R90"/>
 <smd name="1" x="-2.05" y="0.575" dx="1" dy="0.9" layer="1" rot="R90"/>
@@ -3477,48 +3534,7 @@ Source: AVX .. aphvc.pdf</description>
 <hole x="-0.975" y="0.625" drill="0.9"/>
 <hole x="0.975" y="0.625" drill="0.9"/>
 </package>
-<package name="KMS231GLFS">
-<smd name="3" x="0" y="2.8" dx="1.7" dy="0.55" layer="1"/>
-<smd name="2" x="-2.05" y="2.175" dx="1" dy="0.9" layer="1" rot="R90"/>
-<smd name="1" x="-2.05" y="0.575" dx="1" dy="0.9" layer="1" rot="R90"/>
-<smd name="4" x="2.05" y="2.175" dx="1" dy="0.9" layer="1" rot="R90"/>
-<smd name="5" x="2.05" y="0.575" dx="1" dy="0.9" layer="1" rot="R90"/>
-<wire x1="-2.3" y1="2.8" x2="2.3" y2="2.8" width="0.1" layer="21"/>
-<wire x1="2.3" y1="2.8" x2="2.3" y2="0" width="0.1" layer="21"/>
-<wire x1="2.3" y1="0" x2="1.25" y2="0" width="0.1" layer="21"/>
-<wire x1="1.25" y1="0" x2="-1.25" y2="0" width="0.1" layer="21"/>
-<wire x1="-1.25" y1="0" x2="-2.3" y2="0" width="0.1" layer="21"/>
-<wire x1="-2.3" y1="0" x2="-2.3" y2="2.8" width="0.1" layer="21"/>
-<wire x1="-1.25" y1="0" x2="-1.25" y2="-0.75" width="0.1" layer="21"/>
-<wire x1="-1.25" y1="-0.75" x2="1.25" y2="-0.75" width="0.1" layer="21"/>
-<wire x1="1.25" y1="-0.75" x2="1.25" y2="0" width="0.1" layer="21"/>
-<text x="-2.54" y="3.81" size="1.27" layer="25">&gt;NAME</text>
-</package>
-<package name="TT2D5L" urn="urn:adsk.eagle:footprint:22931/1" locally_modified="yes">
-<description>&lt;b&gt;ELECTROLYTIC CAPACITOR&lt;/b&gt;&lt;p&gt;
-diameter 5 mm, grid 2.54 mm</description>
-<wire x1="2.54" y1="12.065" x2="2.54" y2="1.651" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="12.065" x2="-2.54" y2="1.651" width="0.1524" layer="21"/>
-<wire x1="-1.905" y1="1.016" x2="1.905" y2="1.016" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="1.651" x2="-1.905" y2="1.016" width="0.1524" layer="21" curve="90"/>
-<wire x1="1.905" y1="1.016" x2="2.54" y2="1.651" width="0.1524" layer="21" curve="90"/>
-<pad name="-" x="-1.27" y="0" drill="0.8128" diameter="1.6002" shape="octagon"/>
-<pad name="+" x="1.27" y="0" drill="0.8128" diameter="1.6002"/>
-<text x="-2.921" y="1.397" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-<text x="1.778" y="4.318" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
-<rectangle x1="-1.651" y1="0.635" x2="-0.889" y2="1.016" layer="51"/>
-<rectangle x1="0.889" y1="0.635" x2="1.651" y2="1.016" layer="51"/>
-<rectangle x1="0.889" y1="-0.127" x2="1.651" y2="0.635" layer="51"/>
-<rectangle x1="-1.651" y1="-0.127" x2="-0.889" y2="0.635" layer="51"/>
-<wire x1="-2.54" y1="12.065" x2="-1.905" y2="12.7" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-1.905" y1="12.7" x2="1.905" y2="12.7" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="12.7" x2="2.54" y2="12.065" width="0.1524" layer="21" curve="-90"/>
-</package>
-<package name="2PIN_STD">
-<pad name="-" x="-1.27" y="0" drill="0.8128" diameter="1.6002" shape="octagon"/>
-<pad name="+" x="1.27" y="0" drill="0.8128" diameter="1.6002"/>
-</package>
-<package name="SOLDERJUMPER_REFLOW">
+<package name="SOLDERJUMPER_REFLOW" urn="urn:adsk.eagle:footprint:5745155/1" library_version="2" library_locally_modified="yes">
 <description>&lt;b&gt;Solder Jumper&lt;/b&gt; - Reflow</description>
 <wire x1="1.397" y1="-1.016" x2="-1.397" y2="-1.016" width="0.2032" layer="21"/>
 <wire x1="1.397" y1="1.016" x2="1.651" y2="0.762" width="0.2032" layer="21" curve="-90"/>
@@ -3538,7 +3554,7 @@ diameter 5 mm, grid 2.54 mm</description>
 <text x="0.4001" y="0" size="0.02" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.0762" y1="-0.9144" x2="0.0762" y2="0.9144" layer="29"/>
 </package>
-<package name="SOLDERJUMPER_WAVE">
+<package name="SOLDERJUMPER_WAVE" urn="urn:adsk.eagle:footprint:5745156/1" library_version="2" library_locally_modified="yes">
 <description>&lt;b&gt;Solder Jumper&lt;/b&gt; - Wave</description>
 <wire x1="1.905" y1="-1.524" x2="-1.905" y2="-1.524" width="0.2032" layer="21"/>
 <wire x1="1.905" y1="1.524" x2="2.159" y2="1.27" width="0.2032" layer="21" curve="-90"/>
@@ -3575,7 +3591,7 @@ diameter 5 mm, grid 2.54 mm</description>
 <rectangle x1="-1.4732" y1="0.2032" x2="-1.3462" y2="0.3302" layer="51"/>
 <rectangle x1="-1.1176" y1="0.5842" x2="-0.9906" y2="0.7112" layer="51"/>
 </package>
-<package name="SOLDERJUMPER_CLOSEDWIRE">
+<package name="SOLDERJUMPER_CLOSEDWIRE" urn="urn:adsk.eagle:footprint:5745157/1" library_version="2" library_locally_modified="yes">
 <wire x1="1.397" y1="-1.016" x2="-1.397" y2="-1.016" width="0.2032" layer="21"/>
 <wire x1="1.397" y1="1.016" x2="1.651" y2="0.762" width="0.2032" layer="21" curve="-90"/>
 <wire x1="-1.651" y1="0.762" x2="-1.397" y2="1.016" width="0.2032" layer="21" curve="-90"/>
@@ -3595,7 +3611,7 @@ diameter 5 mm, grid 2.54 mm</description>
 <text x="-1.524" y="-1.651" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-0.0762" y1="-0.9144" x2="0.0762" y2="0.9144" layer="29"/>
 </package>
-<package name="SOLDERJUMPER_REFLOW_NOPASTE">
+<package name="SOLDERJUMPER_REFLOW_NOPASTE" urn="urn:adsk.eagle:footprint:5745158/1" library_version="2" library_locally_modified="yes">
 <wire x1="1.397" y1="-1.016" x2="-1.397" y2="-1.016" width="0.2032" layer="21"/>
 <wire x1="1.397" y1="1.016" x2="1.651" y2="0.762" width="0.2032" layer="21" curve="-90"/>
 <wire x1="-1.651" y1="0.762" x2="-1.397" y2="1.016" width="0.2032" layer="21" curve="-90"/>
@@ -3614,34 +3630,8 @@ diameter 5 mm, grid 2.54 mm</description>
 <text x="0.4001" y="0" size="0.02" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.0762" y1="-0.9144" x2="0.0762" y2="0.9144" layer="29"/>
 </package>
-<package name="SOLDERJUMPER_ARROW_NOPASTE">
-<wire x1="1.397" y1="-1.016" x2="-1.397" y2="-1.016" width="0.2032" layer="21"/>
-<wire x1="1.397" y1="1.016" x2="1.651" y2="0.762" width="0.2032" layer="21" curve="-90"/>
-<wire x1="-1.651" y1="0.762" x2="-1.397" y2="1.016" width="0.2032" layer="21" curve="-90"/>
-<wire x1="-1.651" y1="-0.762" x2="-1.397" y2="-1.016" width="0.2032" layer="21" curve="90"/>
-<wire x1="1.397" y1="-1.016" x2="1.651" y2="-0.762" width="0.2032" layer="21" curve="90"/>
-<wire x1="1.651" y1="-0.762" x2="1.651" y2="0.762" width="0.2032" layer="21"/>
-<wire x1="-1.651" y1="-0.762" x2="-1.651" y2="0.762" width="0.2032" layer="21"/>
-<wire x1="-1.397" y1="1.016" x2="1.397" y2="1.016" width="0.2032" layer="21"/>
-<smd name="1" x="-1.016" y="0" dx="0.762" dy="1.524" layer="1" roundness="50" stop="no" cream="no"/>
-<smd name="2" x="1.016" y="0" dx="0.762" dy="1.524" layer="1" roundness="50" stop="no" cream="no"/>
-<text x="-1.778" y="1.27" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
-<text x="-1.651" y="-1.651" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
-<polygon width="0.0508" layer="1">
-<vertex x="-1.143" y="0.7366"/>
-<vertex x="-0.5715" y="0.7366"/>
-<vertex x="0.1651" y="0"/>
-<vertex x="-0.5715" y="-0.7366"/>
-<vertex x="-1.143" y="-0.7366"/>
-</polygon>
-<polygon width="0.0508" layer="1">
-<vertex x="-0.127" y="0.7366"/>
-<vertex x="0.5842" y="0"/>
-<vertex x="-0.127" y="-0.7366"/>
-<vertex x="1.143" y="-0.7366"/>
-<vertex x="1.143" y="0.7366"/>
-</polygon>
-<rectangle x1="-1.4605" y1="-0.8255" x2="1.4605" y2="0.8255" layer="29"/>
+<package name="MATRIX_CONN" urn="urn:adsk.eagle:footprint:5745498/1" library_version="2" library_locally_modified="yes">
+<pad name="1" x="0" y="0" drill="1.016" diameter="1.778"/>
 </package>
 </packages>
 <packages3d>
@@ -4759,9 +4749,109 @@ Source: AVX .. aphvc.pdf</description>
 <packageinstance name="C01005"/>
 </packageinstances>
 </package3d>
+<package3d name="SOT23-5" urn="urn:adsk.eagle:package:5745176/2" type="model" library_version="2" library_locally_modified="yes">
+<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;&lt;p&gt;
+package type OT</description>
+<packageinstances>
+<packageinstance name="SOT23-5"/>
+</packageinstances>
+</package3d>
+<package3d name="FRONT-FACE" urn="urn:adsk.eagle:package:5745166/2" type="model" library_version="2" library_locally_modified="yes">
+<description>Front Face Top</description>
+<packageinstances>
+<packageinstance name="FRONT-FACE"/>
+</packageinstances>
+</package3d>
+<package3d name="BACK-FACE" urn="urn:adsk.eagle:package:5745167/1" type="box" library_version="2" library_locally_modified="yes">
+<description>Back Face Top</description>
+<packageinstances>
+<packageinstance name="BACK-FACE"/>
+</packageinstances>
+</package3d>
+<package3d name="USB_PADS" urn="urn:adsk.eagle:package:5745172/1" type="box" library_version="2" library_locally_modified="yes">
+<packageinstances>
+<packageinstance name="USB_PADS"/>
+</packageinstances>
+</package3d>
+<package3d name="SOT23-6" urn="urn:adsk.eagle:package:5745175/2" type="model" library_version="2" library_locally_modified="yes">
+<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt; 6 lead</description>
+<packageinstances>
+<packageinstance name="SOT23-6"/>
+</packageinstances>
+</package3d>
+<package3d name="BATT_CON" urn="urn:adsk.eagle:package:5745177/1" type="box" library_version="2" library_locally_modified="yes">
+<packageinstances>
+<packageinstance name="BATT_CON"/>
+</packageinstances>
+</package3d>
+<package3d name="TT2D5L" urn="urn:adsk.eagle:package:5745187/1" type="box" library_version="2" library_locally_modified="yes">
+<description>&lt;b&gt;ELECTROLYTIC CAPACITOR&lt;/b&gt;&lt;p&gt;
+diameter 5 mm, grid 2.54 mm</description>
+<packageinstances>
+<packageinstance name="TT2D5L"/>
+</packageinstances>
+</package3d>
+<package3d name="SOD323" urn="urn:adsk.eagle:package:5745186/2" type="model" library_version="2" library_locally_modified="yes">
+<description>&lt;b&gt;SOD323 Wave soldering&lt;/b&gt; Philips SC01_Mounting_1996.pdf</description>
+<packageinstances>
+<packageinstance name="SOD323"/>
+</packageinstances>
+</package3d>
+<package3d name="TP1.5MM" urn="urn:adsk.eagle:package:5745183/1" type="box" library_version="2" library_locally_modified="yes">
+<packageinstances>
+<packageinstance name="TP1.5MM"/>
+</packageinstances>
+</package3d>
+<package3d name="KMS231GLFS" urn="urn:adsk.eagle:package:5745174/2" type="model" library_version="2" library_locally_modified="yes">
+<packageinstances>
+<packageinstance name="KMS231GLFS"/>
+</packageinstances>
+</package3d>
+<package3d name="KMS231GPLFS" urn="urn:adsk.eagle:package:5745173/1" type="box" library_version="2" library_locally_modified="yes">
+<packageinstances>
+<packageinstance name="KMS231GPLFS"/>
+</packageinstances>
+</package3d>
+<package3d name="2PIN_STD" urn="urn:adsk.eagle:package:5745188/1" type="box" library_version="2" library_locally_modified="yes">
+<packageinstances>
+<packageinstance name="2PIN_STD"/>
+</packageinstances>
+</package3d>
+<package3d name="SOLDERJUMPER_ARROW_NOPASTE" urn="urn:adsk.eagle:package:5745182/1" type="box" library_version="2" library_locally_modified="yes">
+<packageinstances>
+<packageinstance name="SOLDERJUMPER_ARROW_NOPASTE"/>
+</packageinstances>
+</package3d>
+<package3d name="SOLDERJUMPER_REFLOW" urn="urn:adsk.eagle:package:5745178/1" type="box" library_version="2" library_locally_modified="yes">
+<description>&lt;b&gt;Solder Jumper&lt;/b&gt; - Reflow</description>
+<packageinstances>
+<packageinstance name="SOLDERJUMPER_REFLOW"/>
+</packageinstances>
+</package3d>
+<package3d name="SOLDERJUMPER_WAVE" urn="urn:adsk.eagle:package:5745179/1" type="box" library_version="2" library_locally_modified="yes">
+<description>&lt;b&gt;Solder Jumper&lt;/b&gt; - Wave</description>
+<packageinstances>
+<packageinstance name="SOLDERJUMPER_WAVE"/>
+</packageinstances>
+</package3d>
+<package3d name="SOLDERJUMPER_CLOSEDWIRE" urn="urn:adsk.eagle:package:5745180/1" type="box" library_version="2" library_locally_modified="yes">
+<packageinstances>
+<packageinstance name="SOLDERJUMPER_CLOSEDWIRE"/>
+</packageinstances>
+</package3d>
+<package3d name="SOLDERJUMPER_REFLOW_NOPASTE" urn="urn:adsk.eagle:package:5745181/1" type="box" library_version="2" library_locally_modified="yes">
+<packageinstances>
+<packageinstance name="SOLDERJUMPER_REFLOW_NOPASTE"/>
+</packageinstances>
+</package3d>
+<package3d name="MATRIX_CONN" urn="urn:adsk.eagle:package:5745499/3" type="model" library_version="2" library_locally_modified="yes">
+<packageinstances>
+<packageinstance name="MATRIX_CONN"/>
+</packageinstances>
+</package3d>
 </packages3d>
 <symbols>
-<symbol name="TLV755P">
+<symbol name="TLV755P" urn="urn:adsk.eagle:symbol:5745145/1" library_version="2" library_locally_modified="yes">
 <wire x1="0" y1="0" x2="0" y2="17.78" width="0.1524" layer="94"/>
 <wire x1="0" y1="17.78" x2="15.24" y2="17.78" width="0.1524" layer="94"/>
 <wire x1="15.24" y1="17.78" x2="15.24" y2="0" width="0.1524" layer="94"/>
@@ -4772,12 +4862,13 @@ Source: AVX .. aphvc.pdf</description>
 <pin name="GND" x="20.32" y="2.54" length="middle" rot="R180"/>
 <text x="2.54" y="7.62" size="1.778" layer="94">TLV755P</text>
 </symbol>
-<symbol name="ESP-WROOM-02">
+<symbol name="ESP-WROOM-02" urn="urn:adsk.eagle:symbol:5745147/1" library_version="2" library_locally_modified="yes">
 <wire x1="-12.7" y1="-12.7" x2="15.24" y2="-12.7" width="0.4064" layer="94"/>
 <wire x1="15.24" y1="-12.7" x2="15.24" y2="20.32" width="0.4064" layer="94"/>
 <wire x1="15.24" y1="20.32" x2="-12.7" y2="20.32" width="0.4064" layer="94"/>
 <wire x1="-12.7" y1="20.32" x2="-12.7" y2="-12.7" width="0.4064" layer="94"/>
 <text x="-8.382" y="15.24" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-11.176" y="22.098" size="1.778" layer="95">&gt;NAME</text>
 <pin name="GND3" x="-17.78" y="10.16" length="middle" direction="pwr" swaplevel="1"/>
 <pin name="IO16" x="-17.78" y="7.62" length="middle"/>
 <pin name="TOUT" x="-17.78" y="5.08" length="middle"/>
@@ -4796,9 +4887,8 @@ Source: AVX .. aphvc.pdf</description>
 <pin name="IO14" x="20.32" y="5.08" length="middle" rot="R180"/>
 <pin name="EN" x="20.32" y="7.62" length="middle" rot="R180"/>
 <pin name="3V3" x="20.32" y="10.16" length="middle" direction="pwr" rot="R180"/>
-<text x="-11.176" y="22.098" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
-<symbol name="USB-4">
+<symbol name="USB-4" urn="urn:adsk.eagle:symbol:5745142/1" library_version="2" library_locally_modified="yes">
 <wire x1="-10.2" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
 <wire x1="7.62" y1="7.62" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
@@ -4832,7 +4922,7 @@ Source: AVX .. aphvc.pdf</description>
 <pin name="VBUS" x="10.16" y="5.08" visible="pin" length="short" direction="pwr" rot="R180"/>
 <pin name="GND" x="10.16" y="-2.54" visible="pin" length="short" direction="pwr" rot="R180"/>
 </symbol>
-<symbol name="BQ21040">
+<symbol name="BQ21040" urn="urn:adsk.eagle:symbol:5745140/1" library_version="2" library_locally_modified="yes">
 <wire x1="0" y1="0" x2="0" y2="20.32" width="0.254" layer="94"/>
 <wire x1="0" y1="20.32" x2="15.24" y2="20.32" width="0.254" layer="94"/>
 <wire x1="15.24" y1="20.32" x2="15.24" y2="0" width="0.254" layer="94"/>
@@ -4844,19 +4934,19 @@ Source: AVX .. aphvc.pdf</description>
 <pin name="TS" x="20.32" y="10.16" length="middle" rot="R180"/>
 <pin name="/CHG" x="20.32" y="2.54" length="middle" rot="R180"/>
 </symbol>
-<symbol name="BATTERY">
+<symbol name="BATTERY" urn="urn:adsk.eagle:symbol:5745139/1" library_version="2" library_locally_modified="yes">
 <wire x1="3.81" y1="3.81" x2="-3.81" y2="3.81" width="0.4064" layer="94"/>
 <wire x1="1.27" y1="2.54" x2="-1.27" y2="2.54" width="0.4064" layer="94"/>
 <wire x1="3.81" y1="1.27" x2="-3.81" y2="1.27" width="0.4064" layer="94"/>
 <wire x1="1.27" y1="0" x2="-1.27" y2="0" width="0.4064" layer="94"/>
-<pin name="-" x="0" y="-2.54" visible="off" length="short" direction="pwr" rot="R90"/>
-<pin name="+" x="0" y="6.35" visible="off" length="short" direction="pwr" rot="R270"/>
 <wire x1="5.08" y1="7.62" x2="5.08" y2="5.08" width="0.254" layer="94"/>
 <wire x1="3.81" y1="6.35" x2="6.35" y2="6.35" width="0.254" layer="94"/>
+<pin name="-" x="0" y="-2.54" visible="off" length="short" direction="pwr" rot="R90"/>
+<pin name="+" x="0" y="6.35" visible="off" length="short" direction="pwr" rot="R270"/>
 <text x="7.62" y="5.08" size="1.778" layer="95">&gt;NAME</text>
 <text x="7.62" y="0" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
-<symbol name="R-US">
+<symbol name="R-US" urn="urn:adsk.eagle:symbol:5745144/1" library_version="2" library_locally_modified="yes">
 <wire x1="-2.54" y1="0" x2="-2.159" y2="1.016" width="0.2032" layer="94"/>
 <wire x1="-2.159" y1="1.016" x2="-1.524" y2="-1.016" width="0.2032" layer="94"/>
 <wire x1="-1.524" y1="-1.016" x2="-0.889" y2="1.016" width="0.2032" layer="94"/>
@@ -4871,7 +4961,7 @@ Source: AVX .. aphvc.pdf</description>
 <pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 </symbol>
-<symbol name="C-US">
+<symbol name="C-US" urn="urn:adsk.eagle:symbol:5745143/1" library_version="2" library_locally_modified="yes">
 <wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="-1.016" x2="0" y2="-2.54" width="0.1524" layer="94"/>
 <wire x1="0" y1="-1" x2="2.4892" y2="-1.8542" width="0.254" layer="94" curve="-37.878202"/>
@@ -4881,7 +4971,7 @@ Source: AVX .. aphvc.pdf</description>
 <pin name="1" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
 <pin name="2" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
 </symbol>
-<symbol name="SCHOTTKY">
+<symbol name="SCHOTTKY" urn="urn:adsk.eagle:symbol:5745136/1" library_version="2" library_locally_modified="yes">
 <wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
 <wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
 <wire x1="1.905" y1="1.27" x2="1.27" y2="1.27" width="0.254" layer="94"/>
@@ -4895,7 +4985,7 @@ Source: AVX .. aphvc.pdf</description>
 <pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
 <pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 </symbol>
-<symbol name="TESTPAD">
+<symbol name="TESTPAD" urn="urn:adsk.eagle:symbol:5745137/1" library_version="2" library_locally_modified="yes">
 <description>TESTPAD</description>
 <pin name="1" x="-5.08" y="0" visible="pin" length="short"/>
 <wire x1="-2.54" y1="1.27" x2="2.54" y2="1.27" width="0.254" layer="94"/>
@@ -4904,7 +4994,7 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="-2.54" y1="-1.27" x2="-2.54" y2="1.27" width="0.254" layer="94"/>
 <text x="5.08" y="0" size="1.27" layer="95" font="vector">&gt;name</text>
 </symbol>
-<symbol name="PUSH_BUTTON">
+<symbol name="PUSH_BUTTON" urn="urn:adsk.eagle:symbol:5745141/1" library_version="2" library_locally_modified="yes">
 <wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
@@ -4913,7 +5003,7 @@ Source: AVX .. aphvc.pdf</description>
 <pin name="2" x="12.7" y="0" length="middle" rot="R180"/>
 <circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
 </symbol>
-<symbol name="2PIN_STD">
+<symbol name="2PIN_STD" urn="urn:adsk.eagle:symbol:5745135/1" library_version="2" library_locally_modified="yes">
 <wire x1="0" y1="5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="0" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
@@ -4921,7 +5011,7 @@ Source: AVX .. aphvc.pdf</description>
 <pin name="+" x="-5.08" y="2.54" length="middle"/>
 <pin name="-" x="-5.08" y="-2.54" length="middle"/>
 </symbol>
-<symbol name="SOLDERJUMPER">
+<symbol name="SOLDERJUMPER" urn="urn:adsk.eagle:symbol:5745138/1" library_version="2" library_locally_modified="yes">
 <wire x1="0.381" y1="0.635" x2="0.381" y2="-0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
 <wire x1="-0.381" y1="-0.635" x2="-0.381" y2="0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
 <wire x1="2.54" y1="0" x2="1.651" y2="0" width="0.1524" layer="94"/>
@@ -4933,7 +5023,7 @@ Source: AVX .. aphvc.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="TLV755P">
+<deviceset name="TLV755P" urn="urn:adsk.eagle:component:5745202/1" locally_modified="yes" library_version="2" library_locally_modified="yes">
 <gates>
 <gate name="G$1" symbol="TLV755P" x="0" y="0"/>
 </gates>
@@ -4945,13 +5035,16 @@ Source: AVX .. aphvc.pdf</description>
 <connect gate="G$1" pin="IN" pad="1"/>
 <connect gate="G$1" pin="OUT" pad="5"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:5745176/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ESP-WROOM-02" prefix="IC">
+<deviceset name="ESP-WROOM-02" urn="urn:adsk.eagle:component:5745204/1" locally_modified="yes" prefix="IC" library_version="2" library_locally_modified="yes">
 <description>WiFi module - ESP-WROOM-02</description>
 <gates>
 <gate name="G$1" symbol="ESP-WROOM-02" x="7.62" y="-7.62"/>
@@ -4978,6 +5071,9 @@ Source: AVX .. aphvc.pdf</description>
 <connect gate="G$1" pin="TOUT" pad="16"/>
 <connect gate="G$1" pin="TXD" pad="12"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:5745166/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -5003,13 +5099,16 @@ Source: AVX .. aphvc.pdf</description>
 <connect gate="G$1" pin="TOUT" pad="16"/>
 <connect gate="G$1" pin="TXD" pad="12"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:5745167/1"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="USB_PCB">
+<deviceset name="USB_PCB" urn="urn:adsk.eagle:component:5745198/1" library_version="2" library_locally_modified="yes">
 <gates>
 <gate name="G$1" symbol="USB-4" x="10.16" y="5.08"/>
 </gates>
@@ -5021,13 +5120,16 @@ Source: AVX .. aphvc.pdf</description>
 <connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="VBUS" pad="V_SUPPLY"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:5745172/1"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="BQ21040">
+<deviceset name="BQ21040" urn="urn:adsk.eagle:component:5745196/1" locally_modified="yes" library_version="2" library_locally_modified="yes">
 <gates>
 <gate name="G$1" symbol="BQ21040" x="0" y="0"/>
 </gates>
@@ -5041,13 +5143,16 @@ Source: AVX .. aphvc.pdf</description>
 <connect gate="G$1" pin="VIN" pad="6"/>
 <connect gate="G$1" pin="VOUT" pad="2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:5745175/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="BATT">
+<deviceset name="BATT" urn="urn:adsk.eagle:component:5745195/1" library_version="2" library_locally_modified="yes">
 <gates>
 <gate name="G$1" symbol="BATTERY" x="0" y="0"/>
 </gates>
@@ -5057,13 +5162,16 @@ Source: AVX .. aphvc.pdf</description>
 <connect gate="G$1" pin="+" pad="V+"/>
 <connect gate="G$1" pin="-" pad="V-"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:5745177/1"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="R-US_" prefix="R" uservalue="yes">
+<deviceset name="R-US_" urn="urn:adsk.eagle:component:5745201/1" prefix="R" uservalue="yes" library_version="2" library_locally_modified="yes">
 <description>&lt;B&gt;RESISTOR&lt;/B&gt;, American symbol</description>
 <gates>
 <gate name="G$1" symbol="R-US" x="0" y="0"/>
@@ -6267,7 +6375,7 @@ Source: AVX .. aphvc.pdf</description>
 </pinmapping>
 </spice>
 </deviceset>
-<deviceset name="C-US" prefix="C" uservalue="yes">
+<deviceset name="C-US" urn="urn:adsk.eagle:component:5745200/1" prefix="C" uservalue="yes" library_version="2" library_locally_modified="yes">
 <description>&lt;B&gt;CAPACITOR&lt;/B&gt;, American symbol</description>
 <gates>
 <gate name="G$1" symbol="C-US" x="0" y="0"/>
@@ -7373,7 +7481,7 @@ Source: AVX .. aphvc.pdf</description>
 </pinmapping>
 </spice>
 </deviceset>
-<deviceset name="NSR0320MW2T1G">
+<deviceset name="NSR0320MW2T1G" urn="urn:adsk.eagle:component:5745192/1" locally_modified="yes" library_version="2" library_locally_modified="yes">
 <gates>
 <gate name="G$1" symbol="SCHOTTKY" x="0" y="0"/>
 </gates>
@@ -7383,13 +7491,16 @@ Source: AVX .. aphvc.pdf</description>
 <connect gate="G$1" pin="A" pad="2"/>
 <connect gate="G$1" pin="C" pad="1"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:5745186/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="TESTPAD_PROG" prefix="TPB">
+<deviceset name="TESTPAD_PROG" urn="urn:adsk.eagle:component:5745193/1" locally_modified="yes" prefix="TPB" library_version="2" library_locally_modified="yes">
 <description>TESTPAD</description>
 <gates>
 <gate name="G$1" symbol="TESTPAD" x="0" y="0"/>
@@ -7399,13 +7510,27 @@ Source: AVX .. aphvc.pdf</description>
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:5745183/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SPRING_PIN" package="MATRIX_CONN">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:5745499/3"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="KMS231GPLFS">
+<deviceset name="KMS231GPLFS" urn="urn:adsk.eagle:component:5745197/1" locally_modified="yes" library_version="2" library_locally_modified="yes">
 <gates>
 <gate name="G$1" symbol="PUSH_BUTTON" x="0" y="0"/>
 </gates>
@@ -7415,6 +7540,9 @@ Source: AVX .. aphvc.pdf</description>
 <connect gate="G$1" pin="1" pad="2 3 4"/>
 <connect gate="G$1" pin="2" pad="1 5"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:5745173/1"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -7424,13 +7552,16 @@ Source: AVX .. aphvc.pdf</description>
 <connect gate="G$1" pin="1" pad="2 3 4"/>
 <connect gate="G$1" pin="2" pad="1 5"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:5745174/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="CAP_5MM_L">
+<deviceset name="CAP_5MM_L" urn="urn:adsk.eagle:component:5745191/1" library_version="2" library_locally_modified="yes">
 <gates>
 <gate name="G$1" symbol="C-US" x="0" y="0"/>
 </gates>
@@ -7440,13 +7571,16 @@ Source: AVX .. aphvc.pdf</description>
 <connect gate="G$1" pin="1" pad="+"/>
 <connect gate="G$1" pin="2" pad="-"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:5745187/1"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="2PIN_STD">
+<deviceset name="2PIN_STD" urn="urn:adsk.eagle:component:5745190/1" library_version="2" library_locally_modified="yes">
 <gates>
 <gate name="G$1" symbol="2PIN_STD" x="0" y="0"/>
 </gates>
@@ -7456,13 +7590,16 @@ Source: AVX .. aphvc.pdf</description>
 <connect gate="G$1" pin="+" pad="+"/>
 <connect gate="G$1" pin="-" pad="-"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:5745188/1"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SOLDERJUMPER" prefix="SJ" uservalue="yes">
+<deviceset name="SOLDERJUMPER" urn="urn:adsk.eagle:component:5745194/1" prefix="SJ" uservalue="yes" library_version="2" library_locally_modified="yes">
 <description>&lt;p&gt;&lt;b&gt;SMD Solder JUMPER&lt;/b&gt;&lt;/p&gt;
 &lt;p&gt;Solder the two pads together to create a connection, or remove the solder to break it.&lt;/p&gt;
 &lt;b&gt;REFLOW&lt;/b&gt; - Use this footprint for solder paste and reflow ovens.&lt;br/&gt;
@@ -7477,6 +7614,9 @@ Source: AVX .. aphvc.pdf</description>
 <connect gate="1" pin="1" pad="1"/>
 <connect gate="1" pin="2" pad="2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:5745178/1"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -7486,6 +7626,9 @@ Source: AVX .. aphvc.pdf</description>
 <connect gate="1" pin="1" pad="1"/>
 <connect gate="1" pin="2" pad="2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:5745179/1"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -7495,6 +7638,9 @@ Source: AVX .. aphvc.pdf</description>
 <connect gate="1" pin="1" pad="1"/>
 <connect gate="1" pin="2" pad="2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:5745180/1"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -7504,6 +7650,9 @@ Source: AVX .. aphvc.pdf</description>
 <connect gate="1" pin="1" pad="1"/>
 <connect gate="1" pin="2" pad="2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:5745181/1"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -7513,6 +7662,9 @@ Source: AVX .. aphvc.pdf</description>
 <connect gate="1" pin="1" pad="1"/>
 <connect gate="1" pin="2" pad="2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:5745182/1"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="BOM" value="EXCLUDE" constant="no"/>
@@ -8759,39 +8911,39 @@ Source: http://www.osram.convergy.de/</description>
 <parts>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="LDO" library="monoblink_wifi" deviceset="TLV755P" device=""/>
+<part name="LDO" library="monoblink_wifi" library_urn="urn:adsk.eagle:library:5745129" deviceset="TLV755P" device="" package3d_urn="urn:adsk.eagle:package:5745176/2"/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="WROOM-02" library="monoblink_wifi" deviceset="ESP-WROOM-02" device="FRONT-FACE"/>
-<part name="U$2" library="monoblink_wifi" deviceset="USB_PCB" device=""/>
+<part name="WROOM-02" library="monoblink_wifi" library_urn="urn:adsk.eagle:library:5745129" deviceset="ESP-WROOM-02" device="FRONT-FACE" package3d_urn="urn:adsk.eagle:package:5745166/2"/>
+<part name="U$2" library="monoblink_wifi" library_urn="urn:adsk.eagle:library:5745129" deviceset="USB_PCB" device="" package3d_urn="urn:adsk.eagle:package:5745172/1"/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="CHG" library="monoblink_wifi" deviceset="BQ21040" device=""/>
+<part name="CHG" library="monoblink_wifi" library_urn="urn:adsk.eagle:library:5745129" deviceset="BQ21040" device="" package3d_urn="urn:adsk.eagle:package:5745175/2"/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="LP402025" library="monoblink_wifi" deviceset="BATT" device="" value="150mAh"/>
+<part name="LP402025" library="monoblink_wifi" library_urn="urn:adsk.eagle:library:5745129" deviceset="BATT" device="" package3d_urn="urn:adsk.eagle:package:5745177/1" value="150mAh"/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R1" library="monoblink_wifi" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="220"/>
-<part name="R2" library="monoblink_wifi" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="10K"/>
-<part name="R3" library="monoblink_wifi" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="6.8K"/>
-<part name="C1" library="monoblink_wifi" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1u"/>
-<part name="C2" library="monoblink_wifi" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1u"/>
-<part name="C3" library="monoblink_wifi" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2"/>
+<part name="R1" library="monoblink_wifi" library_urn="urn:adsk.eagle:library:5745129" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="220"/>
+<part name="R2" library="monoblink_wifi" library_urn="urn:adsk.eagle:library:5745129" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="10K"/>
+<part name="R3" library="monoblink_wifi" library_urn="urn:adsk.eagle:library:5745129" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="6.8K"/>
+<part name="C1" library="monoblink_wifi" library_urn="urn:adsk.eagle:library:5745129" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1u"/>
+<part name="C2" library="monoblink_wifi" library_urn="urn:adsk.eagle:library:5745129" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1u"/>
+<part name="C3" library="monoblink_wifi" library_urn="urn:adsk.eagle:library:5745129" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2"/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="D1" library="monoblink_wifi" deviceset="NSR0320MW2T1G" device=""/>
-<part name="D2" library="monoblink_wifi" deviceset="NSR0320MW2T1G" device=""/>
-<part name="R4" library="monoblink_wifi" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="100K"/>
-<part name="R5" library="monoblink_wifi" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="10K"/>
-<part name="VCC" library="monoblink_wifi" deviceset="TESTPAD_PROG" device=""/>
-<part name="DAT" library="monoblink_wifi" deviceset="TESTPAD_PROG" device=""/>
-<part name="GND" library="monoblink_wifi" deviceset="TESTPAD_PROG" device=""/>
-<part name="CLK" library="monoblink_wifi" deviceset="TESTPAD_PROG" device=""/>
+<part name="D1" library="monoblink_wifi" library_urn="urn:adsk.eagle:library:5745129" deviceset="NSR0320MW2T1G" device="" package3d_urn="urn:adsk.eagle:package:5745186/2"/>
+<part name="D2" library="monoblink_wifi" library_urn="urn:adsk.eagle:library:5745129" deviceset="NSR0320MW2T1G" device="" package3d_urn="urn:adsk.eagle:package:5745186/2"/>
+<part name="R4" library="monoblink_wifi" library_urn="urn:adsk.eagle:library:5745129" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="100K"/>
+<part name="R5" library="monoblink_wifi" library_urn="urn:adsk.eagle:library:5745129" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="10K"/>
+<part name="VCC" library="monoblink_wifi" library_urn="urn:adsk.eagle:library:5745129" deviceset="TESTPAD_PROG" device="SPRING_PIN" package3d_urn="urn:adsk.eagle:package:5745499/3" value="TESTPAD_PROGSPRING_PIN"/>
+<part name="DAT" library="monoblink_wifi" library_urn="urn:adsk.eagle:library:5745129" deviceset="TESTPAD_PROG" device="SPRING_PIN" package3d_urn="urn:adsk.eagle:package:5745499/3" value="TESTPAD_PROGSPRING_PIN"/>
+<part name="GND" library="monoblink_wifi" library_urn="urn:adsk.eagle:library:5745129" deviceset="TESTPAD_PROG" device="SPRING_PIN" package3d_urn="urn:adsk.eagle:package:5745499/3" value="TESTPAD_PROGSPRING_PIN"/>
+<part name="CLK" library="monoblink_wifi" library_urn="urn:adsk.eagle:library:5745129" deviceset="TESTPAD_PROG" device="SPRING_PIN" package3d_urn="urn:adsk.eagle:package:5745499/3" value="TESTPAD_PROGSPRING_PIN"/>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="ON/OFF" library="monoblink_wifi" deviceset="KMS231GPLFS" device="NO_PEGS"/>
-<part name="C4" library="monoblink_wifi" deviceset="CAP_5MM_L" device=""/>
+<part name="ON/OFF" library="monoblink_wifi" library_urn="urn:adsk.eagle:library:5745129" deviceset="KMS231GPLFS" device="NO_PEGS" package3d_urn="urn:adsk.eagle:package:5745174/2"/>
+<part name="C4" library="monoblink_wifi" library_urn="urn:adsk.eagle:library:5745129" deviceset="CAP_5MM_L" device="" package3d_urn="urn:adsk.eagle:package:5745187/1"/>
 <part name="LED1" library="adafruit" deviceset="LED" device="CHIP-LED0603"/>
-<part name="U$1" library="monoblink_wifi" deviceset="2PIN_STD" device=""/>
-<part name="R6" library="monoblink_wifi" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="10K"/>
+<part name="U$1" library="monoblink_wifi" library_urn="urn:adsk.eagle:library:5745129" deviceset="2PIN_STD" device="" package3d_urn="urn:adsk.eagle:package:5745188/1"/>
+<part name="R6" library="monoblink_wifi" library_urn="urn:adsk.eagle:library:5745129" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="10K"/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="RST" library="monoblink_wifi" deviceset="SOLDERJUMPER" device=""/>
+<part name="RST" library="monoblink_wifi" library_urn="urn:adsk.eagle:library:5745129" deviceset="SOLDERJUMPER" device="" package3d_urn="urn:adsk.eagle:package:5745182/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -8803,41 +8955,118 @@ et il faudra le rebrancher à un port USB pour le rallumer.
 et sa sortie flottante, l'alimentation reste coupée)</text>
 </plain>
 <instances>
-<instance part="GND1" gate="1" x="111.76" y="-7.62"/>
-<instance part="GND2" gate="1" x="10.16" y="-7.62"/>
+<instance part="GND1" gate="1" x="111.76" y="-7.62">
+<attribute name="VALUE" x="109.22" y="-10.16" size="1.778" layer="96"/>
+</instance>
+<instance part="GND2" gate="1" x="10.16" y="-7.62">
+<attribute name="VALUE" x="7.62" y="-10.16" size="1.778" layer="96"/>
+</instance>
 <instance part="LDO" gate="G$1" x="228.6" y="73.66"/>
-<instance part="GND4" gate="1" x="251.46" y="71.12"/>
-<instance part="WROOM-02" gate="G$1" x="55.88" y="7.62"/>
-<instance part="U$2" gate="G$1" x="20.32" y="83.82"/>
-<instance part="GND5" gate="1" x="38.1" y="73.66"/>
+<instance part="GND4" gate="1" x="251.46" y="71.12">
+<attribute name="VALUE" x="248.92" y="68.58" size="1.778" layer="96"/>
+</instance>
+<instance part="WROOM-02" gate="G$1" x="55.88" y="7.62">
+<attribute name="VALUE" x="47.498" y="22.86" size="1.778" layer="96"/>
+<attribute name="NAME" x="44.704" y="29.718" size="1.778" layer="95"/>
+</instance>
+<instance part="U$2" gate="G$1" x="20.32" y="83.82">
+<attribute name="NAME" x="10.16" y="92.456" size="1.27" layer="95"/>
+<attribute name="VALUE" x="10.16" y="76.2" size="1.27" layer="96"/>
+</instance>
+<instance part="GND5" gate="1" x="38.1" y="73.66">
+<attribute name="VALUE" x="35.56" y="71.12" size="1.778" layer="96"/>
+</instance>
 <instance part="CHG" gate="G$1" x="68.58" y="78.74"/>
-<instance part="GND6" gate="1" x="58.42" y="68.58"/>
-<instance part="LP402025" gate="G$1" x="116.84" y="78.74"/>
-<instance part="GND7" gate="1" x="111.76" y="68.58"/>
-<instance part="R1" gate="G$1" x="99.06" y="60.96" rot="R270"/>
-<instance part="R2" gate="G$1" x="106.68" y="81.28" rot="R270"/>
-<instance part="R3" gate="G$1" x="53.34" y="81.28" rot="R270"/>
-<instance part="C1" gate="G$1" x="38.1" y="86.36"/>
-<instance part="C2" gate="G$1" x="205.74" y="83.82"/>
-<instance part="C3" gate="G$1" x="111.76" y="7.62"/>
-<instance part="GND8" gate="1" x="205.74" y="73.66"/>
-<instance part="D1" gate="G$1" x="162.56" y="86.36"/>
-<instance part="D2" gate="G$1" x="162.56" y="76.2"/>
-<instance part="R4" gate="G$1" x="248.92" y="7.62" rot="R90"/>
-<instance part="R5" gate="G$1" x="238.76" y="17.78"/>
-<instance part="VCC" gate="G$1" x="193.04" y="0"/>
-<instance part="DAT" gate="G$1" x="193.04" y="-22.86"/>
-<instance part="GND" gate="G$1" x="193.04" y="-12.7"/>
-<instance part="CLK" gate="G$1" x="193.04" y="-33.02"/>
-<instance part="GND9" gate="1" x="144.78" y="-38.1"/>
-<instance part="GND10" gate="1" x="248.92" y="-2.54"/>
+<instance part="GND6" gate="1" x="58.42" y="68.58">
+<attribute name="VALUE" x="55.88" y="66.04" size="1.778" layer="96"/>
+</instance>
+<instance part="LP402025" gate="G$1" x="116.84" y="78.74">
+<attribute name="NAME" x="124.46" y="83.82" size="1.778" layer="95"/>
+<attribute name="VALUE" x="124.46" y="78.74" size="1.778" layer="96"/>
+</instance>
+<instance part="GND7" gate="1" x="111.76" y="68.58">
+<attribute name="VALUE" x="109.22" y="66.04" size="1.778" layer="96"/>
+</instance>
+<instance part="R1" gate="G$1" x="99.06" y="60.96" rot="R270">
+<attribute name="NAME" x="100.5586" y="64.77" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="95.758" y="64.77" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="R2" gate="G$1" x="106.68" y="81.28" rot="R270">
+<attribute name="NAME" x="108.1786" y="85.09" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="103.378" y="85.09" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="R3" gate="G$1" x="53.34" y="81.28" rot="R270">
+<attribute name="NAME" x="54.8386" y="85.09" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="50.038" y="85.09" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="C1" gate="G$1" x="38.1" y="86.36">
+<attribute name="NAME" x="39.116" y="86.995" size="1.778" layer="95"/>
+<attribute name="VALUE" x="39.116" y="82.169" size="1.778" layer="96"/>
+</instance>
+<instance part="C2" gate="G$1" x="205.74" y="83.82">
+<attribute name="NAME" x="206.756" y="84.455" size="1.778" layer="95"/>
+<attribute name="VALUE" x="206.756" y="79.629" size="1.778" layer="96"/>
+</instance>
+<instance part="C3" gate="G$1" x="111.76" y="7.62">
+<attribute name="NAME" x="112.776" y="8.255" size="1.778" layer="95"/>
+<attribute name="VALUE" x="112.776" y="3.429" size="1.778" layer="96"/>
+</instance>
+<instance part="GND8" gate="1" x="205.74" y="73.66">
+<attribute name="VALUE" x="203.2" y="71.12" size="1.778" layer="96"/>
+</instance>
+<instance part="D1" gate="G$1" x="162.56" y="86.36">
+<attribute name="NAME" x="160.274" y="88.265" size="1.778" layer="95"/>
+</instance>
+<instance part="D2" gate="G$1" x="162.56" y="76.2">
+<attribute name="NAME" x="160.274" y="78.105" size="1.778" layer="95"/>
+</instance>
+<instance part="R4" gate="G$1" x="248.92" y="7.62" rot="R90">
+<attribute name="NAME" x="247.4214" y="3.81" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="252.222" y="3.81" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R5" gate="G$1" x="238.76" y="17.78">
+<attribute name="NAME" x="234.95" y="19.2786" size="1.778" layer="95"/>
+<attribute name="VALUE" x="234.95" y="14.478" size="1.778" layer="96"/>
+</instance>
+<instance part="VCC" gate="G$1" x="193.04" y="0">
+<attribute name="NAME" x="198.12" y="0" size="1.27" layer="95" font="vector"/>
+</instance>
+<instance part="DAT" gate="G$1" x="193.04" y="-22.86">
+<attribute name="NAME" x="198.12" y="-22.86" size="1.27" layer="95" font="vector"/>
+</instance>
+<instance part="GND" gate="G$1" x="193.04" y="-12.7">
+<attribute name="NAME" x="198.12" y="-12.7" size="1.27" layer="95" font="vector"/>
+</instance>
+<instance part="CLK" gate="G$1" x="193.04" y="-33.02">
+<attribute name="NAME" x="198.12" y="-33.02" size="1.27" layer="95" font="vector"/>
+</instance>
+<instance part="GND9" gate="1" x="144.78" y="-38.1">
+<attribute name="VALUE" x="142.24" y="-40.64" size="1.778" layer="96"/>
+</instance>
+<instance part="GND10" gate="1" x="248.92" y="-2.54">
+<attribute name="VALUE" x="246.38" y="-5.08" size="1.778" layer="96"/>
+</instance>
 <instance part="ON/OFF" gate="G$1" x="213.36" y="27.94"/>
-<instance part="C4" gate="G$1" x="144.78" y="-5.08"/>
-<instance part="LED1" gate="G$1" x="99.06" y="50.8"/>
+<instance part="C4" gate="G$1" x="144.78" y="-5.08">
+<attribute name="NAME" x="145.796" y="-4.445" size="1.778" layer="95"/>
+<attribute name="VALUE" x="145.796" y="-9.271" size="1.778" layer="96"/>
+</instance>
+<instance part="LED1" gate="G$1" x="99.06" y="50.8">
+<attribute name="NAME" x="102.616" y="46.228" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="104.775" y="46.228" size="1.778" layer="96" rot="R90"/>
+</instance>
 <instance part="U$1" gate="G$1" x="71.12" y="-45.72"/>
-<instance part="R6" gate="G$1" x="60.96" y="-35.56" rot="R90"/>
-<instance part="GND3" gate="1" x="60.96" y="-53.34"/>
-<instance part="RST" gate="1" x="-7.62" y="12.7"/>
+<instance part="R6" gate="G$1" x="60.96" y="-35.56" rot="R90">
+<attribute name="NAME" x="59.4614" y="-39.37" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="64.262" y="-39.37" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND3" gate="1" x="60.96" y="-53.34">
+<attribute name="VALUE" x="58.42" y="-55.88" size="1.778" layer="96"/>
+</instance>
+<instance part="RST" gate="1" x="-7.62" y="12.7">
+<attribute name="NAME" x="-10.16" y="15.24" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-10.16" y="8.89" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
