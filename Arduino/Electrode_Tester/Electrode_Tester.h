@@ -5,151 +5,151 @@
 
 #define PIN_TEST_LED  13
 #define PIN_LEDS      21
+
 #define PIN_ADC_CS    15
 #define PIN_ADC_DRDY  32
 #define PIN_ADC_START 33
+#define PIN_ADC_RESET 12        //Shorté à 36 qui est input only...
+
 #define NB_SENSORS    8
 #define VREF_ADC      2048  //mV
-#define ITEST_ADC     10    //µA
+#define ITEST_ADC     2    //µA
 
 extern  Adafruit_NeoPixel leds;
 extern  uint8_t           leds_brightness;
 
-const byte READ = 0b11111100;     // SCP1000's read command
-const byte WRITE = 0b00000010;   // SCP1000's write command
+extern  bool  new_value_available;
 
-bool  new_value_available = 0;
+SPISettings settingsA(100000, MSBFIRST, SPI_MODE1);
 
-void SPI_Write(byte thisRegister, byte thisValue) {
+void    ADC_Command(byte com_id) {
 
-  // SCP1000 expects the register address in the upper 6 bits
-  // of the byte. So shift the bits left by two bits:
-  thisRegister = thisRegister << 2;
-  // now combine the register address and the command into one byte:
-  byte dataToSend = thisRegister | WRITE;
-
-  // take the chip select low to select the device:
-  digitalWrite(PIN_ADC_CS, LOW);
-
-  SPI.transfer(dataToSend); //Send register location
-  SPI.transfer(thisValue);  //Send value to record into register
-
-  // take the chip select high to de-select:
-  digitalWrite(PIN_ADC_CS, HIGH);
+        SPI.beginTransaction(settingsA);
+        
+        //digitalWrite(PIN_ADC_CS, LOW);
+        
+        SPI.transfer(com_id);
+        
+        //digitalWrite(PIN_ADC_CS, HIGH);
+        
+        SPI.endTransaction();
 }
 
-void  init_ADC(){
+uint8_t ADC_Read(byte thisRegister) {
 
-  SPI.begin();
-  pinMode(PIN_ADC_CS,OUTPUT);
-  pinMode(PIN_ADC_DRDY, INPUT_PULLUP);
-  //
-
-  //SPI_Write(0x69,0x42);
+        uint8_t      read_val;
+        
+        SPI.beginTransaction(settingsA);
+        
+        digitalWrite(PIN_ADC_CS, LOW);
+        
+        SPI.transfer(0b00100000|thisRegister);        //First register to read 's adress
+        SPI.transfer(0b00000000|0);                              //Number of successive registers to read -1
+        
+        read_val      =       SPI.transfer(ADS1248_CMD_NOP);
+        
+        digitalWrite(PIN_ADC_CS, HIGH);
+        
+        SPI.endTransaction();
+        
+        return        read_val;
 }
 
-void  ADC_DataReady_ISR(){
+void    ADC_Write(byte thisRegister, byte thisValue) {
 
-  Serial.println("New data !");
-  new_value_available = 1;
+        SPI.beginTransaction(settingsA);
+
+        digitalWrite(PIN_ADC_CS, LOW);
+
+        SPI.transfer(0b01000000|thisRegister);        //First register to read 's adress
+        SPI.transfer(0b00000000|0);
+        SPI.transfer(thisValue);
+
+        digitalWrite(PIN_ADC_CS, HIGH);
+
+        SPI.endTransaction();
 }
 
-uint32_t  get_value(uint8_t nb_values_mean){
+int32_t ADC_fetchValue(){
 
-  uint32_t values[nb_values_mean];
-  
-  uint8_t  val = 0;
-  
-  attachInterrupt(digitalPinToInterrupt(PIN_ADC_DRDY), ADC_DataReady_ISR, FALLING);
+        int32_t        value   =       0;
 
-  digitalWrite(PIN_ADC_START,HIGH); //On lance les conversions (datarate config ADC)
+        uint8_t  data[3];
+        
+        digitalWrite(PIN_ADC_CS,LOW);
+        
+            // RDATA command
+        SPI.transfer(0x12);
+         data[0] = SPI.transfer(ADS1248_CMD_NOP);
+         data[1] = SPI.transfer(ADS1248_CMD_NOP);
+         data[2] = SPI.transfer(ADS1248_CMD_NOP);
+        digitalWrite(PIN_ADC_CS,HIGH);
 
-  Serial.println("Debut des conversions ! (ADC_START = 1)");
+        const uint8_t *byte = &data[0];
+        for (size_t  n = 0; n < 3; ++n) {
+                value = (value<< 8) | (int)*byte;
+                byte++;
+        }
 
-  while(val<nb_values_mean){  //bloquant!
+        //Extension valeur signée à 32bits :
+        if(value&(1<<23)) {                                     //si négatif
+        value = 0xFF000000|value;
+        }  
 
-    //Serial.println("Meanwhile...");
+        return  value;
+}
 
-    new_value_available = 1;
-  
-    if(new_value_available){
+void    ADC_DataReady_ISR(){
 
-      //Serial.println("Nouvelle valeur disponible ! (ADC_/DRDY = 0)");
+        new_value_available = 1;
+}
 
-      //envoie de 24 cycles sur SCLK et récupération des valeurs
-      digitalWrite(PIN_ADC_CS,LOW);
-      values[val] = SPI.transfer(ADS1248_CMD_NOP)<<16;
-      values[val] |= SPI.transfer(ADS1248_CMD_NOP)<<8;
-      values[val] |= SPI.transfer(ADS1248_CMD_NOP);
-      digitalWrite(PIN_ADC_CS,HIGH);
+void    init_ADC(){
 
-      //Serial.print("Valeur ");  Serial.print(val);  Serial.print(" : ");
-      //Serial.println(values[val]);
-
-      val++;
-
-      //TEST SUR VALEUR (pas saturation, ...)
-      //SI VALEUR CORRECTE  : val++;          (SINON on prendra la prochaine)
-      //SINON       : incrément d'un compteur de valeurs foireuses (pour sortir de la boucle quoi qu'il arrive)
-      new_value_available = 0;
-    }
-  }
-  
-  digitalWrite(PIN_ADC_START,LOW);  //Arrêt des conversions
-
-  Serial.println("Fin des conversions ! (ADC_START = 0)");
-
-  
-  detachInterrupt(digitalPinToInterrupt(PIN_ADC_DRDY));
-  
-  //Moyenne des valeurs obtenues :
-  
-  uint32_t  final_value = 0;
-  
-  for(val=0;val<nb_values_mean;val++)  final_value +=  values[val]/nb_values_mean;
-  
-  return  final_value;
+        SPI.begin();
+        pinMode(PIN_ADC_CS,OUTPUT);
+        pinMode(PIN_ADC_START,OUTPUT);
+        pinMode(PIN_ADC_RESET,OUTPUT);
+        pinMode(PIN_ADC_DRDY, INPUT_PULLUP);
+        
+        digitalWrite(PIN_ADC_CS,HIGH);
+        digitalWrite(PIN_ADC_RESET,HIGH);
+        
+        delay(20);
+        
+        digitalWrite(PIN_ADC_START,HIGH);
+        
+        attachInterrupt(digitalPinToInterrupt(PIN_ADC_DRDY), ADC_DataReady_ISR, FALLING);
+        
+        digitalWrite(PIN_ADC_CS,LOW);
+        
+        ADC_Command(ADS1248_CMD_RESET); 
+        
+        delay(1);
+        
+        ADC_Command(ADS1248_CMD_SDATAC);
+        
+        ADC_Command(0x40);      //Ecriture config registres (à partir du registres 0x00)
+        ADC_Command(0x03);      //3+1 = 4 registres :
+        
+        ADC_Command(0b10000001);        //reg 0x00              2uA current + AIN0(~2.2V) = AIN+ et AIN1(~1.1V) = AIN-
+        //ADC_Command(0x00);      //reg 0x01              No biasing
+        ADC_Command(0b00000010);      //reg 0x01              bias d'AIN- à 1.65V
+        ADC_Command(0x30);      //reg 0x02
+        ADC_Command(0x01);      //reg 0x03              Gain = 1, ODR = 10 SPS
+        
+         ADC_Command(ADS1248_CMD_SYNC);
+        
+        digitalWrite(PIN_ADC_CS,HIGH);
 
 }
 
-uint32_t  value_2_res(uint32_t value){
+void    init_LEDS(){
 
-  //Courant de test = 10uA
-
-  float temp  = value;
-
-  Serial.println(temp);  
-
-  temp  = (temp*100)/8192;
-
-  //temp  = temp*(1000*VREF_ADC/16777216)/ITEST_ADC;
-
-  
-  Serial.println(temp);  
-
-  uint32_t res  = (uint32_t)temp;
-
-  
-  Serial.println(res);  
-  
-  return res;
-}
-
-void  init_LEDS(){
-
-  leds.begin();
-  for(uint8_t led = 0; led<NB_SENSORS; led++) leds.setPixelColor(led,leds.Color(leds_brightness,0,leds_brightness));
-
-  leds.show();
-}
-
-void  refresh_LEDS(uint32_t res,uint8_t sensor){
-
-  uint8_t lum_val = res/1000;
-
-  leds.setPixelColor(sensor, leds.Color(lum_val,255-lum_val,0));
-
-  leds.show();
+        leds.begin();
+        for(uint8_t led = 0; led<NB_SENSORS; led++) leds.setPixelColor(led,leds.Color(leds_brightness,0,0));
+        
+        leds.show();
 }
 
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.3">
+<eagle version="9.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -181,19 +181,7 @@
 <wire x1="50.8" y1="20.32" x2="50.8" y2="2.54" width="0.1524" layer="20"/>
 <wire x1="50.8" y1="2.54" x2="48.26" y2="0" width="0.1524" layer="20" curve="-90"/>
 <wire x1="48.26" y1="0" x2="6.35" y2="0" width="0.1524" layer="20"/>
-<wire x1="3.81" y1="2.54" x2="3.81" y2="10.795" width="0.1524" layer="20"/>
-<wire x1="3.81" y1="12.065" x2="3.81" y2="20.32" width="0.1524" layer="20"/>
-<wire x1="-3.81" y1="27.94" x2="-3.81" y2="12.065" width="0.1524" layer="20"/>
-<wire x1="-3.81" y1="10.795" x2="-3.81" y2="-5.08" width="0.1524" layer="20"/>
-<wire x1="-3.81" y1="-5.08" x2="58.42" y2="-5.08" width="0.1524" layer="20"/>
-<wire x1="58.42" y1="-5.08" x2="58.42" y2="27.94" width="0.1524" layer="20"/>
-<wire x1="58.42" y1="27.94" x2="-3.81" y2="27.94" width="0.1524" layer="20"/>
-<wire x1="-4.445" y1="28.575" x2="-4.445" y2="-5.715" width="0.1524" layer="20"/>
-<wire x1="-4.445" y1="-5.715" x2="59.055" y2="-5.715" width="0.1524" layer="20"/>
-<wire x1="59.055" y1="-5.715" x2="59.055" y2="28.575" width="0.1524" layer="20"/>
-<wire x1="59.055" y1="28.575" x2="-4.445" y2="28.575" width="0.1524" layer="20"/>
-<wire x1="-3.81" y1="12.065" x2="3.81" y2="12.065" width="0.1524" layer="20"/>
-<wire x1="-3.81" y1="10.795" x2="3.81" y2="10.795" width="0.1524" layer="20"/>
+<wire x1="3.81" y1="20.32" x2="3.81" y2="2.54" width="0.1524" layer="20"/>
 </plain>
 <libraries>
 <library name="electrode_tester" urn="urn:adsk.eagle:library:5554192">
@@ -760,116 +748,116 @@ Your Eurocircuits Team
 </pass>
 </autorouter>
 <elements>
-<element name="U1" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="TSSOP28" package3d_urn="urn:adsk.eagle:package:5502030/2" value="ADS1248" x="20.32" y="11.43" smashed="yes" rot="MR180">
+<element name="U1" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="TSSOP28" package3d_urn="urn:adsk.eagle:package:5502030/2" value="ADS1248" x="20.32" y="11.43" rot="MR180">
 <attribute name="NAME" x="15.24" y="15.24" size="0.8128" layer="26" font="vector" ratio="15" rot="MR90"/>
 <attribute name="VALUE" x="16.764" y="12.954" size="1.27" layer="28" rot="MR180"/>
 </element>
-<element name="JP1" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="1X16_ROUND" package3d_urn="urn:adsk.eagle:package:5502036/3" value="" x="25.4" y="21.59" smashed="yes" rot="MR180">
+<element name="JP1" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="1X16_ROUND" package3d_urn="urn:adsk.eagle:package:5502036/3" value="" x="25.4" y="21.59" rot="MR180">
 <attribute name="NAME" x="4.445" y="20.32" size="0.8128" layer="26" ratio="18" rot="MR180"/>
 <attribute name="VALUE" x="5.08" y="24.765" size="0.4064" layer="28" ratio="10" rot="MR180"/>
 </element>
-<element name="JP2" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="1X12_ROUND" package3d_urn="urn:adsk.eagle:package:5502031/2" value="" x="20.32" y="1.27" smashed="yes" rot="MR0">
+<element name="JP2" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="1X12_ROUND" package3d_urn="urn:adsk.eagle:package:5502031/2" value="" x="20.32" y="1.27" rot="MR0">
 <attribute name="NAME" x="6.35" y="2.54" size="0.8128" layer="26" ratio="18" rot="MR0"/>
 <attribute name="VALUE" x="35.56" y="-1.905" size="0.4064" layer="28" ratio="10" rot="MR0"/>
 </element>
-<element name="CONN1" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="505110-1292" package3d_urn="urn:adsk.eagle:package:5502051/2" value="505110-1292" x="41.91" y="2.54" smashed="yes" rot="MR180">
+<element name="CONN1" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="505110-1292" package3d_urn="urn:adsk.eagle:package:5502051/2" value="505110-1292" x="41.91" y="2.54" rot="MR180">
 <attribute name="NAME" x="35.56" y="3.81" size="0.8128" layer="26" font="vector" ratio="15" rot="MR90"/>
 <attribute name="VALUE" x="38.91" y="7.54" size="0.6096" layer="28" font="vector" ratio="15" rot="MR180"/>
 </element>
-<element name="LED1" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="WS2812B" package3d_urn="urn:adsk.eagle:package:5502052/2" value="WS2812B5050" x="8.255" y="17.78" smashed="yes">
+<element name="LED1" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="WS2812B" package3d_urn="urn:adsk.eagle:package:5502052/2" value="WS2812B5050" x="8.255" y="17.78">
 <attribute name="NAME" x="11.43" y="17.145" size="0.8128" layer="25" font="vector" ratio="15"/>
 </element>
-<element name="R1" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="30.48" y="14.605" smashed="yes" rot="MR0">
+<element name="R1" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="30.48" y="14.605" rot="MR0">
 <attribute name="NAME" x="28.575" y="14.605" size="0.6096" layer="26" font="vector" ratio="15" rot="MR0"/>
 <attribute name="SPICEPREFIX" value="R" x="30.48" y="14.605" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="VALUE" x="31.115" y="12.7" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="C1" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="22.225" y="17.78" smashed="yes" rot="MR90">
+<element name="C1" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="22.225" y="17.78" rot="MR90">
 <attribute name="NAME" x="14.605" y="17.145" size="0.6096" layer="26" font="vector" ratio="15" rot="MR90"/>
 <attribute name="SPICEPREFIX" value="C" x="22.225" y="17.78" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="VALUE" x="20.32" y="17.145" size="1.27" layer="28" rot="MR90"/>
 </element>
-<element name="R2" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="30.48" y="12.065" smashed="yes" rot="MR0">
+<element name="R2" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="30.48" y="12.065" rot="MR0">
 <attribute name="NAME" x="28.575" y="12.065" size="0.6096" layer="26" font="vector" ratio="15" rot="MR0"/>
 <attribute name="SPICEPREFIX" value="R" x="30.48" y="17.145" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="VALUE" x="31.115" y="10.16" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="C2" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="24.13" y="17.78" smashed="yes" rot="MR90">
+<element name="C2" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="24.13" y="17.78" rot="MR90">
 <attribute name="NAME" x="15.875" y="17.145" size="0.6096" layer="26" font="vector" ratio="15" rot="MR90"/>
 <attribute name="SPICEPREFIX" value="C" x="19.05" y="17.78" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="VALUE" x="22.225" y="17.145" size="1.27" layer="28" rot="MR90"/>
 </element>
-<element name="R3" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="33.655" y="10.795" smashed="yes" rot="MR0">
+<element name="R3" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="33.655" y="10.795" rot="MR0">
 <attribute name="NAME" x="35.56" y="11.43" size="0.6096" layer="26" font="vector" ratio="15" rot="MR180"/>
 <attribute name="SPICEPREFIX" value="R" x="33.655" y="20.955" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="VALUE" x="34.29" y="8.89" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="C3" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="24.13" y="5.08" smashed="yes" rot="MR270">
+<element name="C3" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="24.13" y="5.08" rot="MR270">
 <attribute name="NAME" x="15.875" y="4.445" size="0.6096" layer="26" font="vector" ratio="15" rot="MR90"/>
 <attribute name="SPICEPREFIX" value="C" x="29.21" y="5.08" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="VALUE" x="26.035" y="5.715" size="1.27" layer="28" rot="MR270"/>
 </element>
-<element name="R4" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="33.655" y="8.255" smashed="yes" rot="MR0">
+<element name="R4" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="33.655" y="8.255" rot="MR0">
 <attribute name="NAME" x="35.56" y="8.89" size="0.6096" layer="26" font="vector" ratio="15" rot="MR180"/>
 <attribute name="SPICEPREFIX" value="R" x="33.655" y="13.335" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="VALUE" x="34.29" y="6.35" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="C4" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="22.225" y="5.08" smashed="yes" rot="MR270">
+<element name="C4" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="22.225" y="5.08" rot="MR270">
 <attribute name="NAME" x="14.605" y="4.445" size="0.6096" layer="26" font="vector" ratio="15" rot="MR90"/>
 <attribute name="SPICEPREFIX" value="C" x="32.385" y="5.08" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="VALUE" x="24.13" y="5.715" size="1.27" layer="28" rot="MR270"/>
 </element>
-<element name="R5" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="33.655" y="13.335" smashed="yes" rot="MR0">
+<element name="R5" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="33.655" y="13.335" rot="MR0">
 <attribute name="NAME" x="35.56" y="13.97" size="0.6096" layer="26" font="vector" ratio="15" rot="MR180"/>
 <attribute name="SPICEPREFIX" value="R" x="33.655" y="23.495" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="VALUE" x="34.29" y="11.43" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="C5" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="26.035" y="17.78" smashed="yes" rot="MR90">
+<element name="C5" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="26.035" y="17.78" rot="MR90">
 <attribute name="NAME" x="17.145" y="17.145" size="0.6096" layer="26" font="vector" ratio="15" rot="MR90"/>
 <attribute name="SPICEPREFIX" value="C" x="20.955" y="17.78" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="VALUE" x="24.13" y="17.145" size="1.27" layer="28" rot="MR90"/>
 </element>
-<element name="R6" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="33.655" y="15.875" smashed="yes" rot="MR0">
+<element name="R6" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="33.655" y="15.875" rot="MR0">
 <attribute name="NAME" x="35.56" y="16.51" size="0.6096" layer="26" font="vector" ratio="15" rot="MR180"/>
 <attribute name="SPICEPREFIX" value="R" x="38.735" y="15.875" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="VALUE" x="34.29" y="13.97" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="C6" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="27.94" y="17.78" smashed="yes" rot="MR90">
+<element name="C6" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="27.94" y="17.78" rot="MR90">
 <attribute name="NAME" x="18.415" y="17.145" size="0.6096" layer="26" font="vector" ratio="15" rot="MR90"/>
 <attribute name="SPICEPREFIX" value="C" x="12.7" y="12.7" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="VALUE" x="26.035" y="17.145" size="1.27" layer="28" rot="MR90"/>
 </element>
-<element name="R7" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="30.48" y="6.985" smashed="yes" rot="MR0">
+<element name="R7" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="30.48" y="6.985" rot="MR0">
 <attribute name="NAME" x="28.575" y="6.985" size="0.6096" layer="26" font="vector" ratio="15" rot="MR0"/>
 <attribute name="SPICEPREFIX" value="R" x="30.48" y="1.905" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="VALUE" x="31.115" y="5.08" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="C7" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="27.94" y="5.08" smashed="yes" rot="MR270">
+<element name="C7" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="27.94" y="5.08" rot="MR270">
 <attribute name="NAME" x="18.415" y="4.445" size="0.6096" layer="26" font="vector" ratio="15" rot="MR90"/>
 <attribute name="SPICEPREFIX" value="C" x="48.26" y="5.08" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="VALUE" x="29.845" y="5.715" size="1.27" layer="28" rot="MR270"/>
 </element>
-<element name="R8" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="30.48" y="9.525" smashed="yes" rot="MR0">
+<element name="R8" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="30.48" y="9.525" rot="MR0">
 <attribute name="NAME" x="28.575" y="9.525" size="0.6096" layer="26" font="vector" ratio="15" rot="MR0"/>
 <attribute name="SPICEPREFIX" value="R" x="35.56" y="-5.715" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="VALUE" x="31.115" y="7.62" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="C8" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="26.035" y="5.08" smashed="yes" rot="MR270">
+<element name="C8" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="26.035" y="5.08" rot="MR270">
 <attribute name="NAME" x="17.145" y="4.445" size="0.6096" layer="26" font="vector" ratio="15" rot="MR90"/>
 <attribute name="SPICEPREFIX" value="C" x="56.515" y="10.16" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="VALUE" x="27.94" y="5.715" size="1.27" layer="28" rot="MR270"/>
 </element>
-<element name="C9" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="20.32" y="5.08" smashed="yes" rot="MR270">
+<element name="C9" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="20.32" y="5.08" rot="MR270">
 <attribute name="NAME" x="13.335" y="4.445" size="0.6096" layer="26" font="vector" ratio="15" rot="MR90"/>
 <attribute name="SPICEPREFIX" value="C" x="20.32" y="5.08" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="VALUE" x="22.225" y="5.715" size="1.27" layer="28" rot="MR270"/>
 </element>
-<element name="C10" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="13.97" y="13.335" smashed="yes" rot="MR90">
+<element name="C10" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="13.97" y="13.335" rot="MR90">
 <attribute name="NAME" x="12.065" y="12.7" size="0.6096" layer="26" font="vector" ratio="15" rot="MR90"/>
 <attribute name="SPICEPREFIX" value="C" x="13.97" y="13.335" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="VALUE" x="12.065" y="12.7" size="1.27" layer="28" rot="MR90"/>
 </element>
-<element name="U2" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="VSSOP8" package3d_urn="urn:adsk.eagle:package:5502055/2" value="LMP7702MM/NOPBVSSOP" x="43.815" y="17.145" smashed="yes" rot="MR0">
+<element name="U2" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="VSSOP8" package3d_urn="urn:adsk.eagle:package:5502055/2" value="LMP7702MM/NOPBVSSOP" x="43.815" y="17.145" rot="MR0">
 <attribute name="DESCRIPTION" value="Op Amps Prec RRIO 12V Dual Op Amp" x="43.815" y="17.145" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MF" value="Texas Instruments" x="43.815" y="17.145" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MP" value="LMP7702MM/NOPB" x="43.815" y="17.145" size="1.778" layer="28" rot="MR0" display="off"/>
@@ -877,141 +865,141 @@ Your Eurocircuits Team
 <attribute name="PACKAGE" value="MSOP-8" x="43.815" y="17.145" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="VALUE" x="45.4914" y="14.478" size="0.6096" layer="28" font="vector" ratio="15" rot="SMR0"/>
 </element>
-<element name="C11" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="8.255" y="13.97" smashed="yes" rot="R180">
+<element name="C11" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="8.255" y="13.97" rot="R180">
 <attribute name="NAME" x="9.525" y="12.7" size="0.6096" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="SPICEPREFIX" value="C" x="8.255" y="13.97" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="8.89" y="15.875" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="LED2" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="WS2812B" package3d_urn="urn:adsk.eagle:package:5502052/2" value="WS2812B5050" x="27.305" y="17.78" smashed="yes">
+<element name="LED2" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="WS2812B" package3d_urn="urn:adsk.eagle:package:5502052/2" value="WS2812B5050" x="27.305" y="17.78">
 <attribute name="NAME" x="30.48" y="17.145" size="0.8128" layer="25" font="vector" ratio="15"/>
 </element>
-<element name="C12" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="8.255" y="8.89" smashed="yes">
+<element name="C12" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="8.255" y="8.89">
 <attribute name="NAME" x="6.985" y="10.16" size="0.6096" layer="25" font="vector" ratio="15"/>
 <attribute name="SPICEPREFIX" value="C" x="8.255" y="8.89" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="7.62" y="6.985" size="1.27" layer="27"/>
 </element>
-<element name="LED3" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="WS2812B" package3d_urn="urn:adsk.eagle:package:5502052/2" value="WS2812B5050" x="36.83" y="11.43" smashed="yes">
+<element name="LED3" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="WS2812B" package3d_urn="urn:adsk.eagle:package:5502052/2" value="WS2812B5050" x="36.83" y="11.43">
 <attribute name="NAME" x="40.005" y="10.795" size="0.8128" layer="25" font="vector" ratio="15"/>
 </element>
-<element name="C13" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="17.78" y="15.24" smashed="yes">
+<element name="C13" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="17.78" y="15.24">
 <attribute name="NAME" x="16.51" y="16.51" size="0.6096" layer="25" font="vector" ratio="15"/>
 <attribute name="SPICEPREFIX" value="C" x="17.78" y="20.955" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="17.145" y="13.335" size="1.27" layer="27"/>
 </element>
-<element name="LED4" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="WS2812B" package3d_urn="urn:adsk.eagle:package:5502052/2" value="WS2812B5050" x="46.355" y="17.78" smashed="yes">
+<element name="LED4" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="WS2812B" package3d_urn="urn:adsk.eagle:package:5502052/2" value="WS2812B5050" x="46.355" y="17.78">
 <attribute name="NAME" x="43.18" y="18.415" size="0.8128" layer="25" font="vector" ratio="15" rot="R180"/>
 </element>
-<element name="C14" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="27.305" y="13.97" smashed="yes" rot="R180">
+<element name="C14" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="27.305" y="13.97" rot="R180">
 <attribute name="NAME" x="28.575" y="12.7" size="0.6096" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="SPICEPREFIX" value="C" x="32.385" y="17.145" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="27.94" y="15.875" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="LED5" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="WS2812B" package3d_urn="urn:adsk.eagle:package:5502052/2" value="WS2812B5050" x="46.355" y="5.08" smashed="yes" rot="R180">
+<element name="LED5" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="WS2812B" package3d_urn="urn:adsk.eagle:package:5502052/2" value="WS2812B5050" x="46.355" y="5.08" rot="R180">
 <attribute name="NAME" x="43.18" y="5.715" size="0.8128" layer="25" font="vector" ratio="15" rot="R180"/>
 </element>
-<element name="C15" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="27.305" y="8.89" smashed="yes">
+<element name="C15" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="27.305" y="8.89">
 <attribute name="NAME" x="26.035" y="10.16" size="0.6096" layer="25" font="vector" ratio="15"/>
 <attribute name="SPICEPREFIX" value="C" x="19.685" y="20.32" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="26.67" y="6.985" size="1.27" layer="27"/>
 </element>
-<element name="LED6" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="WS2812B" package3d_urn="urn:adsk.eagle:package:5502052/2" value="WS2812B5050" x="27.305" y="5.08" smashed="yes" rot="R180">
+<element name="LED6" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="WS2812B" package3d_urn="urn:adsk.eagle:package:5502052/2" value="WS2812B5050" x="27.305" y="5.08" rot="R180">
 <attribute name="NAME" x="30.48" y="4.445" size="0.8128" layer="25" font="vector" ratio="15"/>
 </element>
-<element name="C16" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="36.83" y="7.62" smashed="yes" rot="R180">
+<element name="C16" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="36.83" y="7.62" rot="R180">
 <attribute name="NAME" x="38.1" y="6.35" size="0.6096" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="SPICEPREFIX" value="C" x="36.83" y="-0.635" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="37.465" y="9.525" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="LED7" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="WS2812B" package3d_urn="urn:adsk.eagle:package:5502052/2" value="WS2812B5050" x="17.78" y="11.43" smashed="yes" rot="R180">
+<element name="LED7" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="WS2812B" package3d_urn="urn:adsk.eagle:package:5502052/2" value="WS2812B5050" x="17.78" y="11.43" rot="R180">
 <attribute name="NAME" x="20.955" y="10.795" size="0.8128" layer="25" font="vector" ratio="15"/>
 </element>
-<element name="C17" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="46.355" y="13.97" smashed="yes" rot="R180">
+<element name="C17" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="46.355" y="13.97" rot="R180">
 <attribute name="NAME" x="47.625" y="12.7" size="0.6096" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="SPICEPREFIX" value="C" x="51.435" y="14.605" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="46.99" y="15.875" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="LED8" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="WS2812B" package3d_urn="urn:adsk.eagle:package:5502052/2" value="WS2812B5050" x="8.255" y="5.08" smashed="yes" rot="R180">
+<element name="LED8" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="WS2812B" package3d_urn="urn:adsk.eagle:package:5502052/2" value="WS2812B5050" x="8.255" y="5.08" rot="R180">
 <attribute name="NAME" x="11.43" y="4.445" size="0.8128" layer="25" font="vector" ratio="15"/>
 </element>
-<element name="C18" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="46.355" y="8.89" smashed="yes">
+<element name="C18" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="46.355" y="8.89">
 <attribute name="NAME" x="45.085" y="10.16" size="0.6096" layer="25" font="vector" ratio="15"/>
 <attribute name="SPICEPREFIX" value="C" x="36.195" y="-0.635" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="45.72" y="6.985" size="1.27" layer="27"/>
 </element>
-<element name="C19" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="33.655" y="18.415" smashed="yes" rot="MR0">
+<element name="C19" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="33.655" y="18.415" rot="MR0">
 <attribute name="NAME" x="34.29" y="19.685" size="0.6096" layer="26" font="vector" ratio="15" rot="MR0"/>
 <attribute name="SPICEPREFIX" value="C" x="33.655" y="18.415" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="VALUE" x="34.29" y="16.51" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="R9" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="38.1" y="17.145" smashed="yes" rot="MR180">
+<element name="R9" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="38.1" y="17.145" rot="MR180">
 <attribute name="NAME" x="40.64" y="17.145" size="0.6096" layer="26" font="vector" ratio="15" rot="MR0"/>
 <attribute name="SPICEPREFIX" value="R" x="38.1" y="17.145" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="VALUE" x="37.465" y="19.05" size="1.27" layer="28" rot="MR180"/>
 </element>
-<element name="R10" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="30.48" y="17.145" smashed="yes" rot="MR180">
+<element name="R10" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="30.48" y="17.145" rot="MR180">
 <attribute name="NAME" x="31.115" y="18.415" size="0.6096" layer="26" font="vector" ratio="15" rot="MR0"/>
 <attribute name="SPICEPREFIX" value="R" x="30.48" y="17.145" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="VALUE" x="29.845" y="19.05" size="1.27" layer="28" rot="MR180"/>
 </element>
-<element name="R11" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="46.99" y="12.065" smashed="yes" rot="MR270">
+<element name="R11" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="46.99" y="12.065" rot="MR270">
 <attribute name="NAME" x="47.625" y="10.16" size="0.6096" layer="26" font="vector" ratio="15" rot="MR270"/>
 <attribute name="SPICEPREFIX" value="R" x="46.99" y="12.065" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="VALUE" x="48.895" y="12.7" size="1.27" layer="28" rot="MR270"/>
 </element>
-<element name="R12" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="38.1" y="15.24" smashed="yes" rot="MR180">
+<element name="R12" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="38.1" y="15.24" rot="MR180">
 <attribute name="NAME" x="41.275" y="14.351" size="0.6096" layer="26" font="vector" ratio="15" rot="MR0"/>
 <attribute name="SPICEPREFIX" value="R" x="38.1" y="15.24" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="VALUE" x="37.465" y="17.145" size="1.27" layer="28" rot="MR180"/>
 </element>
-<element name="R13" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="40.64" y="12.065" smashed="yes" rot="MR90">
+<element name="R13" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="40.64" y="12.065" rot="MR90">
 <attribute name="NAME" x="41.275" y="10.16" size="0.6096" layer="26" font="vector" ratio="15" rot="MR270"/>
 <attribute name="SPICEPREFIX" value="R" x="40.64" y="12.065" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="VALUE" x="38.735" y="11.43" size="1.27" layer="28" rot="MR90"/>
 </element>
-<element name="C20" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="42.545" y="12.065" smashed="yes" rot="MR270">
+<element name="C20" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="42.545" y="12.065" rot="MR270">
 <attribute name="NAME" x="43.18" y="10.16" size="0.6096" layer="26" font="vector" ratio="15" rot="MR270"/>
 <attribute name="SPICEPREFIX" value="C" x="42.545" y="12.065" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="VALUE" x="44.45" y="12.7" size="1.27" layer="28" rot="MR270"/>
 </element>
-<element name="DRL_IN" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="TP1.5MM" package3d_urn="urn:adsk.eagle:package:5502061/1" value="TESTPAD_PROG" x="48.895" y="13.335" smashed="yes" rot="MR0">
+<element name="DRL_IN" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="TP1.5MM" package3d_urn="urn:adsk.eagle:package:5502061/1" value="TESTPAD_PROG" x="48.895" y="13.335" rot="MR0">
 <attribute name="NAME" x="50.038" y="11.811" size="0.6096" layer="26" font="vector" ratio="15" rot="SMR90"/>
 <attribute name="VALUE" x="49.5427" y="10.9827" size="0.6096" layer="28" font="vector" ratio="15" rot="SMR0"/>
 </element>
-<element name="CMS_BF" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="TP1.5MM" package3d_urn="urn:adsk.eagle:package:5502061/1" value="TESTPAD_PROG" x="48.895" y="15.875" smashed="yes" rot="MR0">
+<element name="CMS_BF" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="TP1.5MM" package3d_urn="urn:adsk.eagle:package:5502061/1" value="TESTPAD_PROG" x="48.895" y="15.875" rot="MR0">
 <attribute name="NAME" x="50.038" y="15.367" size="0.6096" layer="26" font="vector" ratio="15" rot="SMR90"/>
 <attribute name="VALUE" x="49.5427" y="13.5227" size="0.6096" layer="28" font="vector" ratio="15" rot="SMR0"/>
 </element>
-<element name="CMS" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="TP1.5MM" package3d_urn="urn:adsk.eagle:package:5502061/1" value="TESTPAD_PROG" x="48.895" y="10.795" smashed="yes" rot="MR0">
+<element name="CMS" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="TP1.5MM" package3d_urn="urn:adsk.eagle:package:5502061/1" value="TESTPAD_PROG" x="48.895" y="10.795" rot="MR0">
 <attribute name="NAME" x="50.038" y="9.525" size="0.6096" layer="26" font="vector" ratio="15" rot="SMR90"/>
 <attribute name="VALUE" x="49.5427" y="8.4427" size="0.6096" layer="28" font="vector" ratio="15" rot="SMR0"/>
 </element>
-<element name="R14" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="45.085" y="12.065" smashed="yes" rot="MR90">
+<element name="R14" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="45.085" y="12.065" rot="MR90">
 <attribute name="NAME" x="45.72" y="10.16" size="0.6096" layer="26" font="vector" ratio="15" rot="MR270"/>
 <attribute name="SPICEPREFIX" value="R" x="45.085" y="12.065" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="VALUE" x="43.18" y="11.43" size="1.27" layer="28" rot="MR90"/>
 </element>
-<element name="C21" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="38.1" y="19.05" smashed="yes" rot="MR0">
+<element name="C21" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="38.1" y="19.05" rot="MR0">
 <attribute name="NAME" x="40.005" y="19.685" size="0.6096" layer="26" font="vector" ratio="15" rot="MR180"/>
 <attribute name="SPICEPREFIX" value="C" x="38.1" y="19.05" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="VALUE" x="38.735" y="17.145" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="DRL_OUT" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="TP1.5MM" package3d_urn="urn:adsk.eagle:package:5502061/1" value="TESTPAD_PROG" x="48.895" y="7.62" smashed="yes" rot="MR0">
+<element name="DRL_OUT" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="TP1.5MM" package3d_urn="urn:adsk.eagle:package:5502061/1" value="TESTPAD_PROG" x="48.895" y="7.62" rot="MR0">
 <attribute name="NAME" x="50.038" y="5.207" size="0.6096" layer="26" font="vector" ratio="15" rot="SMR90"/>
 <attribute name="VALUE" x="49.5427" y="5.2677" size="0.6096" layer="28" font="vector" ratio="15" rot="SMR0"/>
 </element>
-<element name="GND" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="TP1.5MM" package3d_urn="urn:adsk.eagle:package:5502061/1" value="TESTPAD_PROG" x="48.895" y="1.905" smashed="yes" rot="MR0">
+<element name="GND" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="TP1.5MM" package3d_urn="urn:adsk.eagle:package:5502061/1" value="TESTPAD_PROG" x="48.895" y="1.905" rot="MR0">
 <attribute name="NAME" x="50.165" y="3.175" size="0.6096" layer="26" font="vector" ratio="15" rot="SMR0"/>
 <attribute name="VALUE" x="49.5427" y="-0.4473" size="0.6096" layer="28" font="vector" ratio="15" rot="SMR0"/>
 </element>
-<element name="3V3-A" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="TP1.5MM" package3d_urn="urn:adsk.eagle:package:5502061/1" value="TESTPAD_PROG" x="48.895" y="20.955" smashed="yes" rot="MR0">
+<element name="3V3-A" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="TP1.5MM" package3d_urn="urn:adsk.eagle:package:5502061/1" value="TESTPAD_PROG" x="48.895" y="20.955" rot="MR0">
 <attribute name="NAME" x="50.165" y="19.05" size="0.6096" layer="26" font="vector" ratio="15" rot="SMR0"/>
 <attribute name="VALUE" x="49.5427" y="18.6027" size="0.6096" layer="28" font="vector" ratio="15" rot="SMR0"/>
 </element>
-<element name="3V3-B" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="TP1.5MM" package3d_urn="urn:adsk.eagle:package:5502061/1" value="TESTPAD_PROG" x="13.97" y="10.16" smashed="yes" rot="MR0">
+<element name="3V3-B" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="TP1.5MM" package3d_urn="urn:adsk.eagle:package:5502061/1" value="TESTPAD_PROG" x="13.97" y="10.16" rot="MR0">
 <attribute name="NAME" x="12.065" y="8.89" size="0.6096" layer="26" font="vector" ratio="15" rot="SMR90"/>
 <attribute name="VALUE" x="14.6177" y="7.8077" size="0.6096" layer="28" font="vector" ratio="15" rot="SMR0"/>
 </element>
-<element name="C22" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="20.32" y="17.78" smashed="yes" rot="MR90">
+<element name="C22" library="electrode_tester" library_urn="urn:adsk.eagle:library:5554192" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="20.32" y="17.78" rot="MR90">
 <attribute name="NAME" x="13.335" y="17.145" size="0.6096" layer="26" font="vector" ratio="15" rot="MR90"/>
 <attribute name="SPICEPREFIX" value="C" x="20.32" y="17.78" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="VALUE" x="18.415" y="17.145" size="1.27" layer="28" rot="MR90"/>
